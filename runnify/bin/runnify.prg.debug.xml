@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\Jaden\Documents\GitHub\Runnify\runnify\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="1" lineNum="3" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="2" lineNum="5" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435479" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="2" lineNum="6" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435481" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="3" lineNum="4" parent="globals/runnifySyncDelegate" pc="268435500" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="4" lineNum="13" parent="globals/runnifySyncDelegate" pc="268435519" symbol="onStartSync"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="4" lineNum="14" parent="globals/runnifySyncDelegate" pc="268435521" symbol="onStartSync"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="23" parent="globals/runnifySyncDelegate" pc="268435539" symbol="onStopSync"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="24" parent="globals/runnifySyncDelegate" pc="268435541" symbol="onStopSync"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="25" parent="globals/runnifySyncDelegate" pc="268435557" symbol="onStopSync"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="6" lineNum="6" parent="globals/runnifySyncDelegate" pc="268435575" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="6" lineNum="7" parent="globals/runnifySyncDelegate" pc="268435577" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="7" lineNum="18" parent="globals/runnifySyncDelegate" pc="268435596" symbol="isSyncNeeded"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="7" lineNum="19" parent="globals/runnifySyncDelegate" pc="268435598" symbol="isSyncNeeded"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="8" lineNum="43" parent="globals" pc="268435601" symbol="getApp"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="8" lineNum="44" parent="globals" pc="268435611" symbol="getApp"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="9" lineNum="7" parent="globals/runnifyApp" pc="268435627" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="10" lineNum="14" parent="globals/runnifyApp" pc="268435646" symbol="onStart"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="11" lineNum="32" parent="globals/runnifyApp" pc="268435649" symbol="getPlaybackConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="11" lineNum="33" parent="globals/runnifyApp" pc="268435651" symbol="getPlaybackConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="12" lineNum="22" parent="globals/runnifyApp" pc="268435726" symbol="getContentDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="12" lineNum="23" parent="globals/runnifyApp" pc="268435728" symbol="getContentDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="13" lineNum="27" parent="globals/runnifyApp" pc="268435755" symbol="getSyncDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="13" lineNum="28" parent="globals/runnifyApp" pc="268435757" symbol="getSyncDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="14" lineNum="9" parent="globals/runnifyApp" pc="268435784" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="14" lineNum="10" parent="globals/runnifyApp" pc="268435786" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="15" lineNum="37" parent="globals/runnifyApp" pc="268435805" symbol="getSyncConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="15" lineNum="38" parent="globals/runnifyApp" pc="268435807" symbol="getSyncConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="16" lineNum="18" parent="globals/runnifyApp" pc="268435882" symbol="onStop"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="17" lineNum="4" parent="globals/runnifyConfigurePlaybackView" pc="268435885" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="19" lineNum="11" parent="globals/runnifyConfigurePlaybackView" pc="268435904" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="19" lineNum="12" parent="globals/runnifyConfigurePlaybackView" pc="268435906" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="20" lineNum="6" parent="globals/runnifyConfigurePlaybackView" pc="268435948" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="20" lineNum="7" parent="globals/runnifyConfigurePlaybackView" pc="268435950" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="22" lineNum="22" parent="globals/runnifyConfigurePlaybackView" pc="268435969" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="22" lineNum="24" parent="globals/runnifyConfigurePlaybackView" pc="268435971" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="23" lineNum="3" parent="globals/runnifyConfigureSyncDelegate" pc="268435992" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="24" lineNum="5" parent="globals/runnifyConfigureSyncDelegate" pc="268436011" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="24" lineNum="6" parent="globals/runnifyConfigureSyncDelegate" pc="268436013" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="25" lineNum="7" parent="globals/Rez" pc="268436032" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="26" lineNum="7" parent="globals/runnifyConfigureSyncView" pc="268436056" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="28" lineNum="14" parent="globals/runnifyConfigureSyncView" pc="268436075" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="28" lineNum="15" parent="globals/runnifyConfigureSyncView" pc="268436077" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="29" lineNum="9" parent="globals/runnifyConfigureSyncView" pc="268436119" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="29" lineNum="10" parent="globals/runnifyConfigureSyncView" pc="268436121" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="31" lineNum="25" parent="globals/runnifyConfigureSyncView" pc="268436140" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="31" lineNum="27" parent="globals/runnifyConfigureSyncView" pc="268436142" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="32" lineNum="4" parent="globals/runnifyContentIterator" pc="268436163" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="33" lineNum="36" parent="globals/runnifyContentIterator" pc="268436182" symbol="next"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="33" lineNum="37" parent="globals/runnifyContentIterator" pc="268436184" symbol="next"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="21" parent="globals/runnifyContentIterator" pc="268436186" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="22" parent="globals/runnifyContentIterator" pc="268436190" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="23" parent="globals/runnifyContentIterator" pc="268436218" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="24" parent="globals/runnifyContentIterator" pc="268436228" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="29" parent="globals/runnifyContentIterator" pc="268436281" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="30" parent="globals/runnifyContentIterator" pc="268436294" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="31" parent="globals/runnifyContentIterator" pc="268436304" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="32" parent="globals/runnifyContentIterator" pc="268436313" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="35" lineNum="51" parent="globals/runnifyContentIterator" pc="268436316" symbol="previous"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="35" lineNum="52" parent="globals/runnifyContentIterator" pc="268436318" symbol="previous"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="36" lineNum="41" parent="globals/runnifyContentIterator" pc="268436320" symbol="peekNext"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="36" lineNum="42" parent="globals/runnifyContentIterator" pc="268436322" symbol="peekNext"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="37" lineNum="16" parent="globals/runnifyContentIterator" pc="268436324" symbol="get"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="37" lineNum="17" parent="globals/runnifyContentIterator" pc="268436326" symbol="get"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="38" lineNum="46" parent="globals/runnifyContentIterator" pc="268436328" symbol="peekPrevious"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="38" lineNum="47" parent="globals/runnifyContentIterator" pc="268436330" symbol="peekPrevious"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="39" lineNum="56" parent="globals/runnifyContentIterator" pc="268436332" symbol="shuffling"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="39" lineNum="57" parent="globals/runnifyContentIterator" pc="268436334" symbol="shuffling"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="40" lineNum="6" parent="globals/runnifyContentIterator" pc="268436337" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="40" lineNum="7" parent="globals/runnifyContentIterator" pc="268436339" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="41" lineNum="11" parent="globals/runnifyContentIterator" pc="268436358" symbol="canSkip"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="41" lineNum="12" parent="globals/runnifyContentIterator" pc="268436360" symbol="canSkip"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="42" lineNum="7" parent="globals/runnifyContentDelegate" pc="268436363" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="44" lineNum="16" parent="globals/runnifyContentDelegate" pc="268436382" symbol="getContentIterator"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="44" lineNum="17" parent="globals/runnifyContentDelegate" pc="268436384" symbol="getContentIterator"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="45" lineNum="21" parent="globals/runnifyContentDelegate" pc="268436411" symbol="onAdAction"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="46" lineNum="25" parent="globals/runnifyContentDelegate" pc="268436414" symbol="onThumbsUp"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="47" lineNum="9" parent="globals/runnifyContentDelegate" pc="268436417" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="47" lineNum="10" parent="globals/runnifyContentDelegate" pc="268436419" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="48" lineNum="38" parent="globals/runnifyContentDelegate" pc="268436438" symbol="onSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="49" lineNum="29" parent="globals/runnifyContentDelegate" pc="268436441" symbol="onThumbsDown"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="29" parent="globals/Rez/Layouts" pc="268436444" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="30" parent="globals/Rez/Layouts" pc="268436456" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="32" parent="globals/Rez/Layouts" pc="268436587" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="33" parent="globals/Rez/Layouts" pc="268436692" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="35" parent="globals/Rez/Layouts" pc="268436732" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="20" parent="globals/Rez/Layouts" pc="268436759" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="21" parent="globals/Rez/Layouts" pc="268436771" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="23" parent="globals/Rez/Layouts" pc="268436902" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="24" parent="globals/Rez/Layouts" pc="268437007" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="26" parent="globals/Rez/Layouts" pc="268437047" symbol="ConfigurePlaybackLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8390434" method="true" symbol="getSyncConfigurationView"/>
+        <entry id="8389346" symbol="text"/>
+        <entry id="8390211" module="true" symbol="Media"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="8390379" method="true" symbol="onThumbsUp"/>
+        <entry id="8390380" method="true" symbol="onThumbsDown"/>
+        <entry id="14" object="true" symbol="runnifyContentDelegate"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="8388826" method="true" symbol="next"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="8390377" method="true" symbol="getContentIterator"/>
+        <entry id="15" object="true" symbol="runnifyContentIterator"/>
+        <entry id="8390373" method="true" symbol="shuffling"/>
+        <entry field="true" id="23" symbol="AppName"/>
+        <entry id="8390459" method="true" symbol="onStopSync"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8390430" method="true" symbol="getContentDelegate"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="12" object="true" symbol="runnifyConfigureSyncDelegate"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8390378" method="true" symbol="onAdAction"/>
+        <entry field="true" id="20" symbol="id_monkey"/>
+        <entry id="8388789" method="true" symbol="get"/>
+        <entry id="13" object="true" symbol="runnifyConfigureSyncView"/>
+        <entry id="8390342" method="true" symbol="isSyncNeeded"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8390431" method="true" symbol="getSyncDelegate"/>
+        <entry id="16" object="true" symbol="runnifySyncDelegate"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="11" object="true" symbol="runnifyConfigurePlaybackView"/>
+        <entry id="18" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="9" object="true" symbol="runnifyApp"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8390371" method="true" symbol="peekNext"/>
+        <entry id="8390372" method="true" symbol="peekPrevious"/>
+        <entry id="8390382" method="true" symbol="onSong"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8390432" method="true" symbol="getPlaybackConfigurationView"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="19" symbol="LauncherIcon"/>
+        <entry id="8390374" method="true" symbol="canSkip"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8390369" method="true" symbol="getPlaybackProfile"/>
+        <entry id="8390370" method="true" symbol="previous"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8390341" method="true" symbol="onStartSync"/>
+        <entry id="21" method="true" symbol="ConfigurePlaybackLayout"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="10" object="true" symbol="runnifyConfigurePlaybackDelegate"/>
+        <entry field="true" id="24" symbol="configurePlaybackMessage"/>
+        <entry id="17" module="true" symbol="Layouts"/>
+        <entry id="22" method="true" symbol="ConfigureSyncLayout"/>
+        <entry id="8390381" method="true" symbol="onShuffle"/>
+        <entry field="true" id="25" symbol="configureSyncMessage"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435754" name="arg" stackId="1" startPc="268435726"/>
+        <entry arg="true" endPc="268435947" name="dc" stackId="1" startPc="268435904"/>
+        <entry arg="true" endPc="268435991" name="dc" stackId="1" startPc="268435969"/>
+        <entry arg="true" endPc="268436118" name="dc" stackId="1" startPc="268436075"/>
+        <entry arg="true" endPc="268436162" name="dc" stackId="1" startPc="268436140"/>
+        <entry endPc="268436315" name="profile" stackId="1" startPc="268436190"/>
+        <entry arg="true" endPc="268436758" name="dc" stackId="1" startPc="268436444"/>
+        <entry endPc="268436758" name="rez_cmp_local_text_2394426391" stackId="2" startPc="268436456"/>
+        <entry endPc="268436758" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436456"/>
+        <entry arg="true" endPc="268437073" name="dc" stackId="1" startPc="268436759"/>
+        <entry endPc="268437073" name="rez_cmp_local_text_1363855775" stackId="2" startPc="268436771"/>
+        <entry endPc="268437073" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436771"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="configureSyncMessage"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="configurePlaybackMessage"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/runnifyConfigurePlaybackDelegate" offset="206" parentId="globals" symbolId="runnifyConfigurePlaybackDelegate" type="class"/>
+        <dataEntry label="globals/runnifySyncDelegate" offset="253" parentId="globals" symbolId="runnifySyncDelegate" type="class"/>
+        <dataEntry label="globals/runnifyApp" offset="324" parentId="globals" symbolId="runnifyApp" type="class"/>
+        <dataEntry label="globals/runnifyConfigurePlaybackView" offset="419" parentId="globals" symbolId="runnifyConfigurePlaybackView" type="class"/>
+        <dataEntry label="globals/runnifyConfigureSyncDelegate" offset="498" parentId="globals" symbolId="runnifyConfigureSyncDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="545" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/runnifyConfigureSyncView" offset="624" parentId="globals" symbolId="runnifyConfigureSyncView" type="class"/>
+        <dataEntry label="globals/runnifyContentIterator" offset="703" parentId="globals" symbolId="runnifyContentIterator" type="class"/>
+        <dataEntry label="globals/runnifyContentDelegate" offset="814" parentId="globals" symbolId="runnifyContentDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="909" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="956" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1003" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1034" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1065" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1120" parentId="Rez" symbolId="JsonData" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="runnifyConfigurePlaybackDelegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435499" name="initialize" parent="runnifyConfigurePlaybackDelegate" startPc="268435479">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435518" name="&lt;init&gt;" parent="runnifySyncDelegate" startPc="268435500">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435538" name="onStartSync" parent="runnifySyncDelegate" startPc="268435519">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435574" name="onStopSync" parent="runnifySyncDelegate" startPc="268435539">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435595" name="initialize" parent="runnifySyncDelegate" startPc="268435575">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435600" name="isSyncNeeded" parent="runnifySyncDelegate" startPc="268435596">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435626" name="getApp" startPc="268435601">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435645" name="&lt;init&gt;" parent="runnifyApp" startPc="268435627">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435648" name="onStart" parent="runnifyApp" startPc="268435646">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435725" name="getPlaybackConfigurationView" parent="runnifyApp" startPc="268435649">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435754" name="getContentDelegate" parent="runnifyApp" startPc="268435726">
+            <param id="arg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435783" name="getSyncDelegate" parent="runnifyApp" startPc="268435755">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435804" name="initialize" parent="runnifyApp" startPc="268435784">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435881" name="getSyncConfigurationView" parent="runnifyApp" startPc="268435805">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435884" name="onStop" parent="runnifyApp" startPc="268435882">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435903" name="&lt;init&gt;" parent="runnifyConfigurePlaybackView" startPc="268435885">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="runnifyConfigurePlaybackView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435947" name="onLayout" parent="runnifyConfigurePlaybackView" startPc="268435904">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435968" name="initialize" parent="runnifyConfigurePlaybackView" startPc="268435948">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="runnifyConfigurePlaybackView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435991" name="onUpdate" parent="runnifyConfigurePlaybackView" startPc="268435969">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436010" name="&lt;init&gt;" parent="runnifyConfigureSyncDelegate" startPc="268435992">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436031" name="initialize" parent="runnifyConfigureSyncDelegate" startPc="268436011">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436055" name="&lt;init&gt;" parent="Rez" startPc="268436032">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436074" name="&lt;init&gt;" parent="runnifyConfigureSyncView" startPc="268436056">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="runnifyConfigureSyncView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436118" name="onLayout" parent="runnifyConfigureSyncView" startPc="268436075">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436139" name="initialize" parent="runnifyConfigureSyncView" startPc="268436119">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="runnifyConfigureSyncView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436162" name="onUpdate" parent="runnifyConfigureSyncView" startPc="268436140">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436181" name="&lt;init&gt;" parent="runnifyContentIterator" startPc="268436163">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436185" name="next" parent="runnifyContentIterator" startPc="268436182">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436315" name="getPlaybackProfile" parent="runnifyContentIterator" startPc="268436186">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436319" name="previous" parent="runnifyContentIterator" startPc="268436316">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436323" name="peekNext" parent="runnifyContentIterator" startPc="268436320">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436327" name="get" parent="runnifyContentIterator" startPc="268436324">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436331" name="peekPrevious" parent="runnifyContentIterator" startPc="268436328">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436336" name="shuffling" parent="runnifyContentIterator" startPc="268436332">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436357" name="initialize" parent="runnifyContentIterator" startPc="268436337">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436362" name="canSkip" parent="runnifyContentIterator" startPc="268436358">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436381" name="&lt;init&gt;" parent="runnifyContentDelegate" startPc="268436363">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShuffle" parent="runnifyContentDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436410" name="getContentIterator" parent="runnifyContentDelegate" startPc="268436382">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436413" name="onAdAction" parent="runnifyContentDelegate" startPc="268436411">
+            <param id="adContext"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436416" name="onThumbsUp" parent="runnifyContentDelegate" startPc="268436414">
+            <param id="contentRefId"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436437" name="initialize" parent="runnifyContentDelegate" startPc="268436417">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436440" name="onSong" parent="runnifyContentDelegate" startPc="268436438">
+            <param id="contentRefId"/>
+            <param id="songEvent"/>
+            <param id="playbackPosition"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436443" name="onThumbsDown" parent="runnifyContentDelegate" startPc="268436441">
+            <param id="contentRefId"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436758" name="ConfigureSyncLayout" parent="Layouts" startPc="268436444">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437073" name="ConfigurePlaybackLayout" parent="Layouts" startPc="268436759">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
