@@ -379,7 +379,8 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_142_34_s
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 144 12 ]
         %tmp.9 = lgetv %message;
         %tmp.10 = getv %tmp.9 :data;
-        %tmp.12 = getv ? :OAUTH_CODE;
+        %tmp.11 = getm $;
+        %tmp.12 = getv %tmp.11 :OAUTH_CODE;
         %tmp.13 = agetv %tmp.10 %tmp.12;
         putv self :authcode %tmp.13;
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 145 12 ]
@@ -394,7 +395,8 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_142_34_s
         %error.1 = local;
         %tmp.20 = lgetv %message;
         %tmp.21 = getv %tmp.20 :data;
-        %tmp.23 = getv ? :OAUTH_ERROR;
+        %tmp.22 = getm $;
+        %tmp.23 = getv %tmp.22 :OAUTH_ERROR;
         %tmp.24 = agetv %tmp.21 %tmp.23;
         lputv %error.1 %tmp.24;
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 147 12 ]
@@ -459,18 +461,13 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_154_29_s
         %tmp.32 = "connectiq://oauth";
         %tmp.33 = getm $.Toybox.Authentication;
         %tmp.34 = getv %tmp.33 :OAUTH_RESULT_TYPE_URL;
-        %tmp.35 = newd 2;
+        %tmp.35 = newd 1;
         %tmp.36 = "responseCode";
         %tmp.37 = getm $;
         %tmp.38 = getv %tmp.37 :OAUTH_CODE;
         %tmp.39 = dup %tmp.35;
         %tmp.40 = aputv %tmp.39 %tmp.36 %tmp.38;
-        %tmp.41 = "responseError";
-        %tmp.42 = getm $;
-        %tmp.43 = getv %tmp.42 :OAUTH_ERROR;
-        %tmp.44 = dup %tmp.40;
-        %tmp.45 = aputv %tmp.44 %tmp.41 %tmp.43;
-        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.31, %tmp.32, %tmp.34, %tmp.45);
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.31, %tmp.32, %tmp.34, %tmp.40);
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_154_29_stop:
     }
 }
