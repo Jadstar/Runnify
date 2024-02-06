@@ -13,85 +13,88 @@
 <entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartMenuDelegate.mc" id="4" lineNum="7" parent="globals/SongsForTheHeartMenuDelegate" pc="268435578" symbol="initialize"/>
 <entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartMenuDelegate.mc" id="4" lineNum="8" parent="globals/SongsForTheHeartMenuDelegate" pc="268435580" symbol="initialize"/>
 <entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435599" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="6" lineNum="180" parent="globals/HeartBeatSensor" pc="268435623" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="6" lineNum="181" parent="globals/HeartBeatSensor" pc="268435625" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="6" lineNum="182" parent="globals/HeartBeatSensor" pc="268435660" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="185" parent="globals/HeartBeatSensor" pc="268435693" symbol="onSensor"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="186" parent="globals/HeartBeatSensor" pc="268435695" symbol="onSensor"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="187" parent="globals/HeartBeatSensor" pc="268435711" symbol="onSensor"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="189" parent="globals/HeartBeatSensor" pc="268435737" symbol="onSensor"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="6" lineNum="182" parent="globals/HeartBeatSensor" pc="268435623" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="6" lineNum="183" parent="globals/HeartBeatSensor" pc="268435625" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="6" lineNum="184" parent="globals/HeartBeatSensor" pc="268435660" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="187" parent="globals/HeartBeatSensor" pc="268435693" symbol="onSensor"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="188" parent="globals/HeartBeatSensor" pc="268435695" symbol="onSensor"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="189" parent="globals/HeartBeatSensor" pc="268435711" symbol="onSensor"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="7" lineNum="191" parent="globals/HeartBeatSensor" pc="268435737" symbol="onSensor"/>
 <entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="8" lineNum="74" parent="globals/SpotifyApi" pc="268435754" symbol="onReceiveResponse"/>
 <entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="8" lineNum="75" parent="globals/SpotifyApi" pc="268435756" symbol="onReceiveResponse"/>
 <entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="8" lineNum="76" parent="globals/SpotifyApi" pc="268435767" symbol="onReceiveResponse"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="81" parent="globals/SpotifyApi" pc="268435783" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="82" parent="globals/SpotifyApi" pc="268435785" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="83" parent="globals/SpotifyApi" pc="268435796" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="84" parent="globals/SpotifyApi" pc="268435819" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="85" parent="globals/SpotifyApi" pc="268435835" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="86" parent="globals/SpotifyApi" pc="268435851" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="87" parent="globals/SpotifyApi" pc="268435886" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="89" parent="globals/SpotifyApi" pc="268435921" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="91" parent="globals/SpotifyApi" pc="268435941" symbol="onReceiveToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="54" parent="globals/SpotifyApi" pc="268435968" symbol="addToQueue"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="55" parent="globals/SpotifyApi" pc="268435972" symbol="addToQueue"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="57" parent="globals/SpotifyApi" pc="268435979" symbol="addToQueue"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="61" parent="globals/SpotifyApi" pc="268435997" symbol="addToQueue"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="71" parent="globals/SpotifyApi" pc="268436080" symbol="addToQueue"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="139" parent="globals/SpotifyApi" pc="268436119" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="140" parent="globals/SpotifyApi" pc="268436123" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="141" parent="globals/SpotifyApi" pc="268436136" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="142" parent="globals/SpotifyApi" pc="268436159" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="143" parent="globals/SpotifyApi" pc="268436181" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="144" parent="globals/SpotifyApi" pc="268436216" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="145" parent="globals/SpotifyApi" pc="268436232" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="147" parent="globals/SpotifyApi" pc="268436247" symbol="onOAuthMessage"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="117" parent="globals/SpotifyApi" pc="268436271" symbol="tokenRequest"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="118" parent="globals/SpotifyApi" pc="268436275" symbol="tokenRequest"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="120" parent="globals/SpotifyApi" pc="268436282" symbol="tokenRequest"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="126" parent="globals/SpotifyApi" pc="268436332" symbol="tokenRequest"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="136" parent="globals/SpotifyApi" pc="268436427" symbol="tokenRequest"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="151" parent="globals/SpotifyApi" pc="268436466" symbol="getOAuthToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="152" parent="globals/SpotifyApi" pc="268436470" symbol="getOAuthToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="155" parent="globals/SpotifyApi" pc="268436502" symbol="getOAuthToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="167" parent="globals/SpotifyApi" pc="268436575" symbol="getOAuthToken"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="48" parent="globals/SpotifyApi" pc="268436641" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="49" parent="globals/SpotifyApi" pc="268436643" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="50" parent="globals/SpotifyApi" pc="268436677" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="51" parent="globals/SpotifyApi" pc="268436711" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="16" lineNum="4" parent="globals/SongsForTheHeartDelegate" pc="268436746" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="17" lineNum="9" parent="globals/SongsForTheHeartDelegate" pc="268436765" symbol="onMenu"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="17" lineNum="10" parent="globals/SongsForTheHeartDelegate" pc="268436767" symbol="onMenu"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="18" lineNum="5" parent="globals/SongsForTheHeartDelegate" pc="268436770" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="18" lineNum="6" parent="globals/SongsForTheHeartDelegate" pc="268436772" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="19" lineNum="4" parent="globals/SongsForTheHeartView" pc="268436791" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="21" lineNum="15" parent="globals/SongsForTheHeartView" pc="268436810" symbol="onLayout"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="21" lineNum="16" parent="globals/SongsForTheHeartView" pc="268436812" symbol="onLayout"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="8" parent="globals/SongsForTheHeartView" pc="268436854" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="9" parent="globals/SongsForTheHeartView" pc="268436856" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="10" parent="globals/SongsForTheHeartView" pc="268436866" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="11" parent="globals/SongsForTheHeartView" pc="268436900" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="26" parent="globals/SongsForTheHeartView" pc="268436919" symbol="onUpdate"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="27" parent="globals/SongsForTheHeartView" pc="268436921" symbol="onUpdate"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="30" parent="globals/SongsForTheHeartView" pc="268436941" symbol="onUpdate"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="31" parent="globals/SongsForTheHeartView" pc="268436963" symbol="onUpdate"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="32" parent="globals/SongsForTheHeartView" pc="268437021" symbol="onUpdate"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="25" lineNum="15" parent="globals/SongsForTheHeartApp" pc="268437092" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="25" lineNum="16" parent="globals/SongsForTheHeartApp" pc="268437110" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="25" lineNum="17" parent="globals/SongsForTheHeartApp" pc="268437144" symbol="&lt;init&gt;"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="26" lineNum="24" parent="globals/SongsForTheHeartApp" pc="268437187" symbol="onStart"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="26" lineNum="25" parent="globals/SongsForTheHeartApp" pc="268437189" symbol="onStart"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="27" lineNum="33" parent="globals/SongsForTheHeartApp" pc="268437208" symbol="getInitialView"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="27" lineNum="34" parent="globals/SongsForTheHeartApp" pc="268437210" symbol="getInitialView"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="28" lineNum="19" parent="globals/SongsForTheHeartApp" pc="268437267" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="28" lineNum="20" parent="globals/SongsForTheHeartApp" pc="268437269" symbol="initialize"/>
-<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="29" lineNum="29" parent="globals/SongsForTheHeartApp" pc="268437288" symbol="onStop"/>
-<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="30" lineNum="19" parent="globals/Rez/Layouts" pc="268437291" symbol="MainLayout"/>
-<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="30" lineNum="20" parent="globals/Rez/Layouts" pc="268437301" symbol="MainLayout"/>
-<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="31" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437308" symbol="&lt;init&gt;"/>
-<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268437327" symbol="initialize"/>
-<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437329" symbol="initialize"/>
-<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437347" symbol="initialize"/>
-<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437403" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="8" lineNum="77" parent="globals/SpotifyApi" pc="268435779" symbol="onReceiveResponse"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="82" parent="globals/SpotifyApi" pc="268435796" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="83" parent="globals/SpotifyApi" pc="268435798" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="84" parent="globals/SpotifyApi" pc="268435809" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="85" parent="globals/SpotifyApi" pc="268435832" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="86" parent="globals/SpotifyApi" pc="268435848" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="87" parent="globals/SpotifyApi" pc="268435864" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="88" parent="globals/SpotifyApi" pc="268435899" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="90" parent="globals/SpotifyApi" pc="268435934" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="92" parent="globals/SpotifyApi" pc="268435954" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="9" lineNum="93" parent="globals/SpotifyApi" pc="268435980" symbol="onReceiveToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="54" parent="globals/SpotifyApi" pc="268435994" symbol="addToQueue"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="55" parent="globals/SpotifyApi" pc="268435998" symbol="addToQueue"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="57" parent="globals/SpotifyApi" pc="268436005" symbol="addToQueue"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="61" parent="globals/SpotifyApi" pc="268436023" symbol="addToQueue"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="10" lineNum="71" parent="globals/SpotifyApi" pc="268436106" symbol="addToQueue"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="141" parent="globals/SpotifyApi" pc="268436145" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="142" parent="globals/SpotifyApi" pc="268436149" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="143" parent="globals/SpotifyApi" pc="268436162" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="144" parent="globals/SpotifyApi" pc="268436185" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="145" parent="globals/SpotifyApi" pc="268436207" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="146" parent="globals/SpotifyApi" pc="268436242" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="147" parent="globals/SpotifyApi" pc="268436258" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="149" parent="globals/SpotifyApi" pc="268436273" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="11" lineNum="150" parent="globals/SpotifyApi" pc="268436296" symbol="onOAuthMessage"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="119" parent="globals/SpotifyApi" pc="268436310" symbol="tokenRequest"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="120" parent="globals/SpotifyApi" pc="268436314" symbol="tokenRequest"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="122" parent="globals/SpotifyApi" pc="268436321" symbol="tokenRequest"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="128" parent="globals/SpotifyApi" pc="268436371" symbol="tokenRequest"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="12" lineNum="138" parent="globals/SpotifyApi" pc="268436466" symbol="tokenRequest"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="154" parent="globals/SpotifyApi" pc="268436505" symbol="getOAuthToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="155" parent="globals/SpotifyApi" pc="268436509" symbol="getOAuthToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="158" parent="globals/SpotifyApi" pc="268436541" symbol="getOAuthToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="13" lineNum="169" parent="globals/SpotifyApi" pc="268436601" symbol="getOAuthToken"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="48" parent="globals/SpotifyApi" pc="268436667" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="49" parent="globals/SpotifyApi" pc="268436669" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="50" parent="globals/SpotifyApi" pc="268436703" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="14" lineNum="51" parent="globals/SpotifyApi" pc="268436737" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="16" lineNum="4" parent="globals/SongsForTheHeartDelegate" pc="268436772" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="17" lineNum="9" parent="globals/SongsForTheHeartDelegate" pc="268436791" symbol="onMenu"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="17" lineNum="10" parent="globals/SongsForTheHeartDelegate" pc="268436793" symbol="onMenu"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="18" lineNum="5" parent="globals/SongsForTheHeartDelegate" pc="268436796" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartDelegate.mc" id="18" lineNum="6" parent="globals/SongsForTheHeartDelegate" pc="268436798" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="19" lineNum="4" parent="globals/SongsForTheHeartView" pc="268436817" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="21" lineNum="15" parent="globals/SongsForTheHeartView" pc="268436836" symbol="onLayout"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="21" lineNum="16" parent="globals/SongsForTheHeartView" pc="268436838" symbol="onLayout"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="8" parent="globals/SongsForTheHeartView" pc="268436880" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="9" parent="globals/SongsForTheHeartView" pc="268436882" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="10" parent="globals/SongsForTheHeartView" pc="268436892" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="22" lineNum="11" parent="globals/SongsForTheHeartView" pc="268436926" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="26" parent="globals/SongsForTheHeartView" pc="268436945" symbol="onUpdate"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="27" parent="globals/SongsForTheHeartView" pc="268436947" symbol="onUpdate"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="30" parent="globals/SongsForTheHeartView" pc="268436967" symbol="onUpdate"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="31" parent="globals/SongsForTheHeartView" pc="268436989" symbol="onUpdate"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="24" lineNum="32" parent="globals/SongsForTheHeartView" pc="268437047" symbol="onUpdate"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="25" lineNum="15" parent="globals/SongsForTheHeartApp" pc="268437118" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="25" lineNum="16" parent="globals/SongsForTheHeartApp" pc="268437136" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="25" lineNum="17" parent="globals/SongsForTheHeartApp" pc="268437170" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="26" lineNum="24" parent="globals/SongsForTheHeartApp" pc="268437213" symbol="onStart"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="26" lineNum="25" parent="globals/SongsForTheHeartApp" pc="268437215" symbol="onStart"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="27" lineNum="33" parent="globals/SongsForTheHeartApp" pc="268437234" symbol="getInitialView"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="27" lineNum="34" parent="globals/SongsForTheHeartApp" pc="268437236" symbol="getInitialView"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="28" lineNum="19" parent="globals/SongsForTheHeartApp" pc="268437293" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="28" lineNum="20" parent="globals/SongsForTheHeartApp" pc="268437295" symbol="initialize"/>
+<entry filename="D:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="29" lineNum="29" parent="globals/SongsForTheHeartApp" pc="268437314" symbol="onStop"/>
+<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="30" lineNum="19" parent="globals/Rez/Layouts" pc="268437317" symbol="MainLayout"/>
+<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="30" lineNum="20" parent="globals/Rez/Layouts" pc="268437327" symbol="MainLayout"/>
+<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="31" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437334" symbol="&lt;init&gt;"/>
+<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268437353" symbol="initialize"/>
+<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437355" symbol="initialize"/>
+<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437373" symbol="initialize"/>
+<entry filename="d:\\Desktop\\Projects\\Garmin App\\Runnify\\bpm\\devbuild\\gen\\006-B3113-00\\source\\Rez.mcgen" id="32" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437429" symbol="initialize"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -170,25 +173,25 @@
 <localVars>
 <entry arg="true" endPc="268435577" name="item" stackId="1" startPc="268435505"/>
 <entry arg="true" endPc="268435753" name="sensorInfo" stackId="1" startPc="268435693"/>
-<entry arg="true" endPc="268435782" name="responseCode" stackId="1" startPc="268435754"/>
-<entry arg="true" endPc="268435782" name="data" stackId="2" startPc="268435754"/>
-<entry arg="true" endPc="268435967" name="responseCode" stackId="1" startPc="268435783"/>
-<entry arg="true" endPc="268435967" name="data" stackId="2" startPc="268435783"/>
-<entry arg="true" endPc="268436118" name="uri" stackId="1" startPc="268435968"/>
-<entry endPc="268436117" name="url" stackId="2" startPc="268435972"/>
-<entry endPc="268436117" name="params" stackId="3" startPc="268435972"/>
-<entry endPc="268436117" name="options" stackId="4" startPc="268435972"/>
-<entry arg="true" endPc="268436270" name="message" stackId="1" startPc="268436119"/>
-<entry endPc="268436243" name="error" stackId="2" startPc="268436136"/>
-<entry endPc="268436464" name="url" stackId="1" startPc="268436275"/>
-<entry endPc="268436464" name="params" stackId="2" startPc="268436275"/>
-<entry endPc="268436464" name="options" stackId="3" startPc="268436275"/>
-<entry endPc="268436639" name="params" stackId="1" startPc="268436470"/>
-<entry arg="true" endPc="268436853" name="dc" stackId="1" startPc="268436810"/>
-<entry arg="true" endPc="268436918" name="spotify" stackId="1" startPc="268436854"/>
-<entry arg="true" endPc="268437091" name="dc" stackId="1" startPc="268436919"/>
-<entry arg="true" endPc="268437207" name="state" stackId="1" startPc="268437187"/>
-<entry arg="true" endPc="268437307" name="dc" stackId="1" startPc="268437291"/>
+<entry arg="true" endPc="268435795" name="responseCode" stackId="1" startPc="268435754"/>
+<entry arg="true" endPc="268435795" name="data" stackId="2" startPc="268435754"/>
+<entry arg="true" endPc="268435993" name="responseCode" stackId="1" startPc="268435796"/>
+<entry arg="true" endPc="268435993" name="data" stackId="2" startPc="268435796"/>
+<entry arg="true" endPc="268436144" name="uri" stackId="1" startPc="268435994"/>
+<entry endPc="268436143" name="url" stackId="2" startPc="268435998"/>
+<entry endPc="268436143" name="params" stackId="3" startPc="268435998"/>
+<entry endPc="268436143" name="options" stackId="4" startPc="268435998"/>
+<entry arg="true" endPc="268436309" name="message" stackId="1" startPc="268436145"/>
+<entry endPc="268436269" name="error" stackId="2" startPc="268436162"/>
+<entry endPc="268436503" name="url" stackId="1" startPc="268436314"/>
+<entry endPc="268436503" name="params" stackId="2" startPc="268436314"/>
+<entry endPc="268436503" name="options" stackId="3" startPc="268436314"/>
+<entry endPc="268436665" name="params" stackId="1" startPc="268436509"/>
+<entry arg="true" endPc="268436879" name="dc" stackId="1" startPc="268436836"/>
+<entry arg="true" endPc="268436944" name="spotify" stackId="1" startPc="268436880"/>
+<entry arg="true" endPc="268437117" name="dc" stackId="1" startPc="268436945"/>
+<entry arg="true" endPc="268437233" name="state" stackId="1" startPc="268437213"/>
+<entry arg="true" endPc="268437333" name="dc" stackId="1" startPc="268437317"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -244,80 +247,80 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="SpotifyApi">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435782" name="onReceiveResponse" parent="SpotifyApi" startPc="268435754">
+<functionEntry accessMode="public" endPc="268435795" name="onReceiveResponse" parent="SpotifyApi" startPc="268435754">
 <param id="responseCode"/>
 <param id="data"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435967" name="onReceiveToken" parent="SpotifyApi" startPc="268435783">
+<functionEntry accessMode="public" endPc="268435993" name="onReceiveToken" parent="SpotifyApi" startPc="268435796">
 <param id="responseCode"/>
 <param id="data"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436118" name="addToQueue" parent="SpotifyApi" startPc="268435968">
+<functionEntry accessMode="public" endPc="268436144" name="addToQueue" parent="SpotifyApi" startPc="268435994">
 <param id="uri"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436270" name="onOAuthMessage" parent="SpotifyApi" startPc="268436119">
+<functionEntry accessMode="public" endPc="268436309" name="onOAuthMessage" parent="SpotifyApi" startPc="268436145">
 <param id="message"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436465" name="tokenRequest" parent="SpotifyApi" startPc="268436271">
+<functionEntry accessMode="public" endPc="268436504" name="tokenRequest" parent="SpotifyApi" startPc="268436310">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436640" name="getOAuthToken" parent="SpotifyApi" startPc="268436466">
+<functionEntry accessMode="public" endPc="268436666" name="getOAuthToken" parent="SpotifyApi" startPc="268436505">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436745" name="initialize" parent="SpotifyApi" startPc="268436641">
+<functionEntry accessMode="public" endPc="268436771" name="initialize" parent="SpotifyApi" startPc="268436667">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="refreshTokenRequest" parent="SpotifyApi">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436764" name="&lt;init&gt;" parent="SongsForTheHeartDelegate" startPc="268436746">
+<functionEntry accessMode="public" endPc="268436790" name="&lt;init&gt;" parent="SongsForTheHeartDelegate" startPc="268436772">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436769" name="onMenu" parent="SongsForTheHeartDelegate" startPc="268436765">
+<functionEntry accessMode="public" endPc="268436795" name="onMenu" parent="SongsForTheHeartDelegate" startPc="268436791">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436790" name="initialize" parent="SongsForTheHeartDelegate" startPc="268436770">
+<functionEntry accessMode="public" endPc="268436816" name="initialize" parent="SongsForTheHeartDelegate" startPc="268436796">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436809" name="&lt;init&gt;" parent="SongsForTheHeartView" startPc="268436791">
+<functionEntry accessMode="public" endPc="268436835" name="&lt;init&gt;" parent="SongsForTheHeartView" startPc="268436817">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onShow" parent="SongsForTheHeartView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436853" name="onLayout" parent="SongsForTheHeartView" startPc="268436810">
+<functionEntry accessMode="public" endPc="268436879" name="onLayout" parent="SongsForTheHeartView" startPc="268436836">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436918" name="initialize" parent="SongsForTheHeartView" startPc="268436854">
+<functionEntry accessMode="public" endPc="268436944" name="initialize" parent="SongsForTheHeartView" startPc="268436880">
 <param id="spotify"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onHide" parent="SongsForTheHeartView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437091" name="onUpdate" parent="SongsForTheHeartView" startPc="268436919">
+<functionEntry accessMode="public" endPc="268437117" name="onUpdate" parent="SongsForTheHeartView" startPc="268436945">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437186" name="&lt;init&gt;" parent="SongsForTheHeartApp" startPc="268437092">
+<functionEntry accessMode="public" endPc="268437212" name="&lt;init&gt;" parent="SongsForTheHeartApp" startPc="268437118">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437207" name="onStart" parent="SongsForTheHeartApp" startPc="268437187">
+<functionEntry accessMode="public" endPc="268437233" name="onStart" parent="SongsForTheHeartApp" startPc="268437213">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437266" name="getInitialView" parent="SongsForTheHeartApp" startPc="268437208">
+<functionEntry accessMode="public" endPc="268437292" name="getInitialView" parent="SongsForTheHeartApp" startPc="268437234">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437287" name="initialize" parent="SongsForTheHeartApp" startPc="268437267">
+<functionEntry accessMode="public" endPc="268437313" name="initialize" parent="SongsForTheHeartApp" startPc="268437293">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437290" name="onStop" parent="SongsForTheHeartApp" startPc="268437288">
+<functionEntry accessMode="public" endPc="268437316" name="onStop" parent="SongsForTheHeartApp" startPc="268437314">
 <param id="state"/>
 <documentation/>
 </functionEntry>
@@ -339,14 +342,14 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437307" name="MainLayout" parent="Layouts" startPc="268437291">
+<functionEntry accessMode="public" endPc="268437333" name="MainLayout" parent="Layouts" startPc="268437317">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437326" name="&lt;init&gt;" parent="MainMenu" startPc="268437308">
+<functionEntry accessMode="public" endPc="268437352" name="&lt;init&gt;" parent="MainMenu" startPc="268437334">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437459" name="initialize" parent="MainMenu" startPc="268437327">
+<functionEntry accessMode="public" endPc="268437485" name="initialize" parent="MainMenu" startPc="268437353">
 <documentation/>
 </functionEntry>
 </functions>

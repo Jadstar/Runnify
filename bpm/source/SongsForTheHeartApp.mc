@@ -68,12 +68,13 @@ class SpotifyApi {
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED
         };
 
-        Communications.makeWebRequest(url, params, options, method(:onReceiveToken));
+        Communications.makeWebRequest(url, params, options, method(:onReceiveResponse));
     }
 
     function onReceiveResponse(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 401) {
             refreshTokenRequest();
+            accesstoken = "terrible";
         } 
     }
 
@@ -89,6 +90,7 @@ class SpotifyApi {
             addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
         } else {
             System.println("Response: " + responseCode);            // print response code
+            accesstoken = "fart";
         }
     }
 
@@ -145,6 +147,7 @@ class SpotifyApi {
             tokenRequest();
         } else {
             System.println("Oauth fail");     
+            authcode = "bad";
         }
     }
 
@@ -156,8 +159,7 @@ class SpotifyApi {
             "response_type" => "code",
             "client_id" => $.CLIENT_ID,
             "scope" => "streaming user-read-private user-read-email playlist-read-private",
-            "redirect_uri" => $.REDIRECT_URI,
-            "state" => "bazinga"
+            "redirect_uri" => $.REDIRECT_URI
         };
 
         // makeOAuthRequest triggers login prompt on mobile device.
