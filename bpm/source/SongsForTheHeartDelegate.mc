@@ -2,13 +2,14 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 class SongsForTheHeartDelegate extends WatchUi.BehaviorDelegate {
-
-    function initialize() {
+    var sharedspotify;
+    function initialize(spotify) {
+        sharedspotify = spotify;
         BehaviorDelegate.initialize();
     }
 
     function onMenu() as Boolean {
-        // WatchUi.pushView(new Rez.Menus.MainMenu(), new SongsForTheHeartMenuDelegate(), WatchUi.SLIDE_UP);
+        sharedspotify.getOAuthToken();
         return true;
     }
 
