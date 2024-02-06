@@ -145,6 +145,9 @@ class SpotifyApi {
             Application.Storage.setValue(authcode, "authcode");
             var error = message.data[$.OAUTH_ERROR];
             tokenRequest();
+        }
+        else if (message.responseCode != null) {
+            authcode = "yipee";
         } else {
             System.println("Oauth fail");     
             authcode = "bad";
@@ -171,7 +174,7 @@ class SpotifyApi {
             params,
             "connectiq://oauth",
             Authentication.OAUTH_RESULT_TYPE_URL,
-            {"responseCode" => $.OAUTH_CODE}
+            {"responseCode" => $.OAUTH_CODE, "responseError" => $.OAUTH_ERROR}
         );
     }
 }
