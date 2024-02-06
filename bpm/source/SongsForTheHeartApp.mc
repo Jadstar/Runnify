@@ -14,6 +14,7 @@ const REDIRECT_URI = "connectiq://oauth";
 
 class SongsForTheHeartApp extends Application.AppBase {
     var spotify = new SpotifyApi();
+    var view = new SongsForTheHeartView(spotify);
 
     function initialize() {
         AppBase.initialize();
@@ -30,7 +31,7 @@ class SongsForTheHeartApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new SongsForTheHeartView(), new SongsForTheHeartDelegate() ] as Array<Views or InputDelegates>;
+        return [ view, new SongsForTheHeartDelegate() ] as Array<Views or InputDelegates>;
     }
 
 }

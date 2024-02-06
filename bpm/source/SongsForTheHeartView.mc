@@ -3,8 +3,10 @@ import Toybox.WatchUi;
 
 class SongsForTheHeartView extends WatchUi.View {
     var bpmSensor;
+    var s;
 
-    function initialize() {
+    function initialize(spotify) {
+        s = spotify;
         bpmSensor = new HeartBeatSensor();
         View.initialize();
     }
@@ -26,7 +28,8 @@ class SongsForTheHeartView extends WatchUi.View {
 
         // Call the parent onUpdate function to redraw the layout
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_LARGE, bpmSensor.currentBPM, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, 0, Graphics.FONT_LARGE, s.authcode, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_LARGE, s.accesstoken, Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     // Called when this View is removed from the screen. Save the
