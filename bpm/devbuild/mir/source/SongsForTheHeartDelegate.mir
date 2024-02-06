@@ -11,31 +11,22 @@ class SongsForTheHeartDelegate extends WatchUi.BehaviorDelegate{
     static
     <init> {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 5; @position = 8; ]
-    var sharedspotify;
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 6; ]
-    function initialize(spotify) as Void {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_6_33_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 7 8 ]
-        %tmp.2 = lgetv %spotify;
-        putv self :sharedspotify %tmp.2;
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 8 8 ]
-        %tmp.4 = getv ? :BehaviorDelegate;
-        %tmp.5 = getv function %tmp.4 :initialize;
-        invoke %tmp.4 %tmp.5();
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_6_33_stop:
-    }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 11; ]
-    function onMenu() as Boolean {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_11_33_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 12 8 ]
-        %tmp.2 = getv ? :sharedspotify;
-        %tmp.3 = getv function %tmp.2 :getOAuthToken;
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 5; ]
+    function initialize() as Void {
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_5_26_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 6 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 13 8 ]
-        %tmp.4 = true;
-        ret %tmp.4;
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_11_33_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_5_26_stop:
+    }
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 9; ]
+    function onMenu() as Boolean {
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_9_33_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 10 8 ]
+        %tmp.1 = true;
+        ret %tmp.1;
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_9_33_stop:
     }
 }
 [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 1; ]

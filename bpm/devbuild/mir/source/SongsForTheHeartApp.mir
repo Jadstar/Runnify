@@ -68,11 +68,10 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_32_65_st
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
         %tmp.11 = getv ? :SongsForTheHeartDelegate;
-        %tmp.13 = getv ? :spotify;
-        %tmp.8 = newc %tmp.11 (%tmp.13);
-        %tmp.14 = dup %tmp.7;
-        %tmp.15 = aputv %tmp.14 1 %tmp.8;
-        ret %tmp.15;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_32_65_stop:
     }
 }
