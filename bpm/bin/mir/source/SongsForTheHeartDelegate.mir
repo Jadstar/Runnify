@@ -1,0 +1,34 @@
+[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
+class SongsForTheHeartDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 6; ]
+    function initialize() as Void {
+D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartDelegate_mc_6_26_start:
+[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc" 7 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartDelegate_mc_6_26_stop:
+    }
+    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 10; ]
+    function onMenu() as Boolean {
+D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartDelegate_mc_10_33_start:
+[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc" 12 8 ]
+        %tmp.1 = true;
+        ret %tmp.1;
+D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartDelegate_mc_10_33_stop:
+    }
+}
+[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartDelegate.mc"; @line = 1; ]
+<init> {
+}
