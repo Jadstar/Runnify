@@ -1,34 +1,34 @@
-[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 2; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
 class SongsForTheHeartDelegate extends WatchUi.BehaviorDelegate{
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 5; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 5; ]
     function initialize() as Void {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_5_26_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 6 8 ]
+C_Users_Jaden_Github_Runnify_bpm_source_SongsForTheHeartDelegate_mc_5_26_start:
+[ "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 6 8 ]
         %tmp.2 = getv ? :BehaviorDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_5_26_stop:
+C_Users_Jaden_Github_Runnify_bpm_source_SongsForTheHeartDelegate_mc_5_26_stop:
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 9; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 9; ]
     function onMenu() as Boolean {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_9_33_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 10 8 ]
+C_Users_Jaden_Github_Runnify_bpm_source_SongsForTheHeartDelegate_mc_9_33_start:
+[ "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc" 10 8 ]
         %tmp.1 = true;
         ret %tmp.1;
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartDelegate_mc_9_33_stop:
+C_Users_Jaden_Github_Runnify_bpm_source_SongsForTheHeartDelegate_mc_9_33_stop:
     }
 }
-[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\bpm\source\SongsForTheHeartDelegate.mc"; @line = 1; ]
 <init> {
 }

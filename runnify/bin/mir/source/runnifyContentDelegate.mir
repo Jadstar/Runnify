@@ -1,50 +1,50 @@
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 2; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 2; ]
 import Toybox.Media;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 7; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 7; ]
 class runnifyContentDelegate extends Media.ContentDelegate{
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 7; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 7; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 7; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 9; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 9; ]
     function initialize() as Void {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifyContentDelegate_mc_9_26_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc" 10 8 ]
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentDelegate_mc_9_26_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc" 10 8 ]
         %tmp.2 = getv ? :ContentDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifyContentDelegate_mc_9_26_stop:
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentDelegate_mc_9_26_stop:
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 16; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 16; ]
     function getContentIterator() as ContentIterator or Null {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifyContentDelegate_mc_16_54_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc" 17 8 ]
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentDelegate_mc_16_54_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc" 17 8 ]
         %tmp.4 = getv ? :runnifyContentIterator;
         %tmp.1 = newc %tmp.4 ();
         ret %tmp.1;
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifyContentDelegate_mc_16_54_stop:
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentDelegate_mc_16_54_stop:
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 21; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 21; ]
     function onAdAction(adContext as Object) as Void {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 25; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 25; ]
     function onThumbsUp(contentRefId as Object) as Void {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 29; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 29; ]
     function onThumbsDown(contentRefId as Object) as Void {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 33; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 33; ]
     function onShuffle() as Void {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 38; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 38; ]
     function onSong(contentRefId as Object, songEvent as SongEvent, playbackPosition as Number or PlaybackPosition) as Void {
     }
 }
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentDelegate.mc"; @line = 1; ]
 <init> {
 }

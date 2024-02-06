@@ -146,11 +146,12 @@ class SpotifyApi {
             var error = message.data[$.OAUTH_ERROR];
             tokenRequest();
         }
-        else if (message.responseCode != null) {
-            authcode = message.responseCode;
-        } else {
+        // else if (message.responseCode != null) {
+        //     authcode = message.responseCode;
+         else {
             System.println("Oauth fail");     
-            authcode = "bad";
+            // authcode = "bad";
+            authcode = $.OAUTH_ERROR;
         }
     }
 
@@ -174,7 +175,7 @@ class SpotifyApi {
             params,
             "connectiq://oauth",
             Authentication.OAUTH_RESULT_TYPE_URL,
-            {"responseCode" => $.OAUTH_CODE, "responseError" => $.OAUTH_ERROR}
+            {"code" => $.OAUTH_CODE, "error" => $.OAUTH_ERROR}
         );
     }
 }

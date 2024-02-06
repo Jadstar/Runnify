@@ -1,58 +1,58 @@
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 1; ]
 import Toybox.Communications;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 2; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 4; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 4; ]
 class runnifySyncDelegate extends Communications.SyncDelegate{
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 4; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 4; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 6; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 6; ]
     function initialize() as Void {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_6_26_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc" 7 8 ]
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_6_26_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc" 7 8 ]
         %tmp.2 = getv ? :SyncDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_6_26_stop:
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_6_26_stop:
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 13; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 13; ]
     function onStartSync() as Void {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_13_35_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc" 14 8 ]
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_13_35_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc" 14 8 ]
         %tmp.1 = getm $.Toybox.Communications;
         %tmp.2 = getv function %tmp.1 :notifySyncComplete;
         %tmp.3 = null;
         invoke %tmp.1 %tmp.2(%tmp.3);
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_13_35_stop:
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_13_35_stop:
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 18; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 18; ]
     function isSyncNeeded() as Boolean {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_18_39_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc" 19 8 ]
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_18_39_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc" 19 8 ]
         %tmp.1 = false;
         ret %tmp.1;
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_18_39_stop:
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_18_39_stop:
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 23; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 23; ]
     function onStopSync() as Void {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_23_34_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc" 24 8 ]
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_23_34_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc" 24 8 ]
         %tmp.1 = getm $.Toybox.Communications;
         %tmp.2 = getv function %tmp.1 :cancelAllRequests;
         invoke %tmp.1 %tmp.2();
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc" 25 8 ]
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc" 25 8 ]
         %tmp.3 = getm $.Toybox.Communications;
         %tmp.4 = getv function %tmp.3 :notifySyncComplete;
         %tmp.5 = null;
         invoke %tmp.3 %tmp.4(%tmp.5);
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_source_runnifySyncDelegate_mc_23_34_stop:
+C_Users_Jaden_Github_Runnify_runnify_source_runnifySyncDelegate_mc_23_34_stop:
     }
 }
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifySyncDelegate.mc"; @line = 1; ]
 <init> {
 }

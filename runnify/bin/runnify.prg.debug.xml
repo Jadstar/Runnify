@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
-    <manifest filename="C:\Users\Jaden\Documents\GitHub\Runnify\runnify\manifest.xml"/>
+    <manifest filename="C:\Users\Jaden\Github\Runnify\runnify\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="1" lineNum="3" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435460" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="2" lineNum="5" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435479" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="2" lineNum="6" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435481" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="3" lineNum="4" parent="globals/runnifySyncDelegate" pc="268435500" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="4" lineNum="13" parent="globals/runnifySyncDelegate" pc="268435519" symbol="onStartSync"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="4" lineNum="14" parent="globals/runnifySyncDelegate" pc="268435521" symbol="onStartSync"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="23" parent="globals/runnifySyncDelegate" pc="268435539" symbol="onStopSync"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="24" parent="globals/runnifySyncDelegate" pc="268435541" symbol="onStopSync"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="25" parent="globals/runnifySyncDelegate" pc="268435557" symbol="onStopSync"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="6" lineNum="6" parent="globals/runnifySyncDelegate" pc="268435575" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="6" lineNum="7" parent="globals/runnifySyncDelegate" pc="268435577" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="7" lineNum="18" parent="globals/runnifySyncDelegate" pc="268435596" symbol="isSyncNeeded"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="7" lineNum="19" parent="globals/runnifySyncDelegate" pc="268435598" symbol="isSyncNeeded"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="8" lineNum="43" parent="globals" pc="268435601" symbol="getApp"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="8" lineNum="44" parent="globals" pc="268435611" symbol="getApp"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="9" lineNum="7" parent="globals/runnifyApp" pc="268435627" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="10" lineNum="14" parent="globals/runnifyApp" pc="268435646" symbol="onStart"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="11" lineNum="32" parent="globals/runnifyApp" pc="268435649" symbol="getPlaybackConfigurationView"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="11" lineNum="33" parent="globals/runnifyApp" pc="268435651" symbol="getPlaybackConfigurationView"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="12" lineNum="22" parent="globals/runnifyApp" pc="268435726" symbol="getContentDelegate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="12" lineNum="23" parent="globals/runnifyApp" pc="268435728" symbol="getContentDelegate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="13" lineNum="27" parent="globals/runnifyApp" pc="268435755" symbol="getSyncDelegate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="13" lineNum="28" parent="globals/runnifyApp" pc="268435757" symbol="getSyncDelegate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="14" lineNum="9" parent="globals/runnifyApp" pc="268435784" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="14" lineNum="10" parent="globals/runnifyApp" pc="268435786" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="15" lineNum="37" parent="globals/runnifyApp" pc="268435805" symbol="getSyncConfigurationView"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="15" lineNum="38" parent="globals/runnifyApp" pc="268435807" symbol="getSyncConfigurationView"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyApp.mc" id="16" lineNum="18" parent="globals/runnifyApp" pc="268435882" symbol="onStop"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="17" lineNum="4" parent="globals/runnifyConfigurePlaybackView" pc="268435885" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="19" lineNum="11" parent="globals/runnifyConfigurePlaybackView" pc="268435904" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="19" lineNum="12" parent="globals/runnifyConfigurePlaybackView" pc="268435906" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="20" lineNum="6" parent="globals/runnifyConfigurePlaybackView" pc="268435948" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="20" lineNum="7" parent="globals/runnifyConfigurePlaybackView" pc="268435950" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="22" lineNum="22" parent="globals/runnifyConfigurePlaybackView" pc="268435969" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="22" lineNum="24" parent="globals/runnifyConfigurePlaybackView" pc="268435971" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="23" lineNum="3" parent="globals/runnifyConfigureSyncDelegate" pc="268435992" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="24" lineNum="5" parent="globals/runnifyConfigureSyncDelegate" pc="268436011" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="24" lineNum="6" parent="globals/runnifyConfigureSyncDelegate" pc="268436013" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="25" lineNum="7" parent="globals/Rez" pc="268436032" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="26" lineNum="7" parent="globals/runnifyConfigureSyncView" pc="268436056" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="28" lineNum="14" parent="globals/runnifyConfigureSyncView" pc="268436075" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="28" lineNum="15" parent="globals/runnifyConfigureSyncView" pc="268436077" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="29" lineNum="9" parent="globals/runnifyConfigureSyncView" pc="268436119" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="29" lineNum="10" parent="globals/runnifyConfigureSyncView" pc="268436121" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="31" lineNum="25" parent="globals/runnifyConfigureSyncView" pc="268436140" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="31" lineNum="27" parent="globals/runnifyConfigureSyncView" pc="268436142" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="32" lineNum="4" parent="globals/runnifyContentIterator" pc="268436163" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="33" lineNum="36" parent="globals/runnifyContentIterator" pc="268436182" symbol="next"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="33" lineNum="37" parent="globals/runnifyContentIterator" pc="268436184" symbol="next"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="21" parent="globals/runnifyContentIterator" pc="268436186" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="22" parent="globals/runnifyContentIterator" pc="268436190" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="23" parent="globals/runnifyContentIterator" pc="268436218" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="24" parent="globals/runnifyContentIterator" pc="268436228" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="29" parent="globals/runnifyContentIterator" pc="268436281" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="30" parent="globals/runnifyContentIterator" pc="268436294" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="31" parent="globals/runnifyContentIterator" pc="268436304" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="32" parent="globals/runnifyContentIterator" pc="268436313" symbol="getPlaybackProfile"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="35" lineNum="51" parent="globals/runnifyContentIterator" pc="268436316" symbol="previous"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="35" lineNum="52" parent="globals/runnifyContentIterator" pc="268436318" symbol="previous"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="36" lineNum="41" parent="globals/runnifyContentIterator" pc="268436320" symbol="peekNext"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="36" lineNum="42" parent="globals/runnifyContentIterator" pc="268436322" symbol="peekNext"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="37" lineNum="16" parent="globals/runnifyContentIterator" pc="268436324" symbol="get"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="37" lineNum="17" parent="globals/runnifyContentIterator" pc="268436326" symbol="get"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="38" lineNum="46" parent="globals/runnifyContentIterator" pc="268436328" symbol="peekPrevious"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="38" lineNum="47" parent="globals/runnifyContentIterator" pc="268436330" symbol="peekPrevious"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="39" lineNum="56" parent="globals/runnifyContentIterator" pc="268436332" symbol="shuffling"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="39" lineNum="57" parent="globals/runnifyContentIterator" pc="268436334" symbol="shuffling"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="40" lineNum="6" parent="globals/runnifyContentIterator" pc="268436337" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="40" lineNum="7" parent="globals/runnifyContentIterator" pc="268436339" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="41" lineNum="11" parent="globals/runnifyContentIterator" pc="268436358" symbol="canSkip"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="41" lineNum="12" parent="globals/runnifyContentIterator" pc="268436360" symbol="canSkip"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="42" lineNum="7" parent="globals/runnifyContentDelegate" pc="268436363" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="44" lineNum="16" parent="globals/runnifyContentDelegate" pc="268436382" symbol="getContentIterator"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="44" lineNum="17" parent="globals/runnifyContentDelegate" pc="268436384" symbol="getContentIterator"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="45" lineNum="21" parent="globals/runnifyContentDelegate" pc="268436411" symbol="onAdAction"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="46" lineNum="25" parent="globals/runnifyContentDelegate" pc="268436414" symbol="onThumbsUp"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="47" lineNum="9" parent="globals/runnifyContentDelegate" pc="268436417" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="47" lineNum="10" parent="globals/runnifyContentDelegate" pc="268436419" symbol="initialize"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="48" lineNum="38" parent="globals/runnifyContentDelegate" pc="268436438" symbol="onSong"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="49" lineNum="29" parent="globals/runnifyContentDelegate" pc="268436441" symbol="onThumbsDown"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="29" parent="globals/Rez/Layouts" pc="268436444" symbol="ConfigureSyncLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="30" parent="globals/Rez/Layouts" pc="268436456" symbol="ConfigureSyncLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="32" parent="globals/Rez/Layouts" pc="268436587" symbol="ConfigureSyncLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="33" parent="globals/Rez/Layouts" pc="268436692" symbol="ConfigureSyncLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="35" parent="globals/Rez/Layouts" pc="268436732" symbol="ConfigureSyncLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="20" parent="globals/Rez/Layouts" pc="268436759" symbol="ConfigurePlaybackLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="21" parent="globals/Rez/Layouts" pc="268436771" symbol="ConfigurePlaybackLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="23" parent="globals/Rez/Layouts" pc="268436902" symbol="ConfigurePlaybackLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="24" parent="globals/Rez/Layouts" pc="268437007" symbol="ConfigurePlaybackLayout"/>
-        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="26" parent="globals/Rez/Layouts" pc="268437047" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="1" lineNum="3" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="2" lineNum="5" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435479" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackDelegate.mc" id="2" lineNum="6" parent="globals/runnifyConfigurePlaybackDelegate" pc="268435481" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="3" lineNum="4" parent="globals/runnifySyncDelegate" pc="268435500" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="4" lineNum="13" parent="globals/runnifySyncDelegate" pc="268435519" symbol="onStartSync"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="4" lineNum="14" parent="globals/runnifySyncDelegate" pc="268435521" symbol="onStartSync"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="23" parent="globals/runnifySyncDelegate" pc="268435539" symbol="onStopSync"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="24" parent="globals/runnifySyncDelegate" pc="268435541" symbol="onStopSync"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="5" lineNum="25" parent="globals/runnifySyncDelegate" pc="268435557" symbol="onStopSync"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="6" lineNum="6" parent="globals/runnifySyncDelegate" pc="268435575" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="6" lineNum="7" parent="globals/runnifySyncDelegate" pc="268435577" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="7" lineNum="18" parent="globals/runnifySyncDelegate" pc="268435596" symbol="isSyncNeeded"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifySyncDelegate.mc" id="7" lineNum="19" parent="globals/runnifySyncDelegate" pc="268435598" symbol="isSyncNeeded"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="8" lineNum="43" parent="globals" pc="268435601" symbol="getApp"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="8" lineNum="44" parent="globals" pc="268435611" symbol="getApp"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="9" lineNum="7" parent="globals/runnifyApp" pc="268435627" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="10" lineNum="14" parent="globals/runnifyApp" pc="268435646" symbol="onStart"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="11" lineNum="32" parent="globals/runnifyApp" pc="268435649" symbol="getPlaybackConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="11" lineNum="33" parent="globals/runnifyApp" pc="268435651" symbol="getPlaybackConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="12" lineNum="22" parent="globals/runnifyApp" pc="268435726" symbol="getContentDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="12" lineNum="23" parent="globals/runnifyApp" pc="268435728" symbol="getContentDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="13" lineNum="27" parent="globals/runnifyApp" pc="268435755" symbol="getSyncDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="13" lineNum="28" parent="globals/runnifyApp" pc="268435757" symbol="getSyncDelegate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="14" lineNum="9" parent="globals/runnifyApp" pc="268435784" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="14" lineNum="10" parent="globals/runnifyApp" pc="268435786" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="15" lineNum="37" parent="globals/runnifyApp" pc="268435805" symbol="getSyncConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="15" lineNum="38" parent="globals/runnifyApp" pc="268435807" symbol="getSyncConfigurationView"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyApp.mc" id="16" lineNum="18" parent="globals/runnifyApp" pc="268435882" symbol="onStop"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="17" lineNum="4" parent="globals/runnifyConfigurePlaybackView" pc="268435885" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="19" lineNum="11" parent="globals/runnifyConfigurePlaybackView" pc="268435904" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="19" lineNum="12" parent="globals/runnifyConfigurePlaybackView" pc="268435906" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="20" lineNum="6" parent="globals/runnifyConfigurePlaybackView" pc="268435948" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="20" lineNum="7" parent="globals/runnifyConfigurePlaybackView" pc="268435950" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="22" lineNum="22" parent="globals/runnifyConfigurePlaybackView" pc="268435969" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigurePlaybackView.mc" id="22" lineNum="24" parent="globals/runnifyConfigurePlaybackView" pc="268435971" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="23" lineNum="3" parent="globals/runnifyConfigureSyncDelegate" pc="268435992" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="24" lineNum="5" parent="globals/runnifyConfigureSyncDelegate" pc="268436011" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncDelegate.mc" id="24" lineNum="6" parent="globals/runnifyConfigureSyncDelegate" pc="268436013" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="25" lineNum="7" parent="globals/Rez" pc="268436032" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="26" lineNum="7" parent="globals/runnifyConfigureSyncView" pc="268436056" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="28" lineNum="14" parent="globals/runnifyConfigureSyncView" pc="268436075" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="28" lineNum="15" parent="globals/runnifyConfigureSyncView" pc="268436077" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="29" lineNum="9" parent="globals/runnifyConfigureSyncView" pc="268436119" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="29" lineNum="10" parent="globals/runnifyConfigureSyncView" pc="268436121" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="31" lineNum="25" parent="globals/runnifyConfigureSyncView" pc="268436140" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyConfigureSyncView.mc" id="31" lineNum="27" parent="globals/runnifyConfigureSyncView" pc="268436142" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="32" lineNum="4" parent="globals/runnifyContentIterator" pc="268436163" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="33" lineNum="36" parent="globals/runnifyContentIterator" pc="268436182" symbol="next"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="33" lineNum="37" parent="globals/runnifyContentIterator" pc="268436184" symbol="next"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="21" parent="globals/runnifyContentIterator" pc="268436186" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="22" parent="globals/runnifyContentIterator" pc="268436190" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="23" parent="globals/runnifyContentIterator" pc="268436218" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="24" parent="globals/runnifyContentIterator" pc="268436228" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="29" parent="globals/runnifyContentIterator" pc="268436281" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="30" parent="globals/runnifyContentIterator" pc="268436294" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="31" parent="globals/runnifyContentIterator" pc="268436304" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="34" lineNum="32" parent="globals/runnifyContentIterator" pc="268436313" symbol="getPlaybackProfile"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="35" lineNum="51" parent="globals/runnifyContentIterator" pc="268436316" symbol="previous"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="35" lineNum="52" parent="globals/runnifyContentIterator" pc="268436318" symbol="previous"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="36" lineNum="41" parent="globals/runnifyContentIterator" pc="268436320" symbol="peekNext"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="36" lineNum="42" parent="globals/runnifyContentIterator" pc="268436322" symbol="peekNext"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="37" lineNum="16" parent="globals/runnifyContentIterator" pc="268436324" symbol="get"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="37" lineNum="17" parent="globals/runnifyContentIterator" pc="268436326" symbol="get"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="38" lineNum="46" parent="globals/runnifyContentIterator" pc="268436328" symbol="peekPrevious"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="38" lineNum="47" parent="globals/runnifyContentIterator" pc="268436330" symbol="peekPrevious"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="39" lineNum="56" parent="globals/runnifyContentIterator" pc="268436332" symbol="shuffling"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="39" lineNum="57" parent="globals/runnifyContentIterator" pc="268436334" symbol="shuffling"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="40" lineNum="6" parent="globals/runnifyContentIterator" pc="268436337" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="40" lineNum="7" parent="globals/runnifyContentIterator" pc="268436339" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="41" lineNum="11" parent="globals/runnifyContentIterator" pc="268436358" symbol="canSkip"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentIterator.mc" id="41" lineNum="12" parent="globals/runnifyContentIterator" pc="268436360" symbol="canSkip"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="42" lineNum="7" parent="globals/runnifyContentDelegate" pc="268436363" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="44" lineNum="16" parent="globals/runnifyContentDelegate" pc="268436382" symbol="getContentIterator"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="44" lineNum="17" parent="globals/runnifyContentDelegate" pc="268436384" symbol="getContentIterator"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="45" lineNum="21" parent="globals/runnifyContentDelegate" pc="268436411" symbol="onAdAction"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="46" lineNum="25" parent="globals/runnifyContentDelegate" pc="268436414" symbol="onThumbsUp"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="47" lineNum="9" parent="globals/runnifyContentDelegate" pc="268436417" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="47" lineNum="10" parent="globals/runnifyContentDelegate" pc="268436419" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="48" lineNum="38" parent="globals/runnifyContentDelegate" pc="268436438" symbol="onSong"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\source\\runnifyContentDelegate.mc" id="49" lineNum="29" parent="globals/runnifyContentDelegate" pc="268436441" symbol="onThumbsDown"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="29" parent="globals/Rez/Layouts" pc="268436444" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="30" parent="globals/Rez/Layouts" pc="268436456" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="32" parent="globals/Rez/Layouts" pc="268436587" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="33" parent="globals/Rez/Layouts" pc="268436692" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="50" lineNum="35" parent="globals/Rez/Layouts" pc="268436732" symbol="ConfigureSyncLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="20" parent="globals/Rez/Layouts" pc="268436759" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="21" parent="globals/Rez/Layouts" pc="268436771" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="23" parent="globals/Rez/Layouts" pc="268436902" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="24" parent="globals/Rez/Layouts" pc="268437007" symbol="ConfigurePlaybackLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Github\\Runnify\\runnify\\bin\\gen\\006-B3113-00\\source\\Rez.mcgen" id="51" lineNum="26" parent="globals/Rez/Layouts" pc="268437047" symbol="ConfigurePlaybackLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -179,10 +179,10 @@
         <entry arg="true" endPc="268436162" name="dc" stackId="1" startPc="268436140"/>
         <entry endPc="268436315" name="profile" stackId="1" startPc="268436190"/>
         <entry arg="true" endPc="268436758" name="dc" stackId="1" startPc="268436444"/>
-        <entry endPc="268436758" name="rez_cmp_local_text_2394426391" stackId="2" startPc="268436456"/>
+        <entry endPc="268436758" name="rez_cmp_local_text_9958099581" stackId="2" startPc="268436456"/>
         <entry endPc="268436758" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436456"/>
         <entry arg="true" endPc="268437073" name="dc" stackId="1" startPc="268436759"/>
-        <entry endPc="268437073" name="rez_cmp_local_text_1363855775" stackId="2" startPc="268436771"/>
+        <entry endPc="268437073" name="rez_cmp_local_text_2106003771" stackId="2" startPc="268436771"/>
         <entry endPc="268437073" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436771"/>
     </localVars>
     <annotations>

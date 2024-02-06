@@ -18,21 +18,21 @@ module Rez {
 
     module Layouts {
         function ConfigurePlaybackLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_1363855775 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>5, :text=>$.Rez.Strings.configurePlaybackMessage, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+            var rez_cmp_local_text_2106003771 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>5, :text=>$.Rez.Strings.configurePlaybackMessage, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
             var rez_cmp_local_bitmap_id_monkey = new WatchUi.Bitmap({:identifier=>"id_monkey", :rezId=>$.Rez.Drawables.id_monkey, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>80});
             rez_cmp_local_bitmap_id_monkey.setLocation(((240 - rez_cmp_local_bitmap_id_monkey.width) * 0.5), rez_cmp_local_bitmap_id_monkey.locY);
 
-            return [rez_cmp_local_text_1363855775, rez_cmp_local_bitmap_id_monkey] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_2106003771, rez_cmp_local_bitmap_id_monkey] as Array<WatchUi.Drawable>;
         }
 
         function ConfigureSyncLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_2394426391 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>5, :text=>$.Rez.Strings.configureSyncMessage, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+            var rez_cmp_local_text_9958099581 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>5, :text=>$.Rez.Strings.configureSyncMessage, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
             var rez_cmp_local_bitmap_id_monkey = new WatchUi.Bitmap({:identifier=>"id_monkey", :rezId=>$.Rez.Drawables.id_monkey, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>80});
             rez_cmp_local_bitmap_id_monkey.setLocation(((240 - rez_cmp_local_bitmap_id_monkey.width) * 0.5), rez_cmp_local_bitmap_id_monkey.locY);
 
-            return [rez_cmp_local_text_2394426391, rez_cmp_local_bitmap_id_monkey] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_9958099581, rez_cmp_local_bitmap_id_monkey] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

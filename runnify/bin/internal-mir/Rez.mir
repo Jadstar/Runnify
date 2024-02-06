@@ -1,51 +1,51 @@
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 2; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 3; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 3; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 4; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 4; ]
 using Toybox.Graphics;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 5; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 5; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 7; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 7; ]
 module Rez {
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 7; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 8; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 8; ]
     module Drawables {
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 8; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
         var id_monkey as Symbol;
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
         var LauncherIcon as Symbol;
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 13; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 13; ]
     module Fonts {
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 13; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 13; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 16; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 16; ]
     module JsonData {
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 16; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 16; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 19; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 19; ]
     module Layouts {
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 19; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 19; ]
         <init> {
         }
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 20; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 20; ]
         function ConfigurePlaybackLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 21 12 ]
-            [ "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_start" "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_stop" ]
-            %rez_cmp_local_text_1363855775.1 = local;
+C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 21 12 ]
+            [ "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_start" "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_stop" ]
+            %rez_cmp_local_text_2106003771.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
             %tmp.5 = newd 6;
@@ -82,9 +82,9 @@ C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_m
             %tmp.42 = dup %tmp.37;
             %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
             %tmp.1 = newc %tmp.4 (%tmp.43);
-            lputv %rez_cmp_local_text_1363855775.1 %tmp.1;
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 23 12 ]
-            [ "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_start" "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_stop" ]
+            lputv %rez_cmp_local_text_2106003771.1 %tmp.1;
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 23 12 ]
+            [ "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_start" "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_stop" ]
             %rez_cmp_local_bitmap_id_monkey.2 = local;
             %tmp.46 = getm $.Toybox.WatchUi;
             %tmp.47 = getv function ? %tmp.46 :Bitmap;
@@ -111,7 +111,7 @@ C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_m
             %tmp.72 = aputv %tmp.71 %tmp.69 %tmp.70;
             %tmp.44 = newc %tmp.47 (%tmp.72);
             lputv %rez_cmp_local_bitmap_id_monkey.2 %tmp.44;
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 24 12 ]
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 24 12 ]
             %tmp.73 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.74 = getv function %tmp.73 :setLocation;
             %tmp.75 = 240;
@@ -123,23 +123,23 @@ C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_m
             %tmp.81 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.82 = getv %tmp.81 :locY;
             invoke %tmp.73 %tmp.74(%tmp.80, %tmp.82);
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 26 12 ]
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 26 12 ]
             %tmp.83 = newa Array<WatchUi.Drawable> 2;
-            %tmp.85 = lgetv %rez_cmp_local_text_1363855775.1;
+            %tmp.85 = lgetv %rez_cmp_local_text_2106003771.1;
             %tmp.86 = dup %tmp.83;
             %tmp.87 = aputv %tmp.86 0 %tmp.85;
             %tmp.89 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.90 = dup %tmp.87;
             %tmp.91 = aputv %tmp.90 1 %tmp.89;
             ret %tmp.91;
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_stop:
+C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_20_87_stop:
         }
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 29; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 29; ]
         function ConfigureSyncLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_start:
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 30 12 ]
-            [ "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_start" "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_stop" ]
-            %rez_cmp_local_text_2394426391.1 = local;
+C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 30 12 ]
+            [ "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_start" "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_stop" ]
+            %rez_cmp_local_text_9958099581.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
             %tmp.5 = newd 6;
@@ -176,9 +176,9 @@ C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_m
             %tmp.42 = dup %tmp.37;
             %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
             %tmp.1 = newc %tmp.4 (%tmp.43);
-            lputv %rez_cmp_local_text_2394426391.1 %tmp.1;
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 32 12 ]
-            [ "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_start" "C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_stop" ]
+            lputv %rez_cmp_local_text_9958099581.1 %tmp.1;
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 32 12 ]
+            [ "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_start" "C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_stop" ]
             %rez_cmp_local_bitmap_id_monkey.2 = local;
             %tmp.46 = getm $.Toybox.WatchUi;
             %tmp.47 = getv function ? %tmp.46 :Bitmap;
@@ -205,7 +205,7 @@ C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_m
             %tmp.72 = aputv %tmp.71 %tmp.69 %tmp.70;
             %tmp.44 = newc %tmp.47 (%tmp.72);
             lputv %rez_cmp_local_bitmap_id_monkey.2 %tmp.44;
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 33 12 ]
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 33 12 ]
             %tmp.73 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.74 = getv function %tmp.73 :setLocation;
             %tmp.75 = 240;
@@ -217,37 +217,37 @@ C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_m
             %tmp.81 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.82 = getv %tmp.81 :locY;
             invoke %tmp.73 %tmp.74(%tmp.80, %tmp.82);
-[ "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 35 12 ]
+[ "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen" 35 12 ]
             %tmp.83 = newa Array<WatchUi.Drawable> 2;
-            %tmp.85 = lgetv %rez_cmp_local_text_2394426391.1;
+            %tmp.85 = lgetv %rez_cmp_local_text_9958099581.1;
             %tmp.86 = dup %tmp.83;
             %tmp.87 = aputv %tmp.86 0 %tmp.85;
             %tmp.89 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
             %tmp.90 = dup %tmp.87;
             %tmp.91 = aputv %tmp.90 1 %tmp.89;
             ret %tmp.91;
-C_Users_Jaden_Documents_GitHub_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_stop:
+C_Users_Jaden_Github_Runnify_runnify_bin_gen_006_B3113_00_source_Rez_mcgen_29_83_stop:
         }
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 39; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 39; ]
     module Menus {
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 39; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 39; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 42; ]
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 42; ]
     module Strings {
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 42; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 42; ]
         <init> {
         }
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
         var configurePlaybackMessage as Symbol;
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 44; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 44; @position = 27; initialized = true; ]
         var configureSyncMessage as Symbol;
-        [ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 45; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 45; @position = 27; initialized = true; ]
         var AppName as Symbol;
     }
 }
-[ @file = "C:\Users\Jaden\Documents\GitHub\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\bin\gen\006-B3113-00\source\Rez.mcgen"; @line = 1; ]
 <init> {
 }
