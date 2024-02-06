@@ -416,20 +416,21 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_149_13_i
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_149_13_if_true:
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_149_47_start:
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 150 12 ]
-        %tmp.31 = "yipee";
-        putv self :authcode %tmp.31;
+        %tmp.31 = lgetv %message;
+        %tmp.32 = getv %tmp.31 :responseCode;
+        putv self :authcode %tmp.32;
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_149_47_stop:
         goto @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_149_13_if_end;
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_149_13_if_false:
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_151_15_start:
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 152 12 ]
-        %tmp.33 = getv ? :System;
-        %tmp.34 = getv function %tmp.33 :println;
-        %tmp.35 = "Oauth fail";
-        invoke %tmp.33 %tmp.34(%tmp.35);
+        %tmp.34 = getv ? :System;
+        %tmp.35 = getv function %tmp.34 :println;
+        %tmp.36 = "Oauth fail";
+        invoke %tmp.34 %tmp.35(%tmp.36);
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 153 12 ]
-        %tmp.36 = "bad";
-        putv self :authcode %tmp.36;
+        %tmp.37 = "bad";
+        putv self :authcode %tmp.37;
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_151_15_stop:
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_149_13_if_end:
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_142_8_if_end:
