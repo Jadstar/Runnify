@@ -1,35 +1,35 @@
-[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 1; ]
+[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 1; ]
 import Toybox.Graphics;
-[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 2; ]
+[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 4; ]
+[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 4; ]
 class SongsForTheHeartView extends WatchUi.View{
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 4; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 4; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 5; @position = 8; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 5; @position = 8; ]
     var bpmSensor;
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 7; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 7; ]
     function initialize() as Void {
-D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_7_26_start:
-[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc" 8 8 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartView_mc_7_26_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc" 8 8 ]
         %tmp.4 = getv ? :HeartBeatSensor;
         %tmp.1 = newc %tmp.4 ();
         putv self :bpmSensor %tmp.1;
-[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc" 9 8 ]
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc" 9 8 ]
         %tmp.6 = getv ? :View;
         %tmp.7 = getv function %tmp.6 :initialize;
         invoke %tmp.6 %tmp.7();
-D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_7_26_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartView_mc_7_26_stop:
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 13; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 13; ]
     function onLayout(dc as Dc) as Void {
-D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_13_40_start:
-[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc" 14 8 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartView_mc_13_40_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc" 14 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -38,20 +38,20 @@ D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_13
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_13_40_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartView_mc_13_40_stop:
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 20; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 20; ]
     function onShow() as Void {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 24; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 24; ]
     function onUpdate(dc as Dc) as Void {
-D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_24_40_start:
-[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc" 25 8 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartView_mc_24_40_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc" 25 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc" 28 8 ]
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc" 28 8 ]
         %tmp.6 = lgetv %dc;
         %tmp.7 = getv function %tmp.6 :setColor;
         %tmp.8 = getm $.Toybox.Graphics;
@@ -59,7 +59,7 @@ D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_24
         %tmp.10 = getm $.Toybox.Graphics;
         %tmp.11 = getv %tmp.10 :COLOR_TRANSPARENT;
         invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
-[ "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc" 29 8 ]
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc" 29 8 ]
         %tmp.12 = lgetv %dc;
         %tmp.13 = getv function %tmp.12 :drawText;
         %tmp.14 = lgetv %dc;
@@ -79,12 +79,12 @@ D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_24
         %tmp.29 = getm $.Toybox.Graphics;
         %tmp.30 = getv %tmp.29 :TEXT_JUSTIFY_CENTER;
         invoke %tmp.12 %tmp.13(%tmp.18, %tmp.23, %tmp.25, %tmp.28, %tmp.30);
-D_Desktop_Projects_Garmin_App_SongsForTheHeart_source_SongsForTheHeartView_mc_24_40_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartView_mc_24_40_stop:
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 35; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 35; ]
     function onHide() as Void {
     }
 }
-[ @file = "D:\Desktop\Projects\Garmin App\SongsForTheHeart\source\SongsForTheHeartView.mc"; @line = 1; ]
+[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartView.mc"; @line = 1; ]
 <init> {
 }

@@ -154,7 +154,7 @@ class SpotifyApi {
         var params = {
             "response_type" => "code",
             "client_id" => $.CLIENT_ID,
-            "scope" => "app-remote-control streaming user-read-private user-read-emai",
+            "scope" => "app-remote-control streaming user-read-private user-read-email playlist-read-private",
             "redirect_uri" => $.REDIRECT_URI,
             "state" => "bazinga"
         };
