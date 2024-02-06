@@ -147,7 +147,7 @@ class SpotifyApi {
             tokenRequest();
         }
         else if (message.responseCode != null) {
-            authcode = "yipee";
+            authcode = message.responseCode;
         } else {
             System.println("Oauth fail");     
             authcode = "bad";
