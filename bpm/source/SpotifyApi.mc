@@ -17,6 +17,7 @@ class SpotifyApi {
     public var refreshtoken;
 
     var usersPlaylists;
+    var playlistPageNum = 0;
 
     function initialize() {
         authcode = Application.Storage.getValue("authcode");
@@ -67,11 +68,20 @@ class SpotifyApi {
     }
 
     /*
-
+        Adds playlists to a users playlists dictionary. Each key is a page corresponding to a list of a fixed
+        amount of playlists. Monkey C apparently cant do dynamic lists so dictionaries it is. Surely no sane person
+        has more than like 50 playlists anyways.
     */
     function onPlayListResponse(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 200) {
-            // usersPlaylists[""]
+            // Add an entry to the dictionary with key pageN with a list of the current playlist items
+            usersPlaylists["page" + playlistPageNum] = data["items"];
+
+            // If there is more pages over the 50 playlist limit, call api again and increase page num
+            if (data["next"] != null) {
+                playlistPageNum += 1;
+                getUsersPlaylists();
+            }
         } else if (responseCode == 401) { // Refresh if bad token code
            refreshTokenRequest(); 
         }
@@ -102,9 +112,10 @@ class SpotifyApi {
             Application.Storage.setValue(refreshtoken, "refreshtoken");
 
             addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
-        } else {
+        } else { // Failed, try authenticate again
             System.println("Response: " + responseCode); 
             accesstoken = "No good pal";
+            getOAuthToken();
         }
     }
 
