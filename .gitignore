@@ -1,5 +1,8 @@
-*/bin/
+bin/
 gen/
 internal-mir/
 mir/
 GarminSpotifyRemoteController/
+.debug.xml
+.vscode/
+
