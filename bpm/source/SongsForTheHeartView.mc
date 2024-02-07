@@ -2,12 +2,10 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 
 class SongsForTheHeartView extends WatchUi.View {
-    var bpmSensor;
     var s;
 
     function initialize(spotify) {
         s = spotify;
-        bpmSensor = new HeartBeatSensor();
         View.initialize();
     }
 
