@@ -15,7 +15,8 @@ class SpotifyApi {
     public var authcode;
     public var accesstoken;
     public var refreshtoken;
-
+    public var responseNum;
+    public var errormsg;
     var usersPlaylists;
     var playlistPageNum = 0;
 
@@ -29,21 +30,46 @@ class SpotifyApi {
         Given a spotify track uri make a request to queue that song
     */
     function addToQueue(uri) {
-        var url = $.BASE_URL + "/me/player/queue";                         
-
+        // var url = $.BASE_URL + "/me/player/queue?";       
+        var url = "https://api.spotify.com/v1/me/player/queue";             
         var params = {                                              
-            "uri" => uri,
+            "uri" => uri
         };
 
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
                 "Content-Type" => "application/x-www-form-urlencoded",
-                "Authorization" => "Bearer " + accesstoken
-            }
+                "Authorization" => "Bearer " + accesstoken.Object.toString()
+            },
+            // :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED
         };
-
         Communications.makeWebRequest(url, params, options, method(:onPOSTReceiveResponse));
+    }
+
+    
+    /*
+        Adds playlists to a users playlists dictionary. Each key is a page corresponding to a list of a fixed
+        amount of playlists. Monkey C apparently cant do dynamic lists so dictionaries it is. Surely no sane person
+        has more than like 50 playlists anyways.
+    */
+    function onPlayListResponse(responseCode as Number, data as Dictionary?) as Void {
+        if (responseCode == 200) {
+            responseNum = "playlist ";
+
+            // Add an entry to the dictionary with key pageN with a list of the current playlist items
+            usersPlaylists["page" + playlistPageNum] = data["items"];
+
+            // If there is more pages over the 50 playlist limit, call api again and increase page num
+            if (data["next"] != null) {
+                playlistPageNum += 1;
+                getUsersPlaylists();
+            }
+        } else if (responseCode == 401) { // Refresh if bad token code
+           refreshTokenRequest(); 
+        }
+        responseNum = responseCode;
+
     }
 
     /*
@@ -51,9 +77,8 @@ class SpotifyApi {
     */
     function getUsersPlaylists() {
         var url = $.BASE_URL + "/me/playlists";                         
-
         var params = {                                              
-            "limit" => 50,
+            "limit" => 50
         };
 
         var options = {                                             
@@ -67,25 +92,6 @@ class SpotifyApi {
         Communications.makeWebRequest(url, params, options, method(:onPlayListResponse));
     }
 
-    /*
-        Adds playlists to a users playlists dictionary. Each key is a page corresponding to a list of a fixed
-        amount of playlists. Monkey C apparently cant do dynamic lists so dictionaries it is. Surely no sane person
-        has more than like 50 playlists anyways.
-    */
-    function onPlayListResponse(responseCode as Number, data as Dictionary?) as Void {
-        if (responseCode == 200) {
-            // Add an entry to the dictionary with key pageN with a list of the current playlist items
-            usersPlaylists["page" + playlistPageNum] = data["items"];
-
-            // If there is more pages over the 50 playlist limit, call api again and increase page num
-            if (data["next"] != null) {
-                playlistPageNum += 1;
-                getUsersPlaylists();
-            }
-        } else if (responseCode == 401) { // Refresh if bad token code
-           refreshTokenRequest(); 
-        }
-    }
 
     /*
         On receiving a response back from a POST command, interpret the response code
@@ -94,7 +100,11 @@ class SpotifyApi {
     function onPOSTReceiveResponse(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 401) { // Refresh if bad token code
             refreshTokenRequest();
-        } 
+            errormsg = data["error"];
+        }
+        else{
+        responseNum = responseCode;
+        }
     }
 
     /*
@@ -102,20 +112,23 @@ class SpotifyApi {
         endpoints. 
     */
     function onReceiveToken(responseCode as Number, data as Dictionary?) as Void {
+        
+
         if (responseCode == 200) {
             System.println("Request Successful");                   
             accesstoken = data["access_token"];
             refreshtoken = data["refresh_token"];
-
+            responseNum = "token got";
             // Save to local storage to persist after app close
             Application.Storage.setValue(accesstoken, "accesstoken");
             Application.Storage.setValue(refreshtoken, "refreshtoken");
-
-            addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
+            // getUsersPlaylists();
+            addToQueue("spotify:track:6rPO02ozF3bM7NnOV4h6s2");
         } else { // Failed, try authenticate again
             System.println("Response: " + responseCode); 
-            accesstoken = "No good pal";
+
             getOAuthToken();
+
         }
     }
 
