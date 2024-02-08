@@ -39,7 +39,7 @@ class SpotifyApi {
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
                 "Content-Type" => "application/x-www-form-urlencoded",
-                "Authorization" => "Bearer " + accesstoken
+                "Authorization" => "Bearer " + accesstoken.Object.toString()
             }
         };
 
@@ -60,7 +60,7 @@ class SpotifyApi {
             :method => Communications.HTTP_REQUEST_METHOD_GET,      
             :headers => {
                 "Content-Type" => "application/x-www-form-urlencoded",
-                "Authorization" => "Bearer " + accesstoken
+                "Authorization" => "Bearer " + accesstoken.Onject.toString()
             }
         };
 
