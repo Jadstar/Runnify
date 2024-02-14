@@ -20,7 +20,7 @@ class SpotifyApi {
     var playlistPageNum = 0;
 
     function initialize() { 
-        Application.Storage.setValue("authcode", "AQAy52JkzmStmMI8vOUGtR-tcknuE1JF5mcq8Oq6UI7zmRgnwQd3dI4mYyVggyvXKRc1AMg2NwLxoLP0al2Z_tZJLrOIzOnKbMWoiGjzHKrUG-hD3BLBtMVdcr08VYVIh-OGfY-_udGFqGWtW2GaQexw0793rgEwxxy3a8P497I3Wt9PGq025HLUBuOojOJJXSdDMaf-Hff8SSQLJ_fz3s6Pa6ArN5I57w-StNmIuRyVV64a6S4FGQbg5yJdNQwh43CYtU38eMx9cp7z1IWHCAPKix7MN7k");
+        Application.Storage.setValue("authcode", "AQCTmHFtEUpd23BU5JpJJVfeSUKsf09e2GNYZWmH0yA6mPGqqyE-Uvmfsdbf2T2Ghillw0-xe-VVau8WoptcdLQoO1R5PAseWVYd77yFrYBwXc1UtxNR5UemXVvXS1N3W96GQzsuN6_8i5ewFjEHu6ChySiRvaMlXoHnO6ObodOb0aU4yINHcWSB3Hex9K7VPN_Mf1s12erOSgxk5tzYBhg5VhzHPtx05NqQIRAsNq1Kk63Z6CO5E3DDscueKAwNyQFs73SKyRvBS5kxqjSn6U4gS3NpIic");
         authcode = Application.Storage.getValue("authcode");
         System.println(authcode);
         accesstoken = Application.Storage.getValue("accesstoken");
@@ -34,14 +34,14 @@ class SpotifyApi {
         var url = $.BASE_URL + "/me/player/queue";                         
 
         var params = {                                              
-            "uri" => uri,
-            "Authorization" => "Bearer " + accesstoken.Object.toString()
+            "uri" => uri
         };
 
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
-                "Content-Type" => "application/x-www-form-urlencoded"
+                "Authorization" => "Bearer " + accesstoken,
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
             }
         };
 
@@ -61,7 +61,7 @@ class SpotifyApi {
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_GET,      
             :headers => {
-                "Content-Type" => "application/x-www-form-urlencoded",
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED,
                 "Authorization" => "Bearer " + accesstoken
             }
         };
@@ -94,9 +94,17 @@ class SpotifyApi {
         and refresh token if necessary
     */
     function onPOSTReceiveResponse(responseCode as Number, data as Dictionary?) as Void {
+        System.print("Post received -> ");
         if (responseCode == 401) { // Refresh if bad token code
+            System.print("Bad Token Provided -> ");
             refreshTokenRequest();
-        } 
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else if (responseCode == 200 || responseCode == 204) {
+            System.println("Added to queue!");
+        } else {
+            System.println("Unhandled response code: " + responseCode);
+        }
     }
 
     /*
@@ -104,17 +112,23 @@ class SpotifyApi {
         endpoints. 
     */
     function onReceiveToken(responseCode as Number, data as Dictionary?) as Void {
+        System.print("Token received -> ");
         if (responseCode == 200) {
-            System.println("Request Successful");                   
             accesstoken = data["access_token"];
             refreshtoken = data["refresh_token"];
 
             // Save to local storage to persist after app close
-            Application.Storage.setValue(accesstoken, "accesstoken");
-            Application.Storage.setValue(refreshtoken, "refreshtoken");
+            Application.Storage.setValue("accesstoken", accesstoken);
+            Application.Storage.setValue("refreshtoken", refreshtoken);
 
-            addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
-        } else { // Failed, try authenticate again
+            System.println("Token: " + accesstoken);
+            System.println("Refresh: " + refreshtoken);
+
+            // addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        }
+        else { // Failed, try authenticate again
             System.println("Response: " + responseCode); 
             accesstoken = "No good pal";
             // getOAuthToken();
@@ -136,7 +150,7 @@ class SpotifyApi {
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
-                "Content-Type" => "application/x-www-form-urlencoded",
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED,
             }
         };
 
@@ -158,7 +172,7 @@ class SpotifyApi {
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
-                "Content-Type" => "application/x-www-form-urlencoded",
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED,
                 "Authorization" => "Basic " + StringUtil.encodeBase64($.CLIENT_ID + ":" + $.CLIENT_SECRET)
             }
         };
