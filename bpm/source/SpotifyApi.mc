@@ -19,8 +19,10 @@ class SpotifyApi {
     var usersPlaylists;
     var playlistPageNum = 0;
 
-    function initialize() {
+    function initialize() { 
+        Application.Storage.setValue("authcode", "AQAy52JkzmStmMI8vOUGtR-tcknuE1JF5mcq8Oq6UI7zmRgnwQd3dI4mYyVggyvXKRc1AMg2NwLxoLP0al2Z_tZJLrOIzOnKbMWoiGjzHKrUG-hD3BLBtMVdcr08VYVIh-OGfY-_udGFqGWtW2GaQexw0793rgEwxxy3a8P497I3Wt9PGq025HLUBuOojOJJXSdDMaf-Hff8SSQLJ_fz3s6Pa6ArN5I57w-StNmIuRyVV64a6S4FGQbg5yJdNQwh43CYtU38eMx9cp7z1IWHCAPKix7MN7k");
         authcode = Application.Storage.getValue("authcode");
+        System.println(authcode);
         accesstoken = Application.Storage.getValue("accesstoken");
         refreshtoken = Application.Storage.getValue("refreshtoken");
     }
@@ -60,7 +62,7 @@ class SpotifyApi {
             :method => Communications.HTTP_REQUEST_METHOD_GET,      
             :headers => {
                 "Content-Type" => "application/x-www-form-urlencoded",
-                "Authorization" => "Bearer " + accesstoken.Onject.toString()
+                "Authorization" => "Bearer " + accesstoken
             }
         };
 
@@ -115,7 +117,7 @@ class SpotifyApi {
         } else { // Failed, try authenticate again
             System.println("Response: " + responseCode); 
             accesstoken = "No good pal";
-            getOAuthToken();
+            // getOAuthToken();
         }
     }
 
@@ -158,7 +160,8 @@ class SpotifyApi {
             :headers => {
                 "Content-Type" => "application/x-www-form-urlencoded",
                 "Authorization" => "Basic " + StringUtil.encodeBase64($.CLIENT_ID + ":" + $.CLIENT_SECRET)
-            }
+            },
+            :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED
         };
 
         Communications.makeWebRequest(url, params, options, method(:onReceiveToken));

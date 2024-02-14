@@ -17,7 +17,7 @@ class HeartRateHandler {
     */
     function onSensor(sensorInfo as Sensor.Info) as Void {
         currentBPM = sensorInfo.heartRate;
-        System.println(currentBPM);
+        // System.println(currentBPM);
 
         WatchUi.requestUpdate();
     }

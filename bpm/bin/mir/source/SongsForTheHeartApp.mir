@@ -54,7 +54,7 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_14_26_st
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_19_51_start:
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 20 8 ]
         %tmp.2 = getv ? :spotify;
-        %tmp.3 = getv function %tmp.2 :getOAuthToken;
+        %tmp.3 = getv function %tmp.2 :tokenRequest;
         invoke %tmp.2 %tmp.3();
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_19_51_stop:
     }
