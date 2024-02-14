@@ -54,37 +54,47 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_14_26_st
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_19_51_start:
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 20 8 ]
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_stmt:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_12_begin:
         %tmp.2 = getv ? :spotify;
         %tmp.3 = getv %tmp.2 :accesstoken;
         %tmp.4 = null;
         %tmp.5 = eq %tmp.3 %tmp.4;
-        bf %tmp.5 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_false;
+        %tmp.6 = dup %tmp.5;
+        bt %tmp.6 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_end;
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_false:
+        %tmp.8 = getv ? :spotify;
+        %tmp.9 = getv %tmp.8 :refreshtoken;
+        %tmp.10 = null;
+        %tmp.11 = eq %tmp.9 %tmp.10;
+        %tmp.12 = or %tmp.5 %tmp.11;
+        push %tmp.12;
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_end:
+        %tmp.13 = phi [%tmp.6 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_12_begin] [%tmp.12 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_false] [%tmp.13 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_end];
+        bf %tmp.13 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_false;
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_true:
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_41_start:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_73_start:
 [ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 21 12 ]
-        %tmp.7 = getv ? :spotify;
-        %tmp.8 = getv function %tmp.7 :getOAuthToken;
-        invoke %tmp.7 %tmp.8();
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_41_stop:
+        %tmp.15 = getv ? :spotify;
+        %tmp.16 = getv function %tmp.15 :getOAuthToken;
+        invoke %tmp.15 %tmp.16();
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_73_stop:
         goto @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_end;
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_false:
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_22_15_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 23 12 ]
-        %tmp.10 = getv ? :spotify;
-        %tmp.11 = getv function %tmp.10 :addToQueue;
-        %tmp.12 = "spotify:track:3z8T28TrqcYuANI7MlBg93";
-        invoke %tmp.10 %tmp.11(%tmp.12);
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_22_15_stop:
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_end:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 27 8 ]
+        %tmp.18 = getv ? :spotify;
+        %tmp.19 = getv function %tmp.18 :addToQueue;
+        %tmp.20 = "spotify:track:3z8T28TrqcYuANI7MlBg93";
+        invoke %tmp.18 %tmp.19(%tmp.20);
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_19_51_stop:
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 28; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 32; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 32; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 36; ]
     function getInitialView() as Array<Views or InputDelegates> or Null {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_32_65_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 33 8 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_36_65_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 37 8 ]
         %tmp.1 = newa Array<Views or InputDelegates> 2;
         %tmp.3 = getv ? :view;
         %tmp.4 = dup %tmp.1;
@@ -94,19 +104,19 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_32_65_st
         %tmp.10 = dup %tmp.5;
         %tmp.11 = aputv %tmp.10 1 %tmp.6;
         ret %tmp.11;
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_32_65_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_36_65_stop:
     }
 }
-[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 38; ]
+[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 42; ]
 function getApp() as SongsForTheHeartApp {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_38_41_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 39 4 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_42_41_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 43 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 SongsForTheHeartApp;
     ret %tmp.4;
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_38_41_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_42_41_stop:
 }
 [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 1; ]
 <init> {

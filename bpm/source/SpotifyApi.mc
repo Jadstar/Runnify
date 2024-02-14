@@ -16,13 +16,12 @@ class SpotifyApi {
     public var accesstoken;
     public var refreshtoken;
 
-    var usersPlaylists;
+    var usersPlaylists = {};
     var playlistPageNum = 0;
 
     function initialize() { 
-        Application.Storage.setValue("authcode", "AQCTmHFtEUpd23BU5JpJJVfeSUKsf09e2GNYZWmH0yA6mPGqqyE-Uvmfsdbf2T2Ghillw0-xe-VVau8WoptcdLQoO1R5PAseWVYd77yFrYBwXc1UtxNR5UemXVvXS1N3W96GQzsuN6_8i5ewFjEHu6ChySiRvaMlXoHnO6ObodOb0aU4yINHcWSB3Hex9K7VPN_Mf1s12erOSgxk5tzYBhg5VhzHPtx05NqQIRAsNq1Kk63Z6CO5E3DDscueKAwNyQFs73SKyRvBS5kxqjSn6U4gS3NpIic");
+        Application.Storage.setValue("authcode", "AQB29uDjmlo80JlTNH-NHBY5u-VSKO_2d7N2Ftr6UK0f1zVuU_voucskZHndGbz_Alk-VO3WniNf_AGwRa4oFil64Qley1Yh1mMcn90wfwL2y8D3ur06lSc8ISdWTiBcDOATtUGtocHPtvYAAON22eA3cOUvbXW42jftKK4hzUX6x4z05qYch_Akeb35lsRnc-IEC62DGyhyenMx4ysAUbN3xTB3HVirHznNj4Xu65Lanc-aJc7r6b9zYiSiuEboc0cxMKfpEgIQSWDpnI_mp439OSOOM3M");
         authcode = Application.Storage.getValue("authcode");
-        System.println(authcode);
         accesstoken = Application.Storage.getValue("accesstoken");
         refreshtoken = Application.Storage.getValue("refreshtoken");
     }
@@ -31,7 +30,8 @@ class SpotifyApi {
         Given a spotify track uri make a request to queue that song
     */
     function addToQueue(uri) {
-        var url = $.BASE_URL + "/me/player/queue";                         
+        var url = $.BASE_URL + "/me/player/queue?uri=" + uri;    
+        System.println(uri);              
 
         var params = {                                              
             "uri" => uri
@@ -52,7 +52,8 @@ class SpotifyApi {
         Gets all of the users playlists and stores them into a list
     */
     function getUsersPlaylists() {
-        var url = $.BASE_URL + "/me/playlists";                         
+        var url = $.BASE_URL + "/me/playlists";       
+        System.println(accesstoken);             
 
         var params = {                                              
             "limit" => 50,
@@ -61,8 +62,8 @@ class SpotifyApi {
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_GET,      
             :headers => {
-                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED,
-                "Authorization" => "Bearer " + accesstoken
+                "Authorization" => "Bearer " + accesstoken,
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
             }
         };
 
@@ -76,16 +77,25 @@ class SpotifyApi {
     */
     function onPlayListResponse(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 200) {
+
             // Add an entry to the dictionary with key pageN with a list of the current playlist items
             usersPlaylists["page" + playlistPageNum] = data["items"];
 
             // If there is more pages over the 50 playlist limit, call api again and increase page num
             if (data["next"] != null) {
                 playlistPageNum += 1;
-                getUsersPlaylists();
+                // getUsersPlaylists();
             }
+
+            System.println("Got playlists page" + playlistPageNum + ": " + usersPlaylists["page" + playlistPageNum]);
+
         } else if (responseCode == 401) { // Refresh if bad token code
-           refreshTokenRequest(); 
+            System.print("Bad Token Provided -> "); 
+            refreshTokenRequest(); 
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else {
+            System.println("Unhandled response code: " + responseCode);
         }
     }
 
@@ -120,9 +130,11 @@ class SpotifyApi {
             // Save to local storage to persist after app close
             Application.Storage.setValue("accesstoken", accesstoken);
             Application.Storage.setValue("refreshtoken", refreshtoken);
+            Application.Storage.setValue("scope", data["scope"]);
 
             System.println("Token: " + accesstoken);
             System.println("Refresh: " + refreshtoken);
+            System.println("Scopes: " + data["scope"]);
 
             // addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
         } else if (responseCode == 400) {
@@ -193,7 +205,6 @@ class SpotifyApi {
         }
         else {
             System.println("Oauth fail");     
-            authcode = $.OAUTH_ERROR;
         }
     }
 
