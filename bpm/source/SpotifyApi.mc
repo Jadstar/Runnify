@@ -35,13 +35,13 @@ class SpotifyApi {
 
         var params = {                                              
             "uri" => uri,
+            "Authorization" => "Bearer " + accesstoken.Object.toString()
         };
 
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
-                "Content-Type" => "application/x-www-form-urlencoded",
-                "Authorization" => "Bearer " + accesstoken.Object.toString()
+                "Content-Type" => "application/x-www-form-urlencoded"
             }
         };
 
@@ -147,7 +147,8 @@ class SpotifyApi {
         Resquest for an access token using the authorization code received from the user
     */
     function tokenRequest() as Void {
-        var url = "https://accounts.spotify.com/api/token";                         
+        var url = "https://accounts.spotify.com/api/token"; 
+        System.println(authcode.toString());  
 
         var params = {                                              
             "code" => authcode,
@@ -158,10 +159,11 @@ class SpotifyApi {
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
-                "Content-Type" => "application/x-www-form-urlencoded",
-                "Authorization" => "Basic " + StringUtil.encodeBase64($.CLIENT_ID + ":" + $.CLIENT_SECRET)
+                "Authorization" => "Basic " + StringUtil.encodeBase64($.CLIENT_ID + ":" + $.CLIENT_SECRET), 
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
             },
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED
+            // :json => true
         };
 
         Communications.makeWebRequest(url, params, options, method(:onReceiveToken));
