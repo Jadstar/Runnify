@@ -17,12 +17,11 @@ class SongsForTheHeartApp extends Application.AppBase {
 
     // onStart() is called on application start up
     function onStart(state as Dictionary?) as Void {
-        // if (spotify.accesstoken == null || spotify.refreshtoken == null) {
-        //     spotify.getOAuthToken();
-        // } else {
-            spotify.tokenRequest();
+        if (spotify.accesstoken == null || spotify.refreshtoken == null) {
+            spotify.getOAuthToken();
+        } else {
             spotify.refreshTokenRequest();
-        // }
+        }
 
         // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
         spotify.getUsersPlaylists();
