@@ -52,27 +52,54 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_14_26_st
     [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 19; ]
     function onStart(state as Dictionary or Null) as Void {
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_19_51_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 23 12 ]
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 20 8 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_stmt:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_12_begin:
         %tmp.2 = getv ? :spotify;
-        %tmp.3 = getv function %tmp.2 :tokenRequest;
-        invoke %tmp.2 %tmp.3();
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 24 12 ]
-        %tmp.5 = getv ? :spotify;
-        %tmp.6 = getv function %tmp.5 :refreshTokenRequest;
-        invoke %tmp.5 %tmp.6();
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 28 8 ]
+        %tmp.3 = getv %tmp.2 :accesstoken;
+        %tmp.4 = null;
+        %tmp.5 = eq %tmp.3 %tmp.4;
+        %tmp.6 = dup %tmp.5;
+        bt %tmp.6 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_end;
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_false:
         %tmp.8 = getv ? :spotify;
-        %tmp.9 = getv function %tmp.8 :getUsersPlaylists;
-        invoke %tmp.8 %tmp.9();
+        %tmp.9 = getv %tmp.8 :refreshtoken;
+        %tmp.10 = null;
+        %tmp.11 = eq %tmp.9 %tmp.10;
+        %tmp.12 = or %tmp.5 %tmp.11;
+        push %tmp.12;
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_end:
+        %tmp.13 = phi [%tmp.6 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_12_begin] [%tmp.12 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_false] [%tmp.13 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_43_end];
+        bf %tmp.13 @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_false;
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_true:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_73_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 21 12 ]
+        %tmp.15 = getv ? :spotify;
+        %tmp.16 = getv function %tmp.15 :getOAuthToken;
+        invoke %tmp.15 %tmp.16();
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_73_stop:
+        goto @D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_end;
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_false:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_22_15_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 24 12 ]
+        %tmp.18 = getv ? :spotify;
+        %tmp.19 = getv function %tmp.18 :refreshTokenRequest;
+        invoke %tmp.18 %tmp.19();
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_22_15_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_20_8_if_end:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 29 8 ]
+        %tmp.21 = getv ? :spotify;
+        %tmp.22 = getv function %tmp.21 :getCurrentTrackProgress;
+        invoke %tmp.21 %tmp.22();
 D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_19_51_stop:
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 32; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 33; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 36; ]
+    [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 37; ]
     function getInitialView() as Array<Views or InputDelegates> or Null {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_36_65_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 37 8 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_37_65_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 38 8 ]
         %tmp.1 = newa Array<Views or InputDelegates> 2;
         %tmp.3 = getv ? :view;
         %tmp.4 = dup %tmp.1;
@@ -82,19 +109,19 @@ D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_36_65_st
         %tmp.10 = dup %tmp.5;
         %tmp.11 = aputv %tmp.10 1 %tmp.6;
         ret %tmp.11;
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_36_65_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_37_65_stop:
     }
 }
-[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 42; ]
+[ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 43; ]
 function getApp() as SongsForTheHeartApp {
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_42_41_start:
-[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 43 4 ]
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_43_41_start:
+[ "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc" 44 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 SongsForTheHeartApp;
     ret %tmp.4;
-D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_42_41_stop:
+D_Desktop_Projects_Garmin_App_Runnify_bpm_source_SongsForTheHeartApp_mc_43_41_stop:
 }
 [ @file = "D:\Desktop\Projects\Garmin App\Runnify\bpm\source\SongsForTheHeartApp.mc"; @line = 1; ]
 <init> {

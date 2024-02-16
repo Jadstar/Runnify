@@ -24,8 +24,10 @@ class SpotifyApi {
     var totalPlaylistCount = 0;
     var gotAllPlaylists = true; // True when latest call to playlists api has finished all pages
 
+    var currentTrackProgress = 0;
+
     function initialize() { 
-        authcode = "AQDC_l5XAJ2n0eUk1Q2ebXJ8Cy75VezWtp5Ht8uAsGmn7CQZfBn7sJLSXzSbJmWXQsH6iVSwQSwWlDB5OEwl9URCV8Cjd_wPcAYYzMSK0Ymh7htTDtRhJfSVAbo8ADAQWIXCoKG1AC_J--gQfbe6yTK4P53IhXcvOrVSA567Z7e5ymv9XCH3BguN8pzlzecmRD8IBkFOBmfu_7ziHHhbq2HqaiOUII5JaMU_8HXM7zT7pQNq7EYQBrJzFnTuho59brYxKszY7eG0pIHD_n79NvMpa9lZwB4";
+        authcode = "AQAembZ0_etxEkpRu7s92vJyiCzRy7LaQWBt8AR9k2YduGO1qkrwn3Hn2q6O2nI4IQ62dzUXr9e7vJusx1cZHdsN9gXoMEzgWuBDXr8fBcDBENGan6z5-UShS9jaYf6bGgdBhyfJSes-h5v0ofQh0DkJUCy_fLMBYwZ5pfn-mGxvGusl5CR2J4SmBNL0-Hym1PQS7uD_-Ti3riUMv62njCi7geo7QR3I-_D60S-JgKARglFgNqEicAhSwRzc0Zz-0qH5HF_hiIRP-PfjtMKOf1f4hxUUbkI";
         accesstoken = Application.Storage.getValue("accesstoken");
         refreshtoken = Application.Storage.getValue("refreshtoken");
     }
@@ -144,6 +146,54 @@ class SpotifyApi {
     }
 
     /*
+        Gets progress of current track playing
+    */
+    function getCurrentTrackProgress() {
+        var url = $.BASE_URL + "/me/player/currently-playing";
+
+        var params = {};
+
+        var options = {                                             
+            :method => Communications.HTTP_REQUEST_METHOD_GET,      
+            :headers => {
+                "Authorization" => "Bearer " + accesstoken,
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
+            }
+        };
+
+        Communications.makeWebRequest(url, params, options, method(:currentTrackResponse));
+    }
+
+    /* 
+        Callback function to handle the current track request
+    */
+    function currentTrackResponse(responseCode as Number, data as Dictionary?) as Void {
+        if (responseCode == 401) { // Refresh if bad token code
+            System.println("Bad Token Provided -> ");
+            // refreshTokenRequest();
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else if (responseCode == 200 || responseCode == 204) {
+            System.println("Got current track");
+
+            currentTrackProgress = data["progress_ms"] / data["item"]["duration_ms"] * 100.0;
+            System.println(currentTrackProgress);
+        } else {
+            System.println("Unhandled response in currentTrackResponse: " + responseCode + " " + data["error"]);
+        }
+    }
+
+    /*
+        TODO: Returns the tracks in given playlist
+    */
+    function getPlaylistsTracks(playlist) {}
+
+    /*
+        TODO: Returns the audio features of a track
+    */
+    function getTrackAudioFeatures(playlist) {}
+
+    /*
         On receiving a response back from a POST command, interpret the response code
         and refresh token if necessary
     */
@@ -168,20 +218,19 @@ class SpotifyApi {
     function onReceiveToken(responseCode as Number, data as Dictionary?) as Void {
         System.print("Token received -> ");
         if (responseCode == 200) {
+
             // Rewrite with new tokens if they are not given as null
             if (data["access_token"] != null) {
                 accesstoken = data["access_token"];
+                Application.Storage.setValue("accesstoken", accesstoken);
+                System.println("Token: " + accesstoken);
+                System.println(data["expires_in"]);
             }
             if (data["refresh_token"] != null) {
                 refreshtoken = data["refresh_token"];
+                Application.Storage.setValue("refreshtoken", refreshtoken);
+                System.println("Refresh: " + refreshtoken);
             }
-
-            // Save to local storage to persist after app close
-            Application.Storage.setValue("accesstoken", accesstoken);
-            Application.Storage.setValue("refreshtoken", refreshtoken);
-
-            System.println("Token: " + accesstoken);
-            System.println("Refresh: " + refreshtoken);
         } 
         else { // Failed, try authenticate again
             System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);
