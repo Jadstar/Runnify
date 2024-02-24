@@ -1,4 +1,5 @@
 import Toybox.Lang;
+import Toybox.Timer;
 
 const BASE_URL = "https://api.spotify.com/v1";
 const CLIENT_ID = "03e00d7168c84260a6175f4668bc7bd6";
@@ -6,7 +7,7 @@ const CLIENT_SECRET = "0aa850a846844d46ab3d6c50591c1c2b";
 const OAUTH_CODE = "code";
 const OAUTH_ERROR = "error";
 const REDIRECT_URI = "connectiq://oauth";
-const SCOPE = "streaming user-modify-playback-state user-read-private user-read-email playlist-read-private";
+const SCOPE = "streaming user-modify-playback-state user-read-private user-read-email playlist-read-private user-read-currently-playing";
 
 const PLAYLIST_LIMIT = 50;
 
@@ -14,9 +15,13 @@ const PLAYLIST_LIMIT = 50;
     Contains all spotify api functionality
 */
 class SpotifyApi {
+    // Authentication stuff
     public var authcode;
     public var accesstoken;
     public var refreshtoken;
+    var autoRefreshTimer = new Timer.Timer();
+    var tokenExpirationSec = 3600;
+    var firstToken = true;
 
     // Playlist variables
     var usersPlaylists = {};
@@ -24,10 +29,13 @@ class SpotifyApi {
     var totalPlaylistCount = 0;
     var gotAllPlaylists = true; // True when latest call to playlists api has finished all pages
 
+    // Track progress
     var currentTrackProgress = 0;
+    var trackPlaying = false;
+
+    var isDebug = true;
 
     function initialize() { 
-        authcode = "AQAembZ0_etxEkpRu7s92vJyiCzRy7LaQWBt8AR9k2YduGO1qkrwn3Hn2q6O2nI4IQ62dzUXr9e7vJusx1cZHdsN9gXoMEzgWuBDXr8fBcDBENGan6z5-UShS9jaYf6bGgdBhyfJSes-h5v0ofQh0DkJUCy_fLMBYwZ5pfn-mGxvGusl5CR2J4SmBNL0-Hym1PQS7uD_-Ti3riUMv62njCi7geo7QR3I-_D60S-JgKARglFgNqEicAhSwRzc0Zz-0qH5HF_hiIRP-PfjtMKOf1f4hxUUbkI";
         accesstoken = Application.Storage.getValue("accesstoken");
         refreshtoken = Application.Storage.getValue("refreshtoken");
     }
@@ -169,15 +177,15 @@ class SpotifyApi {
     */
     function currentTrackResponse(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 401) { // Refresh if bad token code
-            System.println("Bad Token Provided -> ");
-            // refreshTokenRequest();
+            System.println("Bad Token Provided");
+            System.println("Error: " + data["error"]);
+            refreshTokenRequest();
         } else if (responseCode == 400) {
             System.println("Error: " + data["error"]);
         } else if (responseCode == 200 || responseCode == 204) {
-            System.println("Got current track");
-
-            currentTrackProgress = data["progress_ms"] / data["item"]["duration_ms"] * 100.0;
-            System.println(currentTrackProgress);
+            currentTrackProgress = data["progress_ms"].toDouble() / data["item"]["duration_ms"].toDouble();
+            trackPlaying = data["is_playing"];
+            System.println("Current Track Progress: " + currentTrackProgress * 100.0 + "% is playing: " + trackPlaying);
         } else {
             System.println("Unhandled response in currentTrackResponse: " + responseCode + " " + data["error"]);
         }
@@ -212,6 +220,18 @@ class SpotifyApi {
     }
 
     /*
+        Ticks down the token expiration by 1 second until 0, then orders a refresh
+    */
+    function checkTokenExpiration() {
+        if (tokenExpirationSec == 30) {
+            refreshTokenRequest();
+        } else {
+            tokenExpirationSec -= 1;
+        }
+        System.println(tokenExpirationSec);
+    }
+
+    /*
         Callback to receive token data from either refresh token or access token 
         endpoints. 
     */
@@ -223,19 +243,25 @@ class SpotifyApi {
             if (data["access_token"] != null) {
                 accesstoken = data["access_token"];
                 Application.Storage.setValue("accesstoken", accesstoken);
-                System.println("Token: " + accesstoken);
-                System.println(data["expires_in"]);
+                System.println("New Token: " + accesstoken);
+                tokenExpirationSec = data["expires_in"];
             }
             if (data["refresh_token"] != null) {
                 refreshtoken = data["refresh_token"];
                 Application.Storage.setValue("refreshtoken", refreshtoken);
-                System.println("Refresh: " + refreshtoken);
+                System.println("New Refresh: " + refreshtoken);
+            }
+
+            if (firstToken) {
+                System.println("Starting auto refresh timer");
+                autoRefreshTimer.start(method(:checkTokenExpiration), 1000, true);
+                firstToken = false;
             }
         } 
         else { // Failed, try authenticate again
             System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);
             System.println("Attempting new OAuth...");
-            // getOAuthToken();
+            getOAuthToken();
         }
     }
 
@@ -304,6 +330,12 @@ class SpotifyApi {
         Make web request to spotify to receive an auth code. Notifies user's phone with a popup auth screen
     */
     function getOAuthToken() {
+        if (isDebug == true) {
+            authcode = "AQAO5qF3twaehmVXSMK8qjnp9IFDjifPuHQUhB1ZRxKPpSPVRnbs2GzrFp2pIfLkvq9PQ1VNKd4ONFwmHNzqowS29YeLtU1bhvNLh6RbkRAnoSPqu6ou-pYFJFZ8JHO4l3HNHjyM4LshxUCS-0wYJKZ1WYU_XQQEyc4WS3CgQ_19hAjxUCyOQsJrf-5bk6gjckMJheh11lom_mKTvrMCv6Fgm0ptzdLWGILMhh9PSG-wiosAoAxlRYAjzr_8dPotGjDXDCCOJv6fnqicZI2wo2ek1hpPgKMNmJPkFWl12JKrsQDIFqxma5AyzdearCq3-0ahOQ";
+            tokenRequest();
+            return;
+        }
+
         Authentication.registerForOAuthMessages(method(:onOAuthMessage));
 
         // Spotify auth paramaters
@@ -321,5 +353,12 @@ class SpotifyApi {
             Authentication.OAUTH_RESULT_TYPE_URL,               // Auth response type
             {"code" => $.OAUTH_CODE, "error" => $.OAUTH_ERROR}  // The spotify mappings for code and error
         );
+    }
+
+    /*
+        Stops any timers or services
+    */
+    function stop() {
+        autoRefreshTimer.stop();
     }
 }

@@ -5,6 +5,7 @@ import Toybox.Authentication;
 import Toybox.Communications;
 import Toybox.StringUtil;
 import Toybox.Sensor;
+import Toybox.Timer;
 
 class SongsForTheHeartApp extends Application.AppBase {
     var spotify = new SpotifyApi();
@@ -20,10 +21,11 @@ class SongsForTheHeartApp extends Application.AppBase {
         if (spotify.accesstoken == null || spotify.refreshtoken == null) {
             spotify.getOAuthToken();
         } else {
-            // spotify.tokenRequest();
             spotify.refreshTokenRequest();
         }
 
+        // var delayedTimer = new Timer.Timer();
+        // delayedTimer.start(spotify.getCurrentTrackProgress, 1000, false);
         // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
         // spotify.getUsersPlaylists();
         spotify.getCurrentTrackProgress();
@@ -31,6 +33,7 @@ class SongsForTheHeartApp extends Application.AppBase {
 
     // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
+        spotify.stop();
     }
 
     // Return the initial view of your application here
