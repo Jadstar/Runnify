@@ -10,6 +10,8 @@ const REDIRECT_URI = "connectiq://oauth";
 const SCOPE = "streaming user-modify-playback-state user-read-private user-read-email playlist-read-private user-read-currently-playing";
 
 const PLAYLIST_LIMIT = 50;
+const TRACK_LIMIT = 50;
+const AUDIO_FEATURE_LIM = 20;
 
 /*
     Contains all spotify api functionality
@@ -24,14 +26,28 @@ class SpotifyApi {
     var firstToken = true;
 
     // Playlist variables
-    var usersPlaylists = {};
-    var totalPages = 0;
+    public var usersPlaylists = {};
+    var totalPlaylistsPages = 0;
     var totalPlaylistCount = 0;
     var gotAllPlaylists = true; // True when latest call to playlists api has finished all pages
 
+    // Tracks in chosen playlist variables
+    var gotAllTracks = false;
+    var totalTrackCount = 0;
+    var totalTrackPages = 0;
+    public var selectedPlaylistTracks = {};
+    var selectedPlaylistId = "";
+
+    // Audio feature variables
+    var audioFeatureRequests = 0;
+    var audioFeatureURLs = {};
+    var totalAudioFeatureRequests = 0;
+    var delayedAudioFeatureTimer = new Timer.Timer();
+
+
     // Track progress
-    var currentTrackProgress = 0;
-    var trackPlaying = false;
+    public var currentTrackProgress = 0;
+    public var trackPlaying = false;
 
     var isDebug = true;
 
@@ -65,20 +81,20 @@ class SpotifyApi {
     /*
         Gets all of the users playlists and stores them into a list
     */
-    function getUsersPlaylists() {
+    function getUsersPlaylists() as Void {
         var url = $.BASE_URL + "/me/playlists";  
 
         // If non recursive call, reset variables
         if (gotAllPlaylists == true) {
             gotAllPlaylists = false;
             totalPlaylistCount = 0;
-            totalPages = 0;
+            totalPlaylistsPages = 0;
             usersPlaylists = {};
         }     
 
         var params = {                                              
             "limit" => $.PLAYLIST_LIMIT,
-            "offset" => totalPages
+            "offset" => totalPlaylistsPages * $.PLAYLIST_LIMIT
         };
 
         var options = {                                             
@@ -95,27 +111,24 @@ class SpotifyApi {
     /*
         Given a name of a playlist, find it amongst the users playlists.
     */
-    function findPlaylist(name as String) as Dictionary? {
-        if (usersPlaylists == {}) {return null;}
-
+    function selectPlaylist(name as String) {
         // Loop through each page until the end of all playlists for the given name
         var currentTotal = 0;
-        for (var page = 0; page <= totalPages; page++) {
+        for (var page = 0; page <= totalPlaylistsPages; page++) {
             for (var playlist = 0; (playlist < $.PLAYLIST_LIMIT) && (currentTotal < totalPlaylistCount); playlist++) {
                 
                 // Check against name
                 var playlistName = usersPlaylists["page" + page][playlist]["name"];
                 // System.println(name.find(playlistName));
                 if (name.find(playlistName) == 0) {
-                    return usersPlaylists["page" + page][playlist];
+                    selectedPlaylistId = usersPlaylists["page" + page][playlist]["id"];
                 }
 
                 currentTotal++;
             }
         }
 
-        // None with given name
-        return null;
+        getPlaylistsTracks();
     }
 
     /*
@@ -127,12 +140,12 @@ class SpotifyApi {
         if (responseCode == 200) {
 
             // Add an entry to the dictionary with key pageN with a list of the current playlist items
-            usersPlaylists["page" + totalPages] = data["items"];
-            totalPlaylistCount += data["total"];
+            usersPlaylists["page" + totalPlaylistsPages] = data["items"];
+            totalPlaylistCount = data["total"];
 
             // If there is more pages over the 50 playlist limit, call api again and increase page num
             if (data["next"] != null) {
-                totalPages += 1;
+                totalPlaylistsPages += 1;
                 getUsersPlaylists();
             }
 
@@ -140,11 +153,11 @@ class SpotifyApi {
             if (data["next"] == null) {
                 gotAllPlaylists = true;
                 System.println("Got all playlists! " + usersPlaylists);
-                System.println("Found playlist: " + findPlaylist("Pietro's 21"));
             }
 
         } else if (responseCode == 401) { // Refresh if bad token code
-            System.print("Bad Token Provided -> "); 
+            System.print("Bad Token Provided"); 
+            System.println("Error: " + data["error"]);
             refreshTokenRequest(); 
         } else if (responseCode == 400) {
             System.println("Error: " + data["error"]);
@@ -156,7 +169,7 @@ class SpotifyApi {
     /*
         Gets progress of current track playing
     */
-    function getCurrentTrackProgress() {
+    function getCurrentTrackProgress() as Void{
         var url = $.BASE_URL + "/me/player/currently-playing";
 
         var params = {};
@@ -187,19 +200,154 @@ class SpotifyApi {
             trackPlaying = data["is_playing"];
             System.println("Current Track Progress: " + currentTrackProgress * 100.0 + "% is playing: " + trackPlaying);
         } else {
-            System.println("Unhandled response in currentTrackResponse: " + responseCode + " " + data["error"]);
+            System.println("Unhandled response in currentTrackResponse: " + responseCode);
         }
     }
 
     /*
         TODO: Returns the tracks in given playlist
     */
-    function getPlaylistsTracks(playlist) {}
+    function getPlaylistsTracks() as Void {
+        var url = $.BASE_URL + "/playlists/" +  + "/tracks";  
+
+        // If non recursive call, reset variables
+        if (gotAllTracks == true) {
+            gotAllTracks = false;
+            totalTrackCount = 0;
+            totalTrackPages = 0;
+            selectedPlaylistTracks = {};
+        }     
+
+        var params = {       
+            "fields" => "total,next,items(track(name,id))",                                       
+            "limit" => $.TRACK_LIMIT,
+            "offset" => totalTrackPages * $.TRACK_LIMIT
+        };
+
+        var options = {                                             
+            :method => Communications.HTTP_REQUEST_METHOD_GET,      
+            :headers => {
+                "Authorization" => "Bearer " + accesstoken,
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
+            }
+        };
+
+        Communications.makeWebRequest(url, params, options, method(:onPlaylistTracksResponse));
+    }
+
+    /*
+        Collates all tracks from a given playlist id into one dictionary 
+    */
+    function onPlaylistTracksResponse(responseCode as Number, data as Dictionary?) as Void {
+        if (responseCode == 200) {
+
+            // Add an entry to the dictionary for the track 
+            for (var i = 0; i < data["items"].size(); i++) {
+                selectedPlaylistTracks["track" + totalTrackCount] = data["items"][i]["track"];
+                totalTrackCount += 1;
+            }
+
+            // If there is more pages over the 50 track limit, call api again and increase page num
+            if (data["next"] != null) {
+                totalTrackPages += 1;
+                getPlaylistsTracks();
+            } else { // == null
+                gotAllTracks = true;
+                System.println("Got all tracks from playlist " + selectedPlaylistId);
+                System.println(selectedPlaylistTracks);
+                getTrackAudioFeatures();
+            }
+
+        } else if (responseCode == 401) { // Refresh if bad token code
+            System.print("Bad Token Provided"); 
+            System.println("Error: " + data["error"]);
+            refreshTokenRequest(); 
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else {
+            System.println("Unhandled response code: " + responseCode);
+        }
+    }
 
     /*
         TODO: Returns the audio features of a track
     */
-    function getTrackAudioFeatures(playlist) {}
+    function getTrackAudioFeatures() {
+        audioFeatureURLs = {};
+        audioFeatureRequests = 0;
+
+        // Only 100 songs can be analysed at one time, generate audioFeatureURLs with 100 ids max in them
+        var urlCount = 0;
+        var getUrl = "";  
+        for (var i = 1; i < totalTrackCount; i++) {
+            if (i % $.AUDIO_FEATURE_LIM == 0) { // Up to 100th song of this batch
+                getUrl += selectedPlaylistTracks["track" + (i - 1)]["id"]; // Add last id without comma after
+                audioFeatureURLs["url" + urlCount] = getUrl;
+                urlCount += 1;
+                getUrl = "";  
+            } else {
+                getUrl += selectedPlaylistTracks["track" + (i - 1)]["id"] + ",";
+            }
+        }
+        // Add final song and end the current url
+        getUrl += selectedPlaylistTracks["track" + (totalTrackCount - 1)]["id"]; // Add last id without comma after
+        audioFeatureURLs["url" + urlCount] = getUrl;
+        urlCount += 1;
+
+        // Start loop to call requests at a delay between
+        totalAudioFeatureRequests = urlCount;
+        delayedAudioFeatureTimer.start(method(:delayedAudioRequest), 2000, true);
+    }
+
+    // Make web request to get audio features in a callback so that it can be delayed using a timer
+    function delayedAudioRequest() {
+        if (audioFeatureRequests == totalAudioFeatureRequests) {
+            System.println("finished audio feature requests");
+            delayedAudioFeatureTimer.stop();
+            System.println(selectedPlaylistTracks);
+        } else {
+            var url = $.BASE_URL + "/audio-features";
+            var params = {
+                "ids" => audioFeatureURLs["url" + audioFeatureRequests]
+            };
+
+            var options = {                                             
+                :method => Communications.HTTP_REQUEST_METHOD_GET,      
+                :headers => {
+                    "Authorization" => "Bearer " + accesstoken,
+                    "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
+                }
+            };
+            Communications.makeWebRequest(url, params, options, method(:onGetAudioFeaturesResponse));
+        }
+    }
+
+    function onGetAudioFeaturesResponse(responseCode as Number, data as Dictionary?) as Void {
+        if (responseCode == 200) {
+            // Use the class variable to figure out what songs this request was for
+            var start = audioFeatureRequests * $.AUDIO_FEATURE_LIM;
+
+            System.println("Request: " + audioFeatureRequests + " Size: " + data["audio_features"].size());
+            System.println(data["audio_features"]);
+
+            // Add the audio features to the track variable in the dictionary
+            for (var i = 0; i < data["audio_features"].size(); i++) {
+                selectedPlaylistTracks["track" + (i + start)]["audio_features"] = data["audio_features"][i];
+            }
+
+        } else if (responseCode == 401) { // Refresh if bad token code
+            System.print("Bad Token Provided"); 
+            System.println("Error: " + data["error"]);
+            refreshTokenRequest(); 
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else {
+            System.println("Unhandled response code: " + responseCode);
+        }
+
+        // Increment amount of times this has been called
+        audioFeatureRequests += 1;
+    }
 
     /*
         On receiving a response back from a POST command, interpret the response code
@@ -208,7 +356,8 @@ class SpotifyApi {
     function onPOSTReceiveResponse(responseCode as Number, data as Dictionary?) as Void {
         System.println("Post received -> ");
         if (responseCode == 401) { // Refresh if bad token code
-            System.println("Bad Token Provided -> ");
+            System.println("Bad Token Provided");
+            System.println("Error: " + data["error"]);
             refreshTokenRequest();
         } else if (responseCode == 400) {
             System.println("Error: " + data["error"]);
@@ -228,7 +377,6 @@ class SpotifyApi {
         } else {
             tokenExpirationSec -= 1;
         }
-        System.println(tokenExpirationSec);
     }
 
     /*
