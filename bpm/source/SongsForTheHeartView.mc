@@ -3,6 +3,7 @@ import Toybox.WatchUi;
 
 class SongsForTheHeartView extends WatchUi.View {
     var s;
+    var watchdata = new WatchSensorData();
 
     function initialize(spotify) {
         s = spotify;
@@ -26,8 +27,10 @@ class SongsForTheHeartView extends WatchUi.View {
 
         // Call the parent onUpdate function to redraw the layout
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(dc.getWidth() / 2, 0, Graphics.FONT_LARGE, s.authcode, Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_LARGE, s.accesstoken, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, 0, Graphics.FONT_LARGE, watchdata.currentBPM, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, Graphics.FONT_LARGE, watchdata.currCadence, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight()/4, Graphics.FONT_LARGE, watchdata.currSpeed, Graphics.TEXT_JUSTIFY_CENTER);
+
     }
 
     // Called when this View is removed from the screen. Save the
