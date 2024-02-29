@@ -10,7 +10,6 @@ import Toybox.Timer;
 class SongsForTheHeartApp extends Application.AppBase {
     var spotify = new SpotifyApi();
     // var view = new SongsForTheHeartView(spotify);
-    var heartRateHandler = new HeartRateHandler();
 
     function initialize() {
         AppBase.initialize();
