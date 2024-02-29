@@ -9,7 +9,7 @@ import Toybox.Timer;
 
 class SongsForTheHeartApp extends Application.AppBase {
     var spotify = new SpotifyApi();
-    var view = new SongsForTheHeartView(spotify);
+    // var view = new SongsForTheHeartView(spotify);
     var heartRateHandler = new HeartRateHandler();
 
     function initialize() {
@@ -28,6 +28,8 @@ class SongsForTheHeartApp extends Application.AppBase {
 
         // Test functionality
         // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
+        // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
+        // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
         // spotify.getUsersPlaylists();
         // spotify.selectPlaylist("Pietro's 21");
         // spotify.getCurrentTrackProgress();
@@ -40,7 +42,7 @@ class SongsForTheHeartApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ view, new SongsForTheHeartDelegate() ] as Array<Views or InputDelegates>;
+        return [ new SongsForTheHeartMainView(), new SongsForTheHeartMainDelegate() ] as Array<Views or InputDelegates>;
     }
 
 }
