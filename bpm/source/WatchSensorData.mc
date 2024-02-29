@@ -3,11 +3,13 @@ import Toybox.Sensor;
 /*
     Collects and stores heart rate
 */
-class HeartRateHandler {
+class WatchSensorData {
     public var currentBPM;
+    public var currCadence;
+    public var currSpeed;
 
     function initialize() {
-        Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE] );
+        Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE] );          // * For remote sensors, all sensors used should already be enabled 
         Sensor.enableSensorEvents( method( :onSensor ) );
     }
 
@@ -17,6 +19,8 @@ class HeartRateHandler {
     */
     function onSensor(sensorInfo as Sensor.Info) as Void {
         currentBPM = sensorInfo.heartRate;
+        currCadence = sensorInfo.cadence;
+        currSpeed = sensorInfo.speed;       // in m/s
         // System.println(currentBPM);
 
         WatchUi.requestUpdate();
