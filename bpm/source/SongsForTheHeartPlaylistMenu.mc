@@ -3,17 +3,20 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 class SongsForTheHeartPlaylistMenuDelegate extends WatchUi.Menu2InputDelegate {
+    var spotifyApi as SpotifyApi;
 
     //! Constructor
-    public function initialize() {
+    public function initialize(spotify as SpotifyApi) {
+        spotifyApi = spotify;
         Menu2InputDelegate.initialize();
     }
 
     //! Handle an item being selected
     //! @param item The selected menu item
     public function onSelect(item as MenuItem) as Void {
-        var id = item.getId() as String;
+        var name = item.getId() as String;
         
+        spotifyApi.selectPlaylist(name);
     }
 
     //! Handle the back key being pressed

@@ -27,8 +27,8 @@ class SpotifyApi {
 
     // Playlist variables
     public var usersPlaylists = {};
-    var totalPlaylistsPages = 0;
-    var totalPlaylistCount = 0;
+    public var totalPlaylistsPages = 0;
+    public var totalPlaylistCount = 0;
     var gotAllPlaylists = true; // True when latest call to playlists api has finished all pages
 
     // Tracks in chosen playlist variables
@@ -36,7 +36,7 @@ class SpotifyApi {
     var totalTrackCount = 0;
     var totalTrackPages = 0;
     public var selectedPlaylistTracks = {};
-    var selectedPlaylistId = "";
+    var selectedPlaylistName = "";
 
     // Audio feature variables
     var audioFeatureRequests = 0;
@@ -112,23 +112,11 @@ class SpotifyApi {
         Given a name of a playlist, find it amongst the users playlists.
     */
     function selectPlaylist(name as String) {
-        // Loop through each page until the end of all playlists for the given name
-        var currentTotal = 0;
-        for (var page = 0; page <= totalPlaylistsPages; page++) {
-            for (var playlist = 0; (playlist < $.PLAYLIST_LIMIT) && (currentTotal < totalPlaylistCount); playlist++) {
-                
-                // Check against name
-                var playlistName = usersPlaylists["page" + page][playlist]["name"];
-                // System.println(name.find(playlistName));
-                if (name.find(playlistName) == 0) {
-                    selectedPlaylistId = usersPlaylists["page" + page][playlist]["id"];
-                }
-
-                currentTotal++;
-            }
+        var selectedPlaylist = usersPlaylists[name];
+        if (selectedPlaylist != null ) {
+            selectedPlaylistName = name;
+            getPlaylistsTracks();
         }
-
-        getPlaylistsTracks();
     }
 
     /*
@@ -152,7 +140,8 @@ class SpotifyApi {
             // Flag and print when finished
             if (data["next"] == null) {
                 gotAllPlaylists = true;
-                System.println("Got all playlists! " + usersPlaylists);
+                reformatUsersPlaylists();
+                System.println("Got all playlists! " + usersPlaylists.keys());
             }
 
         } else if (responseCode == 401) { // Refresh if bad token code
@@ -164,6 +153,26 @@ class SpotifyApi {
         } else {
             System.println("Unhandled response code: " + responseCode);
         }
+    }
+
+    /*
+    
+    */
+    function reformatUsersPlaylists() as Void {
+        var newdict = {};
+        var currentTotal = 0;
+        for (var page = 0; page <= totalPlaylistsPages; page++) {
+            for (var playlist = 0; (playlist < $.PLAYLIST_LIMIT) && (currentTotal < totalPlaylistCount); playlist++) {
+                
+                // Check against name
+                var playlistName = usersPlaylists["page" + page][playlist]["name"];
+                newdict[playlistName] = usersPlaylists["page" + page][playlist];
+
+                currentTotal++;
+            }
+        }
+
+        usersPlaylists = newdict;
     }
 
     /*
@@ -208,7 +217,7 @@ class SpotifyApi {
         TODO: Returns the tracks in given playlist
     */
     function getPlaylistsTracks() as Void {
-        var url = $.BASE_URL + "/playlists/" +  + "/tracks";  
+        var url = $.BASE_URL + "/playlists/" + usersPlaylists[selectedPlaylistName]["id"] + "/tracks";  
 
         // If non recursive call, reset variables
         if (gotAllTracks == true) {
@@ -253,8 +262,7 @@ class SpotifyApi {
                 getPlaylistsTracks();
             } else { // == null
                 gotAllTracks = true;
-                System.println("Got all tracks from playlist " + selectedPlaylistId);
-                System.println(selectedPlaylistTracks);
+                System.println("Got all tracks from playlist " + selectedPlaylistName + " " + selectedPlaylistTracks.keys().size() + " tracks");
                 getTrackAudioFeatures();
             }
 
@@ -270,13 +278,21 @@ class SpotifyApi {
     }
 
     /*
-        TODO: Returns the audio features of a track
+        Returns the audio features of a track
     */
-    function getTrackAudioFeatures() {
+    function getTrackAudioFeatures() as Void {
+        // No tracks in playlist, do not analyse
+        if (selectedPlaylistTracks.size() == 0) {
+            System.println("No tracks to analyse");
+            return;
+        }
+
         audioFeatureURLs = {};
         audioFeatureRequests = 0;
+        System.println("Starting analysis on all tracks of selected playlist");
 
-        // Only 100 songs can be analysed at one time, generate audioFeatureURLs with 100 ids max in them
+        // Only 100 songs can be analysed at one time, generate audioFeatureURLs with a specific amount of songs in them
+        // The lower audio feature lim is, the faster the web request is and wont fail
         var urlCount = 0;
         var getUrl = "";  
         for (var i = 1; i < totalTrackCount; i++) {
@@ -289,22 +305,23 @@ class SpotifyApi {
                 getUrl += selectedPlaylistTracks["track" + (i - 1)]["id"] + ",";
             }
         }
-        // Add final song and end the current url
+        // Add final song to url request and end the current url
         getUrl += selectedPlaylistTracks["track" + (totalTrackCount - 1)]["id"]; // Add last id without comma after
         audioFeatureURLs["url" + urlCount] = getUrl;
         urlCount += 1;
 
-        // Start loop to call requests at a delay between
+        // Start loop to call requests at a delay between to allow the previous call to finish first
         totalAudioFeatureRequests = urlCount;
         delayedAudioFeatureTimer.start(method(:delayedAudioRequest), 2000, true);
     }
 
-    // Make web request to get audio features in a callback so that it can be delayed using a timer
+    /*
+        Make web request to get audio features in a callback so that it can be delayed using a timer
+    */
     function delayedAudioRequest() {
         if (audioFeatureRequests == totalAudioFeatureRequests) {
-            System.println("finished audio feature requests");
+            System.println("Finished all audio feature requests: " + selectedPlaylistTracks.keys().size());
             delayedAudioFeatureTimer.stop();
-            System.println(selectedPlaylistTracks);
         } else {
             var url = $.BASE_URL + "/audio-features";
             var params = {
@@ -322,15 +339,18 @@ class SpotifyApi {
         }
     }
 
+    /*
+        Adds the audio features received to the corresponding tracks in the playlistTracks dictionary
+    */
     function onGetAudioFeaturesResponse(responseCode as Number, data as Dictionary?) as Void {
         if (responseCode == 200) {
-            // Use the class variable to figure out what songs this request was for
+            // What track we are up to when this callback is received
             var start = audioFeatureRequests * $.AUDIO_FEATURE_LIM;
 
-            System.println("Request: " + audioFeatureRequests + " Size: " + data["audio_features"].size());
-            System.println(data["audio_features"]);
+            // System.println("Request: " + audioFeatureRequests + " Size: " + data["audio_features"].size());
+            // System.println(data["audio_features"]);
 
-            // Add the audio features to the track variable in the dictionary
+            // Add the audio features to the track variable in the dictionary so all the info is together
             for (var i = 0; i < data["audio_features"].size(); i++) {
                 selectedPlaylistTracks["track" + (i + start)]["audio_features"] = data["audio_features"][i];
             }

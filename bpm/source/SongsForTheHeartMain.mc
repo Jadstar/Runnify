@@ -3,9 +3,10 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
-
+    var spotifyApi;
     //! Constructor
-    public function initialize() {
+    public function initialize(spotify as SpotifyApi) {
+        spotifyApi = spotify;
         BehaviorDelegate.initialize();
     }
 
@@ -15,9 +16,15 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
         // Generate a new Menu with a drawable Title
         var menu = new WatchUi.Menu2({:title=>new $.DrawableMenuTitle()});
 
-        // Add menu items for demonstrating toggles, checkbox and icon menu items
-        menu.addItem(new WatchUi.MenuItem("Bazinga", "baz", "inga", null));
-        WatchUi.pushView(menu, new $.SongsForTheHeartPlaylistMenuDelegate(), WatchUi.SLIDE_UP);
+        // Add menu item for each playlist in the playlist dictionary
+        var playlistNames = spotifyApi.usersPlaylists.keys();
+        for (var playlistNum = 0; playlistNum < playlistNames.size(); playlistNum++) {
+                // Check against name
+                var playlistName = playlistNames[playlistNum];
+                menu.addItem(new WatchUi.MenuItem(playlistName, null, playlistName, null));
+        }
+
+        WatchUi.pushView(menu, new $.SongsForTheHeartPlaylistMenuDelegate(spotifyApi), WatchUi.SLIDE_UP);
         return true;
     }
 }
