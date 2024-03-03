@@ -41,7 +41,7 @@ class SongsForTheHeartApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new SongsForTheHeartMainView(), new SongsForTheHeartMainDelegate(spotify) ] as Array<Views or InputDelegates>;
+        return [ new SongsForTheHeartMainView(spotify), new SongsForTheHeartMainDelegate(spotify) ] as Array<Views or InputDelegates>;
     }
 
 }

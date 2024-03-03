@@ -30,9 +30,13 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
 }
 
 class SongsForTheHeartMainView extends WatchUi.View {
+    var spotifyApi;
+    var currentTrackTimer = new Timer.Timer();
+    var currentTrackName = "Song Title";
 
     //! Constructor
-    public function initialize() {
+    public function initialize(spotify) {
+        spotifyApi = spotify;
         View.initialize();
     }
 
@@ -46,18 +50,38 @@ class SongsForTheHeartMainView extends WatchUi.View {
     //! the state of this View and prepare it to be shown. This includes
     //! loading resources into memory.
     public function onShow() as Void {
+        currentTrackTimer.start(method(:getCurrentTrackProgressRequest), 5000, true);
+
+    }
+
+    function getCurrentTrackProgressRequest() as Void {
+        spotifyApi.getCurrentTrackProgress();
+        WatchUi.requestUpdate();
     }
 
     //! Update the view
     //! @param dc Device Context
     public function onUpdate(dc as Dc) as Void {
+        // Song has changed
+        if (!currentTrackName.equals(spotifyApi.currentTrackName)) {
+            currentTrackName = spotifyApi.currentTrackName;
+            spotifyApi.downloadTrackImage();
+        }
+
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 + 50, Graphics.FONT_TINY, currentTrackName, Graphics.TEXT_JUSTIFY_CENTER);
+        if (spotifyApi.currentTrackImage != null) {
+            dc.drawBitmap(dc.getWidth() / 2 - 50, dc.getHeight() / 2 - 50, spotifyApi.currentTrackImage);
+        }
     }
 
     //! Called when this View is removed from the screen. Save the
     //! state of this View here. This includes freeing resources from
     //! memory.
     public function onHide() as Void {
+        currentTrackTimer.stop();
     }
 }

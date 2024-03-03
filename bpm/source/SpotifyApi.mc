@@ -1,5 +1,7 @@
 import Toybox.Lang;
 import Toybox.Timer;
+import Toybox.Graphics;
+import Toybox.WatchUi;
 
 const BASE_URL = "https://api.spotify.com/v1";
 const CLIENT_ID = "03e00d7168c84260a6175f4668bc7bd6";
@@ -48,13 +50,66 @@ class SpotifyApi {
     // Track progress
     public var currentTrackProgress = 0;
     public var trackPlaying = false;
+    public var currentTrackURL = "";
+    public var currentTrackName = "";
+    public var currentTrackImage = null;
 
     var isDebug = true;
 
+    /*
+        Constructor
+    */
     function initialize() { 
         accesstoken = Application.Storage.getValue("accesstoken");
         refreshtoken = Application.Storage.getValue("refreshtoken");
     }
+
+    /*
+        Downloads an image
+    */
+    function downloadTrackImage() {
+        System.println("Downloading current track image from " + currentTrackURL);
+
+        var url = currentTrackURL;           // set the image url
+        var parameters = null;                                  // set the parameters
+        var options = {                                         // set the options
+            :palette => [   
+                Graphics.COLOR_ORANGE,                     // set the palette
+                Graphics.COLOR_DK_BLUE,
+                Graphics.COLOR_BLUE,
+                Graphics.COLOR_BLACK,
+                Graphics.COLOR_YELLOW,
+                Graphics.COLOR_WHITE,
+                Graphics.COLOR_LT_GRAY,
+                Graphics.COLOR_DK_GRAY,
+                Graphics.COLOR_RED,
+                Graphics.COLOR_DK_RED,
+                Graphics.COLOR_GREEN,
+                Graphics.COLOR_DK_GREEN,
+                Graphics.COLOR_PURPLE,
+                Graphics.COLOR_PINK
+            ],
+            :maxWidth => 100,                                   // set the max width
+            :maxHeight => 100,                                  // set the max height
+            :dithering => Communications.IMAGE_DITHERING_NONE   // set the dithering
+        };
+
+        // Make the image request
+        Communications.makeImageRequest(url, parameters, options, method(:imageResponseCallback));
+    }
+    
+    /*
+        saves to local variable
+    */
+    function imageResponseCallback(responseCode as Lang.Number, data as WatchUi.BitmapResource) as Void{
+        if (responseCode == 200) {
+            currentTrackImage = data;
+        } else {
+            System.println("Image download failed: " + data);
+            currentTrackImage = null;
+        }
+    }
+
 
     /*
         Given a spotify track uri make a request to queue that song
@@ -156,7 +211,7 @@ class SpotifyApi {
     }
 
     /*
-    
+        Reformats the playlists dictionary to keep only the useful info and stored by their names as the key
     */
     function reformatUsersPlaylists() as Void {
         var newdict = {};
@@ -166,7 +221,12 @@ class SpotifyApi {
                 
                 // Check against name
                 var playlistName = usersPlaylists["page" + page][playlist]["name"];
-                newdict[playlistName] = usersPlaylists["page" + page][playlist];
+                var playlistDict = usersPlaylists["page" + page][playlist];
+                var trimmedDict = {
+                    "id" => playlistDict["id"],
+                    "name" => playlistName
+                };
+                newdict[playlistName] = trimmedDict;
 
                 currentTotal++;
             }
@@ -204,10 +264,19 @@ class SpotifyApi {
             refreshTokenRequest();
         } else if (responseCode == 400) {
             System.println("Error: " + data["error"]);
-        } else if (responseCode == 200 || responseCode == 204) {
-            currentTrackProgress = data["progress_ms"].toDouble() / data["item"]["duration_ms"].toDouble();
+        } else if (responseCode == 200) {
+
             trackPlaying = data["is_playing"];
-            System.println("Current Track Progress: " + currentTrackProgress * 100.0 + "% is playing: " + trackPlaying);
+
+            var progress = data["progress_ms"];
+            var track = data["item"];
+
+            if (progress != null && track != null) {
+                currentTrackProgress = progress.toDouble() / track["duration_ms"].toDouble();
+                currentTrackName = track["name"];
+                currentTrackURL = track["album"]["images"][0]["url"];
+                System.println("Current Track " + currentTrackName + " Progress: " + currentTrackProgress * 100.0 + "% is playing: " + trackPlaying);
+            }
         } else {
             System.println("Unhandled response in currentTrackResponse: " + responseCode);
         }
@@ -352,7 +421,14 @@ class SpotifyApi {
 
             // Add the audio features to the track variable in the dictionary so all the info is together
             for (var i = 0; i < data["audio_features"].size(); i++) {
-                selectedPlaylistTracks["track" + (i + start)]["audio_features"] = data["audio_features"][i];
+                var audiofeature = data["audio_features"][i];
+                selectedPlaylistTracks["track" + (i + start)]["audio_features"] =  {
+                    "tempo" => audiofeature["tempo"],
+                    "danceability" => audiofeature["danceability"],
+                    "energy" => audiofeature["energy"],
+                    "liveness" => audiofeature["liveness"],
+                    "loudness" => audiofeature["loudness"]
+                };
             }
 
         } else if (responseCode == 401) { // Refresh if bad token code
