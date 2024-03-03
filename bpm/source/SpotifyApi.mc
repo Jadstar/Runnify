@@ -104,6 +104,7 @@ class SpotifyApi {
     function imageResponseCallback(responseCode as Lang.Number, data as WatchUi.BitmapResource) as Void{
         if (responseCode == 200) {
             currentTrackImage = data;
+            WatchUi.requestUpdate();
         } else {
             System.println("Image download failed: " + data);
             currentTrackImage = null;

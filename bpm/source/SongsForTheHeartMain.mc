@@ -33,6 +33,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
     var spotifyApi;
     var currentTrackTimer = new Timer.Timer();
     var currentTrackName = "Song Title";
+    var heartIcon = WatchUi.loadResource($.Rez.Drawables.Heart);
 
     //! Constructor
     public function initialize(spotify) {
@@ -53,29 +54,41 @@ class SongsForTheHeartMainView extends WatchUi.View {
         currentTrackTimer.start(method(:getCurrentTrackProgressRequest), 5000, true);
 
     }
-
+    
     function getCurrentTrackProgressRequest() as Void {
         spotifyApi.getCurrentTrackProgress();
-        WatchUi.requestUpdate();
+
+        // If song has changed get image
+        if (!currentTrackName.equals(spotifyApi.currentTrackName)) {
+            currentTrackName = spotifyApi.currentTrackName;
+            spotifyApi.downloadTrackImage();
+        }
     }
 
     //! Update the view
     //! @param dc Device Context
     public function onUpdate(dc as Dc) as Void {
-        // Song has changed
-        if (!currentTrackName.equals(spotifyApi.currentTrackName)) {
-            currentTrackName = spotifyApi.currentTrackName;
-            spotifyApi.downloadTrackImage();
-        }
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
 
+        // Text above
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 + 50, Graphics.FONT_TINY, currentTrackName, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 - 90, Graphics.FONT_TINY, "Slowing", Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Heart
+        dc.drawBitmap(dc.getWidth() / 2 - 100, dc.getHeight() / 2 - 50, heartIcon);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(dc.getWidth() / 2 - 50, dc.getHeight() / 2 - 20, Graphics.FONT_TINY, "120", Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Image
         if (spotifyApi.currentTrackImage != null) {
-            dc.drawBitmap(dc.getWidth() / 2 - 50, dc.getHeight() / 2 - 50, spotifyApi.currentTrackImage);
+            dc.drawBitmap(dc.getWidth() / 2, dc.getHeight() / 2 - 50, spotifyApi.currentTrackImage);
         }
+
+        // Text below
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 + 65, Graphics.FONT_TINY, currentTrackName, Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     //! Called when this View is removed from the screen. Save the
