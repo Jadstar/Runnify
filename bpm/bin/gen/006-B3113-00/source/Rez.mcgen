@@ -7,6 +7,7 @@ using Toybox.Graphics as Gfx;
 module Rez {
     module Drawables {
         (:initialized) var Heart as Symbol;
+        (:initialized) var Heart2 as Symbol;
         (:initialized) var LauncherIcon as Symbol;
     } // Drawables
 

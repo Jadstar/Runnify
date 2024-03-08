@@ -41,7 +41,7 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
 class SongsForTheHeartMainView extends WatchUi.View {
     var spotifyApi as SpotifyApi;
     var currentTrackTimer = new Timer.Timer();
-    var heartIcon = WatchUi.loadResource($.Rez.Drawables.Heart);
+    var heartIcon = WatchUi.loadResource($.Rez.Drawables.Heart2);
 
     var playlistName = "Waiting for Data";
     var sensorData as WatchSensorData;
@@ -93,7 +93,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
         View.onUpdate(dc);
 
         // Status Text
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
         dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 - 130 + offset, Graphics.FONT_SMALL, runningStatusText, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Playlist Text
@@ -102,7 +102,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
 
         // Heart
         dc.drawBitmap(dc.getWidth() / 2 - 100, dc.getHeight() / 2 - 50 + offset, heartIcon);
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(dc.getWidth() / 2 - 50, dc.getHeight() / 2 - 20 + offset, Graphics.FONT_SMALL, sensorData.currentBPM, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Image
