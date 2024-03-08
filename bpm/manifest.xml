@@ -14,9 +14,7 @@
             "Monkey C: Edit Products" - Lets you add or remove any product
         -->
         <iq:products>
-        
             <iq:product id="fr945"/>
-           
         </iq:products>
         <!--
             Use "Monkey C: Edit Permissions" from the Visual Studio Code command

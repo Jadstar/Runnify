@@ -17,6 +17,7 @@ class SongsForTheHeartPlaylistMenuDelegate extends WatchUi.Menu2InputDelegate {
         var name = item.getId() as String;
         
         spotifyApi.selectPlaylist(name);
+        onBack();
     }
 
     //! Handle the back key being pressed
@@ -36,20 +37,13 @@ class DrawableMenuTitle extends WatchUi.Drawable {
     //! @param dc Device Context
     public function draw(dc as Dc) as Void {
         var spacing = 2;
-        var appIcon = WatchUi.loadResource($.Rez.Drawables.LauncherIcon) as BitmapResource;
-        var bitmapWidth = appIcon.getWidth();
-        var labelWidth = dc.getTextWidthInPixels("Cool", Graphics.FONT_MEDIUM);
-
-        var bitmapX = (dc.getWidth() - (bitmapWidth + spacing + labelWidth)) / 2;
-        var bitmapY = (dc.getHeight() - appIcon.getHeight()) / 2;
-        var labelX = bitmapX + bitmapWidth + spacing;
-        var labelY = dc.getHeight() / 2;
+        var labelWidth = dc.getTextWidthInPixels("Your Playlists", Graphics.FONT_MEDIUM);
 
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
+        // dc.fillRectangle(-100, -100, 1000, 200);
 
-        dc.drawBitmap(bitmapX, bitmapY, appIcon);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(labelX, labelY, Graphics.FONT_MEDIUM, "Cool", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.drawText(0, 25, Graphics.FONT_MEDIUM, "Your Playlists", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 }

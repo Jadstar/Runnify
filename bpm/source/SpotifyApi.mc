@@ -13,7 +13,7 @@ const SCOPE = "streaming user-modify-playback-state user-read-private user-read-
 
 const PLAYLIST_LIMIT = 50;
 const TRACK_LIMIT = 50;
-const AUDIO_FEATURE_LIM = 20;
+const AUDIO_FEATURE_LIM = 10;
 
 /*
     Contains all spotify api functionality
@@ -31,7 +31,7 @@ class SpotifyApi {
     public var usersPlaylists = {};
     public var totalPlaylistsPages = 0;
     public var totalPlaylistCount = 0;
-    var gotAllPlaylists = true; // True when latest call to playlists api has finished all pages
+    var gotAllPlaylists = false; // True when latest call to playlists api has finished all pages
 
     // Tracks in chosen playlist variables
     var gotAllTracks = false;
@@ -51,10 +51,10 @@ class SpotifyApi {
     public var currentTrackProgress = 0;
     public var trackPlaying = false;
     public var currentTrackURL = "";
-    public var currentTrackName = "";
+    public var currentTrackName = "No Active Device";
     public var currentTrackImage = null;
 
-    var isDebug = true;
+    var isDebug = false;
 
     /*
         Constructor
@@ -168,9 +168,9 @@ class SpotifyApi {
         Given a name of a playlist, find it amongst the users playlists.
     */
     function selectPlaylist(name as String) {
+        selectedPlaylistName = name;
         var selectedPlaylist = usersPlaylists[name];
         if (selectedPlaylist != null ) {
-            selectedPlaylistName = name;
             getPlaylistsTracks();
         }
     }
@@ -267,15 +267,22 @@ class SpotifyApi {
             System.println("Error: " + data["error"]);
         } else if (responseCode == 200) {
 
+            // Get track info
             trackPlaying = data["is_playing"];
-
             var progress = data["progress_ms"];
             var track = data["item"];
 
-            if (progress != null && track != null) {
+            if (progress != null && track != null) { // Sometimes returns as null
                 currentTrackProgress = progress.toDouble() / track["duration_ms"].toDouble();
-                currentTrackName = track["name"];
-                currentTrackURL = track["album"]["images"][0]["url"];
+                
+                // If song has changed get image
+                var newTrackName = track["name"];
+                if (!currentTrackName.equals(newTrackName)) {
+                    currentTrackName = newTrackName;
+                    // Get current track img url
+                    currentTrackURL = track["album"]["images"][0]["url"];
+                    downloadTrackImage();
+                }
                 System.println("Current Track " + currentTrackName + " Progress: " + currentTrackProgress * 100.0 + "% is playing: " + trackPlaying);
             }
         } else {
@@ -359,7 +366,6 @@ class SpotifyApi {
 
         audioFeatureURLs = {};
         audioFeatureRequests = 0;
-        System.println("Starting analysis on all tracks of selected playlist");
 
         // Only 100 songs can be analysed at one time, generate audioFeatureURLs with a specific amount of songs in them
         // The lower audio feature lim is, the faster the web request is and wont fail
@@ -382,7 +388,8 @@ class SpotifyApi {
 
         // Start loop to call requests at a delay between to allow the previous call to finish first
         totalAudioFeatureRequests = urlCount;
-        delayedAudioFeatureTimer.start(method(:delayedAudioRequest), 2000, true);
+        System.println("Starting analysis on all tracks of selected playlist");
+        delayedAudioFeatureTimer.start(method(:delayedAudioRequest), 1000, true);
     }
 
     /*
@@ -405,6 +412,8 @@ class SpotifyApi {
                     "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
                 }
             };
+
+            System.println("Start Audio Feature Request: " + audioFeatureRequests);
             Communications.makeWebRequest(url, params, options, method(:onGetAudioFeaturesResponse));
         }
     }
@@ -431,6 +440,8 @@ class SpotifyApi {
                     "loudness" => audiofeature["loudness"]
                 };
             }
+
+            System.println("Finish Audio Feature Request: " + audioFeatureRequests);
 
         } else if (responseCode == 401) { // Refresh if bad token code
             System.print("Bad Token Provided"); 
@@ -502,6 +513,9 @@ class SpotifyApi {
                 autoRefreshTimer.start(method(:checkTokenExpiration), 1000, true);
                 firstToken = false;
             }
+
+            // Call get playlists after successful token retrieval
+            getUsersPlaylists();
         } 
         else { // Failed, try authenticate again
             System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);

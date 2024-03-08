@@ -21,8 +21,5 @@ class WatchSensorData {
         currentBPM = sensorInfo.heartRate;
         currCadence = sensorInfo.cadence;
         currSpeed = sensorInfo.speed;       // in m/s
-        // System.println(currentBPM);
-
-        WatchUi.requestUpdate();
     }
 }
