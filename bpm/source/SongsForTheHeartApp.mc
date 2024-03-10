@@ -24,13 +24,6 @@ class SongsForTheHeartApp extends Application.AppBase {
         }
 
         var delayedTimer = new Timer.Timer();
-
-        // Test functionality
-        // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
-        // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
-        // spotify.addToQueue("spotify:track:3z8T28TrqcYuANI7MlBg93");
-        // spotify.selectPlaylist("Pietro's 21");
-        // spotify.getCurrentTrackProgress();
     }
 
     // onStop() is called when your application is exiting
