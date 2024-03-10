@@ -17,6 +17,7 @@ class SongsForTheHeartPlaylistMenuDelegate extends WatchUi.Menu2InputDelegate {
         var name = item.getId() as String;
         
         spotifyApi.selectPlaylist(name);
+        spotifyApi.startPlayback();
         onBack();
     }
 

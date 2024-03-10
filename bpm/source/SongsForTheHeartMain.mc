@@ -65,7 +65,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
     //! the state of this View and prepare it to be shown. This includes
     //! loading resources into memory.
     public function onShow() as Void {
-        currentTrackTimer.start(method(:updateMainScreen), 2500, true);
+        currentTrackTimer.start(method(:updateMainScreen), 10000, true);
         WatchUi.requestUpdate();
     }
     

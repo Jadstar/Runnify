@@ -13,7 +13,9 @@ const SCOPE = "streaming user-modify-playback-state user-read-private user-read-
 
 const PLAYLIST_LIMIT = 50;
 const TRACK_LIMIT = 50;
-const AUDIO_FEATURE_LIM = 10;
+const AUDIO_FEATURE_LIM = 50;
+
+const TOKEN_EXP_DT = 10;
 
 /*
     Contains all spotify api functionality
@@ -131,7 +133,7 @@ class SpotifyApi {
             }
         };
 
-        Communications.makeWebRequest(url, params, options, method(:onPOSTReceiveResponse));
+        Communications.makeWebRequest(url, params, options, method(:onQueueRequestResponse));
     }
 
     /*
@@ -397,7 +399,7 @@ class SpotifyApi {
     */
     function delayedAudioRequest() {
         if (audioFeatureRequests == totalAudioFeatureRequests) {
-            System.println("Finished all audio feature requests: " + selectedPlaylistTracks.keys().size());
+            System.println("Finished all audio feature songs: " + selectedPlaylistTracks.keys().size());
             delayedAudioFeatureTimer.stop();
         } else {
             var url = $.BASE_URL + "/audio-features";
@@ -449,6 +451,8 @@ class SpotifyApi {
             refreshTokenRequest(); 
         } else if (responseCode == 400) {
             System.println("Error: " + data["error"]);
+        } else if (responseCode == -402) {
+            System.println("Serialized response was too large in audio feature request");
         } else {
             System.println("Unhandled response code: " + responseCode);
         }
@@ -461,7 +465,7 @@ class SpotifyApi {
         On receiving a response back from a POST command, interpret the response code
         and refresh token if necessary
     */
-    function onPOSTReceiveResponse(responseCode as Number, data as Dictionary?) as Void {
+    function onQueueRequestResponse(responseCode as Number, data as Dictionary?) as Void {
         System.println("Post received -> ");
         if (responseCode == 401) { // Refresh if bad token code
             System.println("Bad Token Provided");
@@ -472,7 +476,7 @@ class SpotifyApi {
         } else if (responseCode == 200 || responseCode == 204) {
             System.println("Added to queue!");
         } else {
-            System.println("Unhandled response in onPOSTReceiveResponse: " + responseCode + " " + data["error"]);
+            System.println("Unhandled response in onQueueRequestResponse: " + responseCode + " " + data["error"]);
         }
     }
 
@@ -483,7 +487,7 @@ class SpotifyApi {
         if (tokenExpirationSec == 30) {
             refreshTokenRequest();
         } else {
-            tokenExpirationSec -= 1;
+            tokenExpirationSec -= $.TOKEN_EXP_DT;
         }
     }
 
@@ -510,7 +514,7 @@ class SpotifyApi {
 
             if (firstToken) {
                 System.println("Starting auto refresh timer");
-                autoRefreshTimer.start(method(:checkTokenExpiration), 1000, true);
+                autoRefreshTimer.start(method(:checkTokenExpiration), $.TOKEN_EXP_DT*1000, true);
                 firstToken = false;
             }
 
@@ -612,6 +616,43 @@ class SpotifyApi {
             Authentication.OAUTH_RESULT_TYPE_URL,               // Auth response type
             {"code" => $.OAUTH_CODE, "error" => $.OAUTH_ERROR}  // The spotify mappings for code and error
         );
+    }
+
+    /*
+        Starts playback with the selected playlist context
+    */
+    function startPlayback() {
+        var url = $.BASE_URL + "/me/player/play";                         
+
+        var params = {
+            "context_uri" => "spotify:playlist:" + usersPlaylists[selectedPlaylistName]["id"],
+            "offset" => {"position" => 0}
+        };
+
+        var options = {                                             
+            :method => Communications.HTTP_REQUEST_METHOD_PUT,      
+            :headers => {
+                "Authorization" => "Bearer " + accesstoken,
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_JSON,
+            }
+        };
+
+        System.println("Requesting start playback");
+        Communications.makeWebRequest(url, params, options, method(:onStartResponse));
+    }
+
+    function onStartResponse(responseCode as Number, data as Dictionary?) as Void {
+        if (responseCode == 401) { // Refresh if bad token code
+            System.println("Bad Token Provided");
+            System.println("Error: " + data["error"]);
+            refreshTokenRequest();
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else if (responseCode == 200 || responseCode == 204) {
+            System.println("Started Playback");
+        } else {
+            System.println("Unhandled response in onStartResponse: " + responseCode + " " + data["error"]);
+        }
     }
 
     /*
