@@ -5,7 +5,6 @@ import Toybox.WatchUi;
 
 const BASE_URL = "https://api.spotify.com/v1";
 const CLIENT_ID = "03e00d7168c84260a6175f4668bc7bd6";
-const CLIENT_SECRET = "0aa850a846844d46ab3d6c50591c1c2b";
 const OAUTH_CODE = "code";
 const OAUTH_ERROR = "error";
 const REDIRECT_URI = "connectiq://oauth";
@@ -28,6 +27,7 @@ class SpotifyApi {
     var autoRefreshTimer = new Timer.Timer();
     var tokenExpirationSec = 3600;
     var firstToken = true;
+    var codeVerifier = Cryptography.randomBytes($.VERIFIER_LENGTH); // Random bytes
 
     // Playlist variables
     public var usersPlaylists = {};
@@ -544,7 +544,6 @@ class SpotifyApi {
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
                 "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED,
-                "Authorization" => "Basic " + StringUtil.encodeBase64($.CLIENT_ID + ":" + $.CLIENT_SECRET)
             }
         };
 
@@ -560,14 +559,15 @@ class SpotifyApi {
         var params = {                                              
             "code" => authcode,
             "redirect_uri" => $.REDIRECT_URI,
-            "grant_type" => "authorization_code"
+            "grant_type" => "authorization_code",
+            "client_id" => $.CLIENT_ID,
+            "code_verifier" => codeVerifier
         };
 
         var options = {                                             
             :method => Communications.HTTP_REQUEST_METHOD_POST,      
             :headers => {
                 "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED,
-                "Authorization" => "Basic " + StringUtil.encodeBase64($.CLIENT_ID + ":" + $.CLIENT_SECRET)
             }
         };
 
@@ -593,11 +593,6 @@ class SpotifyApi {
         Make web request to spotify to receive an auth code. Notifies user's phone with a popup auth screen
     */
     function getOAuthToken() {
-        if (isDebug == true) {
-            authcode = "AQAO5qF3twaehmVXSMK8qjnp9IFDjifPuHQUhB1ZRxKPpSPVRnbs2GzrFp2pIfLkvq9PQ1VNKd4ONFwmHNzqowS29YeLtU1bhvNLh6RbkRAnoSPqu6ou-pYFJFZ8JHO4l3HNHjyM4LshxUCS-0wYJKZ1WYU_XQQEyc4WS3CgQ_19hAjxUCyOQsJrf-5bk6gjckMJheh11lom_mKTvrMCv6Fgm0ptzdLWGILMhh9PSG-wiosAoAxlRYAjzr_8dPotGjDXDCCOJv6fnqicZI2wo2ek1hpPgKMNmJPkFWl12JKrsQDIFqxma5AyzdearCq3-0ahOQ";
-            tokenRequest();
-            return;
-        }
 
         Authentication.registerForOAuthMessages(method(:onOAuthMessage));
 
@@ -606,7 +601,9 @@ class SpotifyApi {
             "response_type" => "code",
             "client_id" => $.CLIENT_ID,
             "scope" => $.SCOPE,
-            "redirect_uri" => $.REDIRECT_URI
+            "redirect_uri" => $.REDIRECT_URI,
+            "code_challenge_method" => "S256",
+            "code_challenge" => getCodeChallenge(codeVerifier)
         };
 
         Authentication.makeOAuthRequest(
