@@ -20,13 +20,11 @@ class SongsForTheHeartApp extends Application.AppBase {
         if (spotify.accesstoken == null || spotify.refreshtoken == null
             || spotify.accesstoken.equals("") || spotify.refreshtoken.equals("")
         ) {
-            System.println("First auth");
             spotify.getOAuthToken();
         } else {
-            spotify.refreshTokenRequest();
+            spotify.tokenRequest();
         }
 
-        var delayedTimer = new Timer.Timer();
     }
 
     // onStop() is called when your application is exiting

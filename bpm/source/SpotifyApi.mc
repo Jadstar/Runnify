@@ -56,7 +56,7 @@ class SpotifyApi {
     public var currentTrackName = "No Active Device";
     public var currentTrackImage = null;
 
-    var isDebug = false;
+    var isDebug = true;
 
     /*
         Constructor
@@ -496,7 +496,7 @@ class SpotifyApi {
         endpoints. 
     */
     function onReceiveToken(responseCode as Number, data as Dictionary?) as Void {
-        // System.print("Token received -> ");
+        System.print("onReceiveToken(): ");
         if (responseCode == 200) {
 
             // Rewrite with new tokens if they are not given as null
@@ -522,7 +522,7 @@ class SpotifyApi {
             getUsersPlaylists();
         } 
         else { // Failed, try authenticate again
-            System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);
+            System.println("Unhandled response " + responseCode + " " + data["error"]);
             // System.println("Attempting new OAuth...");
             // getOAuthToken();
         }
@@ -547,6 +547,7 @@ class SpotifyApi {
             }
         };
 
+        System.println("Refresh token request");
         Communications.makeWebRequest(url, params, options, method(:onReceiveToken));
     }
 
@@ -554,7 +555,12 @@ class SpotifyApi {
         Resquest for an access token using the authorization code received from the user
     */
     function tokenRequest() as Void {
-        var url = "https://accounts.spotify.com/api/token";                         
+        var url = "https://accounts.spotify.com/api/token"; 
+
+        if (isDebug) {
+            authcode = "AQB1bafob7P25fVdw_2GLNqLySz5IzF4RbSE0mnAhkTLN9Nc5kW_razI85HFXnTzYZVVCp-Q_-BGWE-7dP97rPxZlSrdRKYYlPz9Xv0kjXmNmIUebbnKsph-zyrUThBKoHuTm-O79LGQreOMLZwzfnyPgwawULoPWWBsK3bUTgMTk4ta1yzcJRtuS7Izm7D9a_wrjxmalOq8TT_VfwSZHqnx59oU7lcFkmenlRir-8a0R86mtVw10nHB76l1IviXIz6MIT845xXkDP8JaxcDuz-fyJrsTXO5lvzXyAGGqusLgwMefdCk64yrQCLIvEtIkT41FlyHHvm098xsWMZme_aaCAfE1C18H6mHRcihH60Jg6tvV0aUSPKD9zWoYWxjfoZfdyKh018";
+            codeVerifier = [51, 109, 89, 72, 98, 75, 51, 100, 110, 113, 103, 99, 106, 78, 104, 69, 52, 78, 51, 114, 55, 68, 85, 103, 56, 101, 110, 109, 65, 85, 102, 121, 115, 77, 101, 102, 79, 49, 79, 73, 90, 88, 90, 113, 101, 107, 106, 114, 106, 120, 57, 118, 74, 116, 49, 99, 104, 101, 107, 115, 75, 110, 112, 89]b;
+        }                        
 
         var params = {                                              
             "code" => authcode,
@@ -571,6 +577,7 @@ class SpotifyApi {
             }
         };
 
+        System.println("Token Request");
         Communications.makeWebRequest(url, params, options, method(:onReceiveToken));
     }
 
@@ -593,9 +600,6 @@ class SpotifyApi {
         Make web request to spotify to receive an auth code. Notifies user's phone with a popup auth screen
     */
     function getOAuthToken() {
-        if (isDebug) {
-            // codeVerifier = 
-        }
 
         Authentication.registerForOAuthMessages(method(:onOAuthMessage));
 
