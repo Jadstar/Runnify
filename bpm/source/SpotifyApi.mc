@@ -496,7 +496,7 @@ class SpotifyApi {
         endpoints. 
     */
     function onReceiveToken(responseCode as Number, data as Dictionary?) as Void {
-        System.print("Token received -> ");
+        // System.print("Token received -> ");
         if (responseCode == 200) {
 
             // Rewrite with new tokens if they are not given as null
@@ -523,8 +523,8 @@ class SpotifyApi {
         } 
         else { // Failed, try authenticate again
             System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);
-            System.println("Attempting new OAuth...");
-            getOAuthToken();
+            // System.println("Attempting new OAuth...");
+            // getOAuthToken();
         }
     }
 
@@ -561,7 +561,7 @@ class SpotifyApi {
             "redirect_uri" => $.REDIRECT_URI,
             "grant_type" => "authorization_code",
             "client_id" => $.CLIENT_ID,
-            "code_verifier" => codeVerifier
+            "code_verifier" => byteArray2String(codeVerifier)
         };
 
         var options = {                                             
@@ -593,6 +593,9 @@ class SpotifyApi {
         Make web request to spotify to receive an auth code. Notifies user's phone with a popup auth screen
     */
     function getOAuthToken() {
+        if (isDebug) {
+            // codeVerifier = 
+        }
 
         Authentication.registerForOAuthMessages(method(:onOAuthMessage));
 

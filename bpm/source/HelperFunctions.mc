@@ -7,14 +7,6 @@ import Toybox.Application;
 const VERIFIER_VALUES = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~";
 const VERIFIER_LENGTH = 64;
 
-function encodeString2Bytes(plain_text) {
-    return StringUtil.convertEncodedString(plain_text, {
-        :fromRepresentation => StringUtil.REPRESENTATION_STRING_PLAIN_TEXT,
-        :toRepresentation => StringUtil.REPRESENTATION_BYTE_ARRAY,
-        :encoding => StringUtil.CHAR_ENCODING_UTF8
-    });
-}
-
 function sha256(byte_array) {
     var hash = new Cryptography.Hash({:algorithm => Cryptography.HASH_SHA256});
     hash.update(byte_array);
@@ -24,7 +16,7 @@ function sha256(byte_array) {
 function byteArray2String(byte_array) {
     return StringUtil.convertEncodedString(byte_array, {
         :fromRepresentation => StringUtil.REPRESENTATION_BYTE_ARRAY,
-        :toRepresentation => StringUtil.REPRESENTATION_STRING_HEX,
+        :toRepresentation => StringUtil.REPRESENTATION_STRING_PLAIN_TEXT,
         :encoding => StringUtil.CHAR_ENCODING_UTF8
     });
 }
@@ -59,5 +51,9 @@ function getCodeChallenge(codeVerifier) {
 
     // Hash the bytes, encode and return
     var hashed = sha256(codeVerifier);
-    return base64encode(hashed);
+    var codeChallenge = base64encode(hashed);
+    System.println("Code Challenge: " + codeChallenge);
+    System.println("Code Verifier: " + codeVerifier);
+    System.println("Converted Verifier: " + byteArray2String(codeVerifier));
+    return codeChallenge;
 }

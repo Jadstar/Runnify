@@ -17,7 +17,10 @@ class SongsForTheHeartApp extends Application.AppBase {
 
     // onStart() is called on application start up
     function onStart(state as Dictionary?) as Void {
-        if (spotify.accesstoken == null || spotify.refreshtoken == null) {
+        if (spotify.accesstoken == null || spotify.refreshtoken == null
+            || spotify.accesstoken.equals("") || spotify.refreshtoken.equals("")
+        ) {
+            System.println("First auth");
             spotify.getOAuthToken();
         } else {
             spotify.refreshTokenRequest();
