@@ -524,6 +524,8 @@ class SpotifyApi {
         else { // Failed, try authenticate again
             System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);
             System.println("Attempting new OAuth...");
+            System.println("result URL");
+        System.println( $.REDIRECT_URI.toString());
             getOAuthToken();
         }
     }
@@ -578,6 +580,8 @@ class SpotifyApi {
         Callback function to receive the authorization code from the web request
     */
     function onOAuthMessage(message) {
+      
+
         if (message.data != null) {
             System.println("OAuth Successful");     
             authcode = message.data[$.OAUTH_CODE];
@@ -608,7 +612,6 @@ class SpotifyApi {
             "scope" => $.SCOPE,
             "redirect_uri" => $.REDIRECT_URI
         };
-
         Authentication.makeOAuthRequest(
             "https://accounts.spotify.com/authorize",           // Url
             params,                                             // Params
@@ -642,6 +645,7 @@ class SpotifyApi {
     }
 
     function onStartResponse(responseCode as Number, data as Dictionary?) as Void {
+          
         if (responseCode == 401) { // Refresh if bad token code
             System.println("Bad Token Provided");
             System.println("Error: " + data["error"]);
