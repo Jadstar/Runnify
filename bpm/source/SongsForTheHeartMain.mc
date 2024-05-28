@@ -1,10 +1,12 @@
 import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Toybox.ActivityRecording;
 
 class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
     var spotifyApi;
-    
+    var session = null;                                             // set up session variable
+
     //! Constructor
     public function initialize(spotify as SpotifyApi) {
         spotifyApi = spotify;
@@ -13,6 +15,8 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
 
     //! Handle the menu event
     //! @return true if handled, false otherwise
+   
+
     public function onSelect() as Boolean {
 
         // If playlists retrieved

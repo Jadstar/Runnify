@@ -2,7 +2,6 @@ import Toybox.Lang;
 import Toybox.Timer;
 import Toybox.Graphics;
 import Toybox.WatchUi;
-
 const BASE_URL = "https://api.spotify.com/v1";
 const CLIENT_ID = "03e00d7168c84260a6175f4668bc7bd6";
 const CLIENT_SECRET = "0aa850a846844d46ab3d6c50591c1c2b";
@@ -56,7 +55,7 @@ class SpotifyApi {
     public var currentTrackName = "No Active Device";
     public var currentTrackImage = null;
 
-    var isDebug = false;
+    var isDebug = true;
 
     /*
         Constructor
@@ -196,6 +195,7 @@ class SpotifyApi {
             }
 
             // Flag and print when finished
+            System.println("Num of playlists pages " + totalPlaylistsPages);
             if (data["next"] == null) {
                 gotAllPlaylists = true;
                 reformatUsersPlaylists();
@@ -218,7 +218,7 @@ class SpotifyApi {
     */
     function reformatUsersPlaylists() as Void {
         var newdict = {};
-        var currentTotal = 0;
+        var currentTotal = 1;
         for (var page = 0; page <= totalPlaylistsPages; page++) {
             for (var playlist = 0; (playlist < $.PLAYLIST_LIMIT) && (currentTotal < totalPlaylistCount); playlist++) {
                 
@@ -524,8 +524,6 @@ class SpotifyApi {
         else { // Failed, try authenticate again
             System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);
             System.println("Attempting new OAuth...");
-            System.println("result URL");
-        System.println( $.REDIRECT_URI.toString());
             getOAuthToken();
         }
     }
@@ -549,7 +547,7 @@ class SpotifyApi {
                 "Authorization" => "Basic " + StringUtil.encodeBase64($.CLIENT_ID + ":" + $.CLIENT_SECRET)
             }
         };
-
+        System.println(params);
         Communications.makeWebRequest(url, params, options, method(:onReceiveToken));
     }
 
@@ -598,7 +596,7 @@ class SpotifyApi {
     */
     function getOAuthToken() {
         if (isDebug == true) {
-            authcode = "AQAO5qF3twaehmVXSMK8qjnp9IFDjifPuHQUhB1ZRxKPpSPVRnbs2GzrFp2pIfLkvq9PQ1VNKd4ONFwmHNzqowS29YeLtU1bhvNLh6RbkRAnoSPqu6ou-pYFJFZ8JHO4l3HNHjyM4LshxUCS-0wYJKZ1WYU_XQQEyc4WS3CgQ_19hAjxUCyOQsJrf-5bk6gjckMJheh11lom_mKTvrMCv6Fgm0ptzdLWGILMhh9PSG-wiosAoAxlRYAjzr_8dPotGjDXDCCOJv6fnqicZI2wo2ek1hpPgKMNmJPkFWl12JKrsQDIFqxma5AyzdearCq3-0ahOQ";
+            authcode = "AQCWdP9YEARyrRIfmRnlR_EtoiqoCGxt_P5ke7_ldR_qQkFMCAt1YwBU-TST5s82P5N4Zwbzn88HglEJ8HP4ExIW_NtvD7H9iL-6K08V5V1U5UyoTzi7PlkuYji90yE0R4ygbQjZFb1jgjZdKT67nLsFjcO6t3my8oZ11lt9D3lWk3PKBCHK0sXNOjfq_taXTjasceI19VX_6emtUvFn13JaAx6Y1ttkVk124WzlTr3Av7KlCJNjAVkjsHNzhhx7ucoKby2Zg07XdYFzW2vSNW_ECd75K-pkB31LKf70Gb9P4939hnSC_Qeg1-WMDgjjLJ3dcg";
             tokenRequest();
             return;
         }
@@ -612,8 +610,9 @@ class SpotifyApi {
             "scope" => $.SCOPE,
             "redirect_uri" => $.REDIRECT_URI
         };
+        System.println($.OAUTH_CODE);
         Authentication.makeOAuthRequest(
-            "https://accounts.spotify.com/authorize",           // Url
+            "https://accounts.spotify.com/authorize?",           // Url
             params,                                             // Params
             $.REDIRECT_URI,                                     // Redirect uri (back to the app)                       
             Authentication.OAUTH_RESULT_TYPE_URL,               // Auth response type

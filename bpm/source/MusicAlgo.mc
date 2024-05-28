@@ -23,9 +23,9 @@ enum RunState {
 // Uses the Sensor Data to determine Run State
 function parseRunData() {
     var heartrate;
-    var maxHeartRate;
     var cadence;
     var speed;
+    var zone;
     
 }
 
