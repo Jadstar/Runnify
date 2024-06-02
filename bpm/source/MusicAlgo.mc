@@ -1,5 +1,6 @@
 import Toybox.Sensor;
 import Toybox.Lang;
+
 /*
 Uses the spotify song data found in a playlist
 compares it with the heart rate data and begins ranking
@@ -8,31 +9,92 @@ what song should play based on the state of runner
 */
 
 class MusicAlgo  {
-var watchSensorData = new WatchSensorData();
-var spotify = new SpotifyApi();
+    var rundata = new WatchSensorData();
+    var spotify = new SpotifyApi();
+    public var runmode;
 
-enum RunState {
-    WARMUP = "Warm Up",
-    RECOVER = "Base/Recovery",
-    TEMPO = "Tempo",
-    RACE = "Race Mode",
-    FALLOFF = "Fall Off",
-    COOLDOWN = "Cooldown"
-}
+    enum  {
+        //Runstates
+        RSTATE_WARMUP,
+        RSTATE_RECOVER,
+        RSTATE_TEMPO,
+        RSTATE_RACE,
+        RSTATE_FALLOFF,
+        RSTATE_COOLDOWN,
 
-// Uses the Sensor Data to determine Run State
-function parseRunData() {
-    var heartrate;
-    var cadence;
-    var speed;
-    var zone;
+        //Data Variance
+        SLOW,
+        STABLE,
+        HIGH,
+        SPRINT,
+        STOPPED
+    }
+
+    // Uses the Sensor Data to determine Run State
+    function parseRunData() {
     
-}
+        if (rundata.zone <= 2 && rundata.ActivityElapsedTime < 300*60*1000) {
+            runmode = RSTATE_WARMUP;
+        }
+        else if (rundata.zone <= 2 && heartRateVariance() == STABLE) {
+            runmode = RSTATE_RECOVER;
+        }
+        else if (rundata.zone >= 3 && heartRateVariance() == STABLE) {
+            runmode = RSTATE_TEMPO;
+        }
+        else if (rundata.zone >= 4 || SpeedVariance() == SPRINT) {
+            runmode = RSTATE_RACE;
+        }
+        else if (SpeedVariance() == SLOW && CadenceVariance() == SLOW) {
+            runmode = RSTATE_FALLOFF;
+        }
+        else if (heartRateVariance() == STOPPED && SpeedVariance() == STOPPED) {
+            runmode = RSTATE_COOLDOWN;
+        } else {
+            // Default state if none of the conditions are met
+            runmode = RSTATE_RECOVER;
+        }
+    }
 
-//Determines the best song to queue based on the run state
-function rankSong(runstate as String) {
+
+    function heartRateVariance() {
+
+        if (rundata.ActivityAVGHeartRate != null)
+        {
+
+        }
+        else
+        {
+            return STABLE;
+
+        }
+
+        return SLOW;
+        return HIGH;
+        return SPRINT;
+        return STOPPED;
+    }
+
+    function SpeedVariance() {
+        return SLOW;
+        return STABLE;
+        return HIGH;
+        return SPRINT;
+        return STOPPED;    }
+
+    function CadenceVariance() {
+        return SLOW;
+        return STABLE;
+        return HIGH;
+        return SPRINT;
+        return STOPPED;
+    }
 
 
-}
+    //Determines the best song to queue based on the run state
+    function rankSong(runstate as String) {
+
+
+    }
 
 }
