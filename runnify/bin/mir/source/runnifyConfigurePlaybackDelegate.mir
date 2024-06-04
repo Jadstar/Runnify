@@ -1,0 +1,24 @@
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyConfigurePlaybackDelegate.mc"; @line = 1; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyConfigurePlaybackDelegate.mc"; @line = 3; ]
+class runnifyConfigurePlaybackDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyConfigurePlaybackDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyConfigurePlaybackDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyConfigurePlaybackDelegate.mc"; @line = 5; ]
+    function initialize() as Void {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyConfigurePlaybackDelegate_mc_5_26_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyConfigurePlaybackDelegate.mc" 6 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyConfigurePlaybackDelegate_mc_5_26_stop:
+    }
+}
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyConfigurePlaybackDelegate.mc"; @line = 1; ]
+<init> {
+}

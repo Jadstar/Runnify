@@ -1,0 +1,126 @@
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 2; ]
+import Toybox.Media;
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 4; ]
+class runnifyContentIterator extends Media.ContentIterator{
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 6; ]
+    function initialize() as Void {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_6_26_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 7 8 ]
+        %tmp.2 = getv ? :ContentIterator;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_6_26_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 11; ]
+    function canSkip() as Boolean {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_11_34_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 12 8 ]
+        %tmp.1 = false;
+        ret %tmp.1;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_11_34_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 16; ]
+    function get() as Content or Null {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_16_31_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 17 8 ]
+        %tmp.1 = null;
+        ret %tmp.1;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_16_31_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 21; ]
+    function getPlaybackProfile() as PlaybackProfile or Null {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_21_54_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 22 8 ]
+        [ "C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_21_54_start" "C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_21_54_stop" ]
+        %profile.1 = local;
+        %tmp.3 = getm $.Toybox.Media;
+        %tmp.4 = getv function ? %tmp.3 :PlaybackProfile;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %profile.1 %tmp.1;
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 23 8 ]
+        %tmp.5 = lgetv %profile.1;
+        %tmp.6 = false;
+        putv %tmp.5 :attemptSkipAfterThumbsDown %tmp.6;
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 24 8 ]
+        %tmp.7 = lgetv %profile.1;
+        %tmp.8 = newa Array<PlaybackControl or CustomButton or SystemButton> 3;
+        %tmp.10 = getv ? :PLAYBACK_CONTROL_SKIP_BACKWARD;
+        %tmp.11 = dup %tmp.8;
+        %tmp.12 = aputv %tmp.11 0 %tmp.10;
+        %tmp.14 = getv ? :PLAYBACK_CONTROL_PLAYBACK;
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 1 %tmp.14;
+        %tmp.18 = getv ? :PLAYBACK_CONTROL_SKIP_FORWARD;
+        %tmp.19 = dup %tmp.16;
+        %tmp.20 = aputv %tmp.19 2 %tmp.18;
+        putv %tmp.7 :playbackControls %tmp.20;
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 29 8 ]
+        %tmp.21 = lgetv %profile.1;
+        %tmp.22 = 1;
+        putv %tmp.21 :playbackNotificationThreshold %tmp.22;
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 30 8 ]
+        %tmp.23 = lgetv %profile.1;
+        %tmp.24 = false;
+        putv %tmp.23 :requirePlaybackNotification %tmp.24;
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 31 8 ]
+        %tmp.25 = lgetv %profile.1;
+        %tmp.26 = null;
+        putv %tmp.25 :skipPreviousThreshold %tmp.26;
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 32 8 ]
+        %tmp.28 = lgetv %profile.1;
+        ret %tmp.28;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_21_54_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 36; ]
+    function next() as Content or Null {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_36_32_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 37 8 ]
+        %tmp.1 = null;
+        ret %tmp.1;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_36_32_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 41; ]
+    function peekNext() as Content or Null {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_41_36_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 42 8 ]
+        %tmp.1 = null;
+        ret %tmp.1;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_41_36_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 46; ]
+    function peekPrevious() as Content or Null {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_46_40_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 47 8 ]
+        %tmp.1 = null;
+        ret %tmp.1;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_46_40_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 51; ]
+    function previous() as Content or Null {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_51_36_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 52 8 ]
+        %tmp.1 = null;
+        ret %tmp.1;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_51_36_stop:
+    }
+    [ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 56; ]
+    function shuffling() as Boolean {
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_56_36_start:
+[ "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc" 57 8 ]
+        %tmp.1 = false;
+        ret %tmp.1;
+C_Users_Jaden_Github_Runnify_runnify_source_runnifyContentIterator_mc_56_36_stop:
+    }
+}
+[ @file = "C:\Users\Jaden\Github\Runnify\runnify\source\runnifyContentIterator.mc"; @line = 1; ]
+<init> {
+}
