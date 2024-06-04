@@ -17,6 +17,10 @@ class WatchSensorData {
     public var currSpeed;
     public var zone;
 
+    public var heartRates = [];
+    public var speeds = [];
+    public var cadences = [];
+
     var activtyTimer = new Timer.Timer();
     //If theres an activity happening, these variables exist
     public var ActivityAVGCadence;
@@ -32,7 +36,21 @@ class WatchSensorData {
         
         activtyTimer.start(method(:ActivityTimerCallback),1000,true);
     }
-
+    function tempDataStorer() {
+        //stores recent data to determine runstate
+        heartRates.add(currentBPM);
+        if (heartRates.size() > 10) {
+            heartRates.slice(1,null);
+        }
+        cadences.add(currCadence);
+        if (cadences.size() > 10) {
+            cadences.slice(1,null);
+        }
+        speeds.add(currSpeed);
+        if (speeds.size() > 10) {
+            speeds.slice(1,null);
+        }
+    }
     function ActivityTimerCallback() {
         //Checks to see if an activty is happening, if it is, timer stops
         var activity = Activity.getActivityInfo();
@@ -57,6 +75,7 @@ class WatchSensorData {
         getSpeed(sensorInfo);
         getCadence(sensorInfo);
         getZone();
+        tempDataStorer();
     }
     
 
@@ -124,11 +143,11 @@ class WatchSensorData {
         }
     }
 
-    // Currently hardcoded to 2024, can be done by getting location and then mapping the time related to that location
-    // seems like a bit of work just for year so might be a better way
     function getMaxHeartRate(calendar as Gregorian.Info) {
         // var curryear = calendar.year;
-        var curryear = 2024;
+        var currTime = Gregorian.utcInfo(Time.today(),Time.FORMAT_SHORT);
+        curryear = currTime.year;
+        
         var age = curryear - profile.birthYear;
         var maxHR = 220- age;
         System.println("MAX HR: "  +maxHR);

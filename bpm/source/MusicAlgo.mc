@@ -32,7 +32,7 @@ class MusicAlgo  {
 
     // Uses the Sensor Data to determine Run State
     function parseRunData() {
-    
+
         if (rundata.zone <= 2 && rundata.ActivityElapsedTime < 300*60*1000) {
             runmode = RSTATE_WARMUP;
         }
@@ -54,9 +54,33 @@ class MusicAlgo  {
             // Default state if none of the conditions are met
             runmode = RSTATE_RECOVER;
         }
+    } 
+
+    function rcoeffcientamirite(value) {
+        // Define the coefficient ranges
+        var coefficients = {
+            "slow" => [-0.8, -0.4],
+            "stable" => [-0.4, 0.4],
+            "high" => [0.4, 0.8],
+            "sprint" => [0.8, 1.0],
+            "stopped" => [-1.0, -0.8]
+        };
+
+        // Get the list of states (keys)
+        var states = coefficients.keys();
+        for (var i = 0; i < states.size(); i++) {
+            var state = states[i];
+            var range = coefficients[state];
+            var lower = range[0];
+            var upper = range[1];
+            if (lower < value && value <= upper) {
+                return state;
+            }
+        }
+        return "unknown"; // Return "unknown" if the value doesn"t fit any range
     }
 
-
+    
     function heartRateVariance() {
 
         if (rundata.ActivityAVGHeartRate != null)
@@ -70,24 +94,25 @@ class MusicAlgo  {
         }
 
         return SLOW;
-        return HIGH;
-        return SPRINT;
-        return STOPPED;
+        // return HIGH;
+        // return SPRINT;
+        // return STOPPED;
     }
 
     function SpeedVariance() {
         return SLOW;
-        return STABLE;
-        return HIGH;
-        return SPRINT;
-        return STOPPED;    }
+        // return STABLE;
+        // return HIGH;
+        // return SPRINT;
+        // return STOPPED;    
+        }
 
     function CadenceVariance() {
         return SLOW;
-        return STABLE;
-        return HIGH;
-        return SPRINT;
-        return STOPPED;
+        // return STABLE;
+        // return HIGH;
+        // return SPRINT;
+        // return STOPPED;
     }
 
 

@@ -6,4 +6,4 @@ GarminSpotifyRemoteController/
 .debug.xml
 .vscode/
 .mir
-
+.venv
