@@ -17,6 +17,11 @@ class WatchSensorData {
     public var currSpeed;
     public var zone;
 
+    //used to calc variance of recent data
+    public var heartRates = []; 
+    public var cadences = []; 
+    public var speeds = []; 
+
     var activtyTimer = new Timer.Timer();
     //If theres an activity happening, these variables exist
     public var ActivityAVGCadence;

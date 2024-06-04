@@ -58,10 +58,22 @@ class MusicAlgo  {
 
 
     function heartRateVariance() {
+        //Create an array of 10 or so heart rates, and pop off the old one and add new one,
+        // use this array to determine how quick the stuffs happening
+
+        rundata.heartRates.push(rundata.currentBPM);
+        if (rundata.heartRates.length > 10) {
+            rundata.heartRates.shift();
+        }
 
         if (rundata.ActivityAVGHeartRate != null)
         {
 
+            
+            return SLOW;
+            return HIGH;
+            return SPRINT;
+            return STOPPED;
         }
         else
         {
@@ -69,10 +81,6 @@ class MusicAlgo  {
 
         }
 
-        return SLOW;
-        return HIGH;
-        return SPRINT;
-        return STOPPED;
     }
 
     function SpeedVariance() {
