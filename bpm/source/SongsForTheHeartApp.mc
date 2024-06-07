@@ -10,7 +10,7 @@ import Toybox.Timer;
 class SongsForTheHeartApp extends Application.AppBase {
     var spotify = new SpotifyApi();
     var watchSensorData = new WatchSensorData();
-
+    var music = new MusicAlgo();
     function initialize() {
         AppBase.initialize();
     }
@@ -33,7 +33,7 @@ class SongsForTheHeartApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new SongsForTheHeartMainView(spotify, watchSensorData), new SongsForTheHeartMainDelegate(spotify) ] as Array<Views or InputDelegates>;
+        return [ new SongsForTheHeartMainView(spotify, watchSensorData,music), new SongsForTheHeartMainDelegate(spotify) ] as Array<Views or InputDelegates>;
     }
 
 }

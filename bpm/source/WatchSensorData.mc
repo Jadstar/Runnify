@@ -20,6 +20,7 @@ class WatchSensorData {
     public var heartRates = [];
     public var speeds = [];
     public var cadences = [];
+    public var timestamps = [];
 
     var activtyTimer = new Timer.Timer();
     //If theres an activity happening, these variables exist
@@ -29,6 +30,7 @@ class WatchSensorData {
     public var ActivityElapsedTime;
 
     var profile = UserProfile.getProfile();
+    public var currTime = Gregorian.utcInfo(Time.today(),Time.FORMAT_SHORT);
 
     function initialize() {
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE] );          // * For remote sensors, all sensors used should already be enabled 
@@ -50,6 +52,10 @@ class WatchSensorData {
         if (speeds.size() > 10) {
             speeds.slice(1,null);
         }
+        timestamps.add(currTime);
+        if (timestamps.size() > 10) {
+            timestamps.slice(1,null);
+        }
     }
     function ActivityTimerCallback() {
         //Checks to see if an activty is happening, if it is, timer stops
@@ -62,10 +68,10 @@ class WatchSensorData {
                 ActivityAVGSpeed = activity.averageSpeed;
                 ActivityElapsedTime = activity.elapsedTime;
             }
-            System.println("Activity Average Cadence: "  +ActivityAVGCadence);
-            System.println("Activity Average Heart Rate: "  +ActivityAVGHeartRate);
-            System.println("Activity Average Speed: "  +ActivityAVGSpeed);
-            System.println("Activity Average Elapsed Time: "  +ActivityElapsedTime);
+            // System.println("Activity Average Cadence: "  +ActivityAVGCadence);
+            // System.println("Activity Average Heart Rate: "  +ActivityAVGHeartRate);
+            // System.println("Activity Average Speed: "  +ActivityAVGSpeed);
+            // System.println("Activity Average Elapsed Time: "  +ActivityElapsedTime);
 
         }
     }
@@ -75,7 +81,9 @@ class WatchSensorData {
         getSpeed(sensorInfo);
         getCadence(sensorInfo);
         getZone();
+        currTime = Gregorian.utcInfo(Time.today(),Time.FORMAT_SHORT);
         tempDataStorer();
+        
     }
     
 
@@ -145,8 +153,7 @@ class WatchSensorData {
 
     function getMaxHeartRate(calendar as Gregorian.Info) {
         // var curryear = calendar.year;
-        var currTime = Gregorian.utcInfo(Time.today(),Time.FORMAT_SHORT);
-        curryear = currTime.year;
+        var curryear = currTime.year;
         
         var age = curryear - profile.birthYear;
         var maxHR = 220- age;

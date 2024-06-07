@@ -53,9 +53,10 @@ class SongsForTheHeartMainView extends WatchUi.View {
     var runningStatusText = "Slowing Down";
 
     //! Constructor
-    public function initialize(spotify as SpotifyApi, watchSensorData as WatchSensorData) {
+    public function initialize(spotify as SpotifyApi, watchSensorData as WatchSensorData,music as MusicAlgo) {
         spotifyApi = spotify;
         sensorData = watchSensorData;
+        music.initialize();
         View.initialize();
     }
 
