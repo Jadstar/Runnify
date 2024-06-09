@@ -41,15 +41,24 @@ class WatchSensorData {
     }
     function tempDataStorer() {
         //stores recent data to determine runstate
-        heartRates.add(currentBPM);
+        if (currentBPM != null)
+        {
+            heartRates.add(currentBPM);
+        }
         if (heartRates.size() > 10) {
            heartRates = heartRates.slice(1,null);
         }
-        cadences.add(currCadence);
+        if (currCadence != null)
+        {
+            cadences.add(currCadence);
+        }        
         if (cadences.size() > 10) {
             cadences = cadences.slice(1,null);
         }
-        speeds.add(currSpeed);
+        if (currSpeed != null)
+        {
+            speeds.add(currSpeed);
+        }
         if (speeds.size() > 10) {
             speeds.slice(1,null);
         }
