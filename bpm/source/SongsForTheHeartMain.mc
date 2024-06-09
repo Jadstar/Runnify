@@ -50,14 +50,17 @@ class SongsForTheHeartMainView extends WatchUi.View {
     var playlistName = "Waiting for Data";
     var sensorData as WatchSensorData;
     var offset = 30;
-    var runningStatusText = "Slowing Down";
-
+    var stateData;
+    // var music = new  MusicAlgo();
+    var runningStatusText;
     //! Constructor
     public function initialize(spotify as SpotifyApi, watchSensorData as WatchSensorData,music as MusicAlgo) {
         spotifyApi = spotify;
         sensorData = watchSensorData;
+        stateData = music;
         music.initialize();
         View.initialize();
+        runningStatusText = "ANALYSING DATA";
     }
 
     //! Load your resources here
@@ -84,6 +87,11 @@ class SongsForTheHeartMainView extends WatchUi.View {
         } else {
             playlistName = spotifyApi.selectedPlaylistName;
         }
+         if (runningStatusText == null){
+                stateData.stateText = "WAITING FOR DATA";
+
+        }
+        runningStatusText = stateData.stateText;
 
         // Get track info
         spotifyApi.getCurrentTrackProgress();

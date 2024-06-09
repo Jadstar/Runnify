@@ -10,6 +10,7 @@ what song should play based on the state of runner
 
 class MusicAlgo  {
     public var runmode;
+    public var stateText = "WAITING FOR DATA";
     var spotify = new SpotifyApi();
     public var rundata;
 
@@ -53,6 +54,7 @@ class MusicAlgo  {
         if (rundata.currSpeed != null && rundata.currCadence !=null && rundata.currentBPM !=null && rundata.zone !=null){
             if ( RegressionCalc(rundata.cadences) == SPRINT || RegressionCalc(rundata.speeds) == SPRINT) {
                 System.println("RACE");
+                stateText = "RACE MODE";
                 runmode = RSTATE_RACE;
             }
             else if (rundata.zone <= 2 && rundata.ActivityElapsedTime < 300*60*1000) {
@@ -61,19 +63,23 @@ class MusicAlgo  {
             }
              else if (RegressionCalc(rundata.speeds) == SLOW && RegressionCalc(rundata.cadences) == SLOW) {
                 System.println("FALLOFF");
+                stateText = "YOU FELL OFF";
                 runmode = RSTATE_FALLOFF;
             }
 
             else if (RegressionCalc(rundata.heartRates) == STOPPED && RegressionCalc(rundata.speeds) == STOPPED) {
                 System.println("COOLDOWN");
+                stateText = "COOLING DOWN";
                 runmode = RSTATE_COOLDOWN;
             }
             else if (rundata.zone <= 2 && RegressionCalc(rundata.heartRates) == STABLE) {
+                stateText = "BASE RUN";
                 System.println("RECOVERY");
                 runmode = RSTATE_RECOVER;
             }
             else if (rundata.zone >= 3 && RegressionCalc(rundata.heartRates) == STABLE) {
                 System.println("TEMPO");
+                stateText = "TEMPO RUN";
                 runmode = RSTATE_TEMPO;
             }
             
@@ -81,10 +87,12 @@ class MusicAlgo  {
              else {
                 // Default state if none of the conditions are met
                 System.println("RECOVER");
+                stateText = "RECOVERY";
 
                 runmode = RSTATE_RECOVER;
             }
         }
+       
     } 
 
     function corr(xvalues,yvalues){
