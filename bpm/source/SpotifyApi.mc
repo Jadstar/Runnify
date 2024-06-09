@@ -53,7 +53,7 @@ class SpotifyApi {
     public var trackPlaying = false;
     public var currentTrackURL = "";
     public var currentTrackName = "No Active Device";
-    public var currentTrackImage = null;
+    public var  currentTrackImage = null;
 
     var isDebug = true;
 

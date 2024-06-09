@@ -12,9 +12,12 @@ class MusicAlgo  {
     public var runmode;
     var spotify = new SpotifyApi();
     public var rundata;
+
+    var runTimer = new Timer.Timer();
+
     function initialize(){
         rundata = new WatchSensorData();
-        
+        runTimer.start(method(:parseRunData),1000,true);
     }
 
 
@@ -44,33 +47,43 @@ class MusicAlgo  {
     // Uses the Sensor Data to determine Run State
     function parseRunData() {
 
-        if (rundata.zone <= 2 && rundata.ActivityElapsedTime < 300*60*1000) {
-            runmode = RSTATE_WARMUP;
-        }
-        else if (rundata.zone <= 2 && RegressionCalc(rundata.heartRates) == STABLE) {
-            System.println("RECOVERY");
-            runmode = RSTATE_RECOVER;
-        }
-        else if (rundata.zone >= 3 && RegressionCalc(rundata.heartRates) == STABLE) {
-            System.println("TEMPO");
-            runmode = RSTATE_TEMPO;
-        }
-        else if (rundata.zone >= 4 || RegressionCalc(rundata.speeds) == SPRINT) {
-            System.println("RACE");
-            runmode = RSTATE_RACE;
-        }
-        else if (RegressionCalc(rundata.speeds) == SLOW && RegressionCalc(rundata.cadences) == SLOW) {
-            System.println("FALLOFF");
-            runmode = RSTATE_FALLOFF;
-        }
-        else if (RegressionCalc(rundata.heartRates) == STOPPED && RegressionCalc(rundata.speeds) == STOPPED) {
-            System.println("COOLDOWN");
-            runmode = RSTATE_COOLDOWN;
-        } else {
-            // Default state if none of the conditions are met
-            System.println("RECOVER");
+        //Run activity data:
+        rundata.ActivityTimerCallback();
 
-            runmode = RSTATE_RECOVER;
+        if (rundata.currSpeed != null && rundata.currCadence !=null && rundata.currentBPM !=null && rundata.zone !=null){
+            if ( RegressionCalc(rundata.cadences) == SPRINT || RegressionCalc(rundata.speeds) == SPRINT) {
+                System.println("RACE");
+                runmode = RSTATE_RACE;
+            }
+            else if (rundata.zone <= 2 && rundata.ActivityElapsedTime < 300*60*1000) {
+                System.println("RECOVERY");
+                runmode = RSTATE_WARMUP;
+            }
+             else if (RegressionCalc(rundata.speeds) == SLOW && RegressionCalc(rundata.cadences) == SLOW) {
+                System.println("FALLOFF");
+                runmode = RSTATE_FALLOFF;
+            }
+
+            else if (RegressionCalc(rundata.heartRates) == STOPPED && RegressionCalc(rundata.speeds) == STOPPED) {
+                System.println("COOLDOWN");
+                runmode = RSTATE_COOLDOWN;
+            }
+            else if (rundata.zone <= 2 && RegressionCalc(rundata.heartRates) == STABLE) {
+                System.println("RECOVERY");
+                runmode = RSTATE_RECOVER;
+            }
+            else if (rundata.zone >= 3 && RegressionCalc(rundata.heartRates) == STABLE) {
+                System.println("TEMPO");
+                runmode = RSTATE_TEMPO;
+            }
+            
+           
+             else {
+                // Default state if none of the conditions are met
+                System.println("RECOVER");
+
+                runmode = RSTATE_RECOVER;
+            }
         }
     } 
 
@@ -89,10 +102,17 @@ class MusicAlgo  {
         else{
 
             for (var i = 0; i < samplesize; i++){
-                var z_x = (xvalues[i] - x_avg)/Math.stdev(xvalues, x_avg);
-                var z_y = (yvalues[i] - y_avg)/Math.stdev(yvalues,y_avg);
+                var z_x = (xvalues[i] - x_avg)/Math.stdev(xvalues, x_avg);  //timestamp
 
-                product_of_z.add(z_x*z_y);
+                if (Math.stdev(yvalues,y_avg) != 0){
+                    var z_y = (yvalues[i] - y_avg)/Math.stdev(yvalues,y_avg);
+                    product_of_z.add(z_x*z_y);
+
+                }
+                else {
+                    coefficent = 0;
+                    return coefficent;
+                }
             }
             coefficent = Math.mean(product_of_z);
 
@@ -108,7 +128,7 @@ class MusicAlgo  {
             var state = states[i];
             var entry = coefficients[state];
 
-            var range = entry[state];
+            var range = entry["range"];
             var lower = range[0];
             var upper = range[1];
             if (lower < value && value <= upper) {

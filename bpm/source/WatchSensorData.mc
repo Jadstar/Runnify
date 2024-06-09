@@ -16,13 +16,14 @@ class WatchSensorData {
     public var currCadence;
     public var currSpeed;
     public var zone;
+    public var timestamp;
 
     public var heartRates = [];
     public var speeds = [];
     public var cadences = [];
     public var timestamps = [];
 
-    var activtyTimer = new Timer.Timer();
+    // var activtyTimer = new Timer.Timer();
     //If theres an activity happening, these variables exist
     public var ActivityAVGCadence;
     public var ActivityAVGHeartRate;
@@ -36,25 +37,25 @@ class WatchSensorData {
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE] );          // * For remote sensors, all sensors used should already be enabled 
         Sensor.enableSensorEvents( method( :getData ) );
         
-        activtyTimer.start(method(:ActivityTimerCallback),1000,true);
+        // activtyTimer.start(method(:ActivityTimerCallback),1000,true);
     }
     function tempDataStorer() {
         //stores recent data to determine runstate
         heartRates.add(currentBPM);
         if (heartRates.size() > 10) {
-            heartRates.slice(1,null);
+           heartRates = heartRates.slice(1,null);
         }
         cadences.add(currCadence);
         if (cadences.size() > 10) {
-            cadences.slice(1,null);
+            cadences = cadences.slice(1,null);
         }
         speeds.add(currSpeed);
         if (speeds.size() > 10) {
             speeds.slice(1,null);
         }
-        timestamps.add(currTime);
+        timestamps.add(timestamp);
         if (timestamps.size() > 10) {
-            timestamps.slice(1,null);
+           timestamps= timestamps.slice(1,null);
         }
     }
     function ActivityTimerCallback() {
@@ -82,6 +83,7 @@ class WatchSensorData {
         getCadence(sensorInfo);
         getZone();
         currTime = Gregorian.utcInfo(Time.today(),Time.FORMAT_SHORT);
+        timestamp =  Time.now().value();
         tempDataStorer();
         
     }
