@@ -23,7 +23,6 @@ class WatchSensorData {
     public var cadences = [];
     public var timestamps = [];
 
-    // var activtyTimer = new Timer.Timer();
     //If theres an activity happening, these variables exist
     public var ActivityAVGCadence;
     public var ActivityAVGHeartRate;
@@ -37,7 +36,6 @@ class WatchSensorData {
         Sensor.setEnabledSensors( [Sensor.SENSOR_HEARTRATE] );          // * For remote sensors, all sensors used should already be enabled 
         Sensor.enableSensorEvents( method( :getData ) );
         
-        // activtyTimer.start(method(:ActivityTimerCallback),1000,true);
     }
     function tempDataStorer() {
         //stores recent data to determine runstate

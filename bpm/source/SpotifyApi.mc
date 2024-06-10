@@ -68,7 +68,7 @@ class SpotifyApi {
     /*
         Downloads an image
     */
-    function downloadTrackImage() {
+    function downloadTrackImage(currentTrackURL) {
         System.println("Downloading current track image from " + currentTrackURL);
 
         var url = currentTrackURL;           // set the image url
@@ -223,11 +223,15 @@ class SpotifyApi {
             for (var playlist = 0; (playlist < $.PLAYLIST_LIMIT) && (currentTotal < totalPlaylistCount); playlist++) {
                 
                 // Check against name
-                var playlistName = usersPlaylists["page" + page][playlist]["name"];
                 var playlistDict = usersPlaylists["page" + page][playlist];
+                var playlistName = playlistDict["name"];
+                var tracks = playlistDict["tracks"]["total"];
+                var image = playlistDict["images"][0]["url"];
                 var trimmedDict = {
                     "id" => playlistDict["id"],
-                    "name" => playlistName
+                    "name" => playlistName,
+                    "image" => image,
+                    "tracks" => tracks
                 };
                 newdict[playlistName] = trimmedDict;
 
@@ -283,7 +287,7 @@ class SpotifyApi {
                     currentTrackName = newTrackName;
                     // Get current track img url
                     currentTrackURL = track["album"]["images"][0]["url"];
-                    downloadTrackImage();
+                    downloadTrackImage(currentTrackURL);
                 }
                 System.println("Current Track " + currentTrackName + " Progress: " + currentTrackProgress * 100.0 + "% is playing: " + trackPlaying);
             }
@@ -517,8 +521,10 @@ class SpotifyApi {
                 autoRefreshTimer.start(method(:checkTokenExpiration), $.TOKEN_EXP_DT*1000, true);
                 firstToken = false;
             }
-
+            //stop timer
+            autoRefreshTimer.stop();
             // Call get playlists after successful token retrieval
+
             getUsersPlaylists();
         } 
         else { // Failed, try authenticate again

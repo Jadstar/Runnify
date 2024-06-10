@@ -4,7 +4,9 @@ import Toybox.WatchUi;
 
 class SongsForTheHeartPlaylistMenuDelegate extends WatchUi.Menu2InputDelegate {
     var spotifyApi as SpotifyApi;
-
+    var spotifyIcon = WatchUi.loadResource($.Rez.Drawables.Heart2);
+    var theme =MENU_THEME_GREEN;
+    var menu = Menu2InputDelegate;
     //! Constructor
     public function initialize(spotify as SpotifyApi) {
         spotifyApi = spotify;
@@ -44,7 +46,7 @@ class DrawableMenuTitle extends WatchUi.Drawable {
         dc.clear();
         // dc.fillRectangle(-100, -100, 1000, 200);
 
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-        dc.drawText(0, 25, Graphics.FONT_MEDIUM, "Your Playlists", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        // dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        // dc.drawText(0, 25, Graphics.FONT_SMALL, "Your Playlists", Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 }

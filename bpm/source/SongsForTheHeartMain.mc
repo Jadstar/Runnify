@@ -17,20 +17,26 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
     //! @return true if handled, false otherwise
    
 
-    public function onSelect() as Boolean {
-
+    public function onPreviousPage() as Boolean {
+        var playlist;
         // If playlists retrieved
         if (spotifyApi.gotAllPlaylists) {
 
             // Generate a new Menu with a drawable Title
             var menu = new WatchUi.Menu2({:title=>new $.DrawableMenuTitle()});
-
+            menu.setTitle("Select Spotify Playlist");
+            menu.setFocus(1);
             // Add menu item for each playlist in the playlist dictionary
             var playlistNames = spotifyApi.usersPlaylists.keys();
             for (var playlistNum = 0; playlistNum < playlistNames.size(); playlistNum++) {
                     // Check against name
                     var playlistName = playlistNames[playlistNum];
-                    menu.addItem(new WatchUi.MenuItem(playlistName, null, playlistName, null));
+                    var noOfTracks = spotifyApi.usersPlaylists[playlistName]["tracks"];
+                    var imageURL = spotifyApi.usersPlaylists[playlistName]["image"];
+                    // var image = spotifyApi.downloadTrackImage(imageURL);
+                    playlist = new WatchUi.MenuItem(playlistName, null, playlistName, null);
+                    // playlist.setIcon(image);
+                    menu.addItem(playlist);
             }
 
             WatchUi.pushView(menu, new $.SongsForTheHeartPlaylistMenuDelegate(spotifyApi), WatchUi.SLIDE_UP);
@@ -88,7 +94,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
             playlistName = spotifyApi.selectedPlaylistName;
         }
          if (runningStatusText == null){
-                stateData.stateText = "WAITING FOR DATA";
+                stateData.stateText = "ANALYSING DATA";
 
         }
         runningStatusText = stateData.stateText;
@@ -107,7 +113,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
 
         // Status Text
         dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 - 130 + offset, Graphics.FONT_SMALL, runningStatusText, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 - 130 + offset, Graphics.FONT_TINY, runningStatusText, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Playlist Text
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);

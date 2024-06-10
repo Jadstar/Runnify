@@ -23,7 +23,6 @@ class SongsForTheHeartApp extends Application.AppBase {
             spotify.refreshTokenRequest();
         }
 
-        // var delayedTimer = new Timer.Timer();
     }
 
     // onStop() is called when your application is exiting
