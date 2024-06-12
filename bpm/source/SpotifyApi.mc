@@ -46,7 +46,7 @@ class SpotifyApi {
     var audioFeatureURLs = {};
     var totalAudioFeatureRequests = 0;
     var delayedAudioFeatureTimer = new Timer.Timer();
-
+    public var audioAnalysis = false;
 
     // Track progress
     public var currentTrackProgress = 0;
@@ -395,6 +395,7 @@ class SpotifyApi {
         // Start loop to call requests at a delay between to allow the previous call to finish first
         totalAudioFeatureRequests = urlCount;
         System.println("Starting analysis on all tracks of selected playlist");
+        audioAnalysis = false;
         delayedAudioFeatureTimer.start(method(:delayedAudioRequest), 1000, true);
     }
 
@@ -405,6 +406,9 @@ class SpotifyApi {
         if (audioFeatureRequests == totalAudioFeatureRequests) {
             System.println("Finished all audio feature songs: " + selectedPlaylistTracks.keys().size());
             delayedAudioFeatureTimer.stop();
+            audioAnalysis = true;
+            
+            //Allow for flag to be open
         } else {
             var url = $.BASE_URL + "/audio-features";
             var params = {
@@ -437,15 +441,22 @@ class SpotifyApi {
 
             // Add the audio features to the track variable in the dictionary so all the info is together
             for (var i = 0; i < data["audio_features"].size(); i++) {
-                var audiofeature = data["audio_features"][i];
-                selectedPlaylistTracks["track" + (i + start)]["audio_features"] =  {
-                    "tempo" => audiofeature["tempo"],
-                    "danceability" => audiofeature["danceability"],
-                    "energy" => audiofeature["energy"],
-                    "liveness" => audiofeature["liveness"],
-                    "loudness" => audiofeature["loudness"]
+                var audiofeature = {
+                    "track_href" => data["audio_features"][i]["track_href"],
+                    "id" => data["audio_features"][i]["id"],
+                    "acousticness" => data["audio_features"][i]["acousticness"],
+                    "instrumentalness" => data["audio_features"][i]["instrumentalness"],
+                    "danceability" => data["audio_features"][i]["danceability"],
+                    "liveness" => data["audio_features"][i]["liveness"],
+                    "speechiness" => data["audio_features"][i]["speechiness"],
+                    "tempo" => data["audio_features"][i]["tempo"],
+                    "energy" => data["audio_features"][i]["energy"],
+                    "happiness" => data["audio_features"][i]["energy"]
                 };
+
+                selectedPlaylistTracks["track" + (i + start)] =  audiofeature;
             }
+
 
             System.println("Finish Audio Feature Request: " + audioFeatureRequests);
 

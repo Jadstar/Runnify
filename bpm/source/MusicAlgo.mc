@@ -38,13 +38,77 @@ class MusicAlgo  {
         SPRINT,
         STOPPED
     }
-    public var coefficients = {
+    public const coefficients = {
         "slow" => { "range" => [-0.8, -0.4], "variance" => SLOW },
         "stable" => { "range" => [-0.4, 0.4], "variance" => STABLE },
         "high" => { "range" => [0.4, 0.8], "variance" => HIGH },
         "sprint" => { "range" => [0.8, 1.0], "variance" => SPRINT },
         "stopped" => { "range" => [-1.0, -0.8], "variance" => STOPPED }
     };
+
+    const songStates = [
+        { 
+            "state"=> RSTATE_WARMUP,
+            "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (low prio)
+            "dance"=> [50, 85],
+            "energy"=> [50, 85],
+            "acoustic"=> [0, 10],
+            "instrumental"=> [0, 40],
+            "liveness"=> [0, 20],
+            "speech"=> [0, 10]
+        },
+        { 
+            "state"=> RSTATE_RECOVER,
+            "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (high prio)
+            "dance"=> [50, 85],
+            "energy"=> [50, 85],
+            "acoustic"=> [0, 10],
+            "instrumental"=> [0, 40],
+            "liveness"=> [0, 20],
+            "speech"=> [0, 10]
+        },
+        {
+            "state"=> RSTATE_TEMPO,
+            "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (High prio)
+            "dance"=> [40, 85],
+            "energy"=> [70, 100],
+            "acoustic"=> [0, 10],
+            "instrumental"=> [0, 100],
+            "liveness"=> [0, 50],
+            "speech"=> [0, 30]
+        },
+        {
+            "state"=> RSTATE_RACE,
+            "bpmRange"=> [175, 180], // BPM match ideal cadence ~175-180bpm (High prio)
+            "dance"=> [40, 85],
+            "energy"=> [80, 100],
+            "acoustic"=> [0, 10],
+            "instrumental"=> [0, 100],
+            "liveness"=> [5, 50],
+            "speech"=> [0, 20]
+        },
+        {
+            "state"=> RSTATE_FALLOFF,
+            "bpmRange"=> [0, rundata.maxHR], // BPM equal avg cadence, or slightly higher than current cadence (High prio)
+            "happiness"=> [40, 100],
+            "dance"=> [40, 85],
+            "energy"=> [70, 90],
+            "acoustic"=> [0, 10],
+            "instrumental"=> [0, 100],
+            "liveness"=> [5, 50],
+            "speech"=> [20, 50]
+        },
+        {
+            "state"=> RSTATE_COOLDOWN,
+            "bpmRange"=> [0, rundata.maxHR], // BPM lower than current cadence (low prio)
+            "dance"=> [0, 85],
+            "energy"=> [30, 80],
+            "acoustic"=> [0, 10],
+            "instrumental"=> [0, 100],
+            "liveness"=> [5, 50],
+            "speech"=> [0, 20]
+        }
+    ];
     // Uses the Sensor Data to determine Run State
     function parseRunData() {
 
@@ -137,21 +201,49 @@ class MusicAlgo  {
             var entry = coefficients[state];
 
             var range = entry["range"];
-            var lower = range[0];
-            var upper = range[1];
-            if (lower < value && value <= upper) {
+
+            if (inRange(value,range)){
                 return entry["variance"];
             }
         }
 
         return "stable"; // Return "unknown" if the value doesn"t fit any range
     }
+    function inRange(value, range) {
+        return value >= range[0] && value <= range[1];
+    }
 
-    
+    function categoriseSong(){
+        //for each song, we categorise them so we can rank them easy based on the current running state
+
+
+        if (spotify.audioAnalysis == true){
+                    for (var i =0; i <spotify.selectedPlaylistTracks.size(); i++){
+                        
+                      for (var state=0; state < songStates.size(); state++) {
+                        if (
+                        inRange(spotify.selectedPlaylistTracks[i]["tempo"], songStates[state]["bpmRange"]) &&
+                        inRange(spotify.selectedPlaylistTracks[i]["danceability"], songStates[state]["dance"]) &&
+                        inRange(spotify.selectedPlaylistTracks[i]["energy"], songStates[state]["energy"]) &&
+                        inRange(spotify.selectedPlaylistTracks[i]["acousticness"], songStates[state]["acoustic"]) &&
+                        inRange(spotify.selectedPlaylistTracks[i]["instrumentalness"], songStates[state]["instrumental"]) &&
+                        inRange(spotify.selectedPlaylistTracks[i]["liveness"], songStates[state]["liveness"]) &&
+                        inRange(spotify.selectedPlaylistTracks[i]["speechiness"], songStates[state]["speech"])
+                        ) {
+                        // track.state = state.state;
+                        break; // Exit the loop once a state is matched
+                            }
+                      }
+                    }
+
+                }
+
+
+
+            }
     //Determines the best song to queue based on the run state
     function rankSong(runstate as String) {
-
-
+      
     }
 
 }

@@ -17,7 +17,8 @@ class WatchSensorData {
     public var currSpeed;
     public var zone;
     public var timestamp;
-
+    public var maxHR;
+    
     public var heartRates = [];
     public var speeds = [];
     public var cadences = [];
@@ -165,7 +166,7 @@ class WatchSensorData {
         var curryear = currTime.year;
         
         var age = curryear - profile.birthYear;
-        var maxHR = 220- age;
+        maxHR = 220- age;
         System.println("MAX HR: "  +maxHR);
         
         return maxHR;
