@@ -158,101 +158,122 @@ class MusicAlgo  {
 
         return "stable"; // Return "unknown" if the value doesn"t fit any range
     }
-    function inRange(value, range) {
+    function inRange(value, range) as Boolean{
         return value >= range[0] && value <= range[1];
     }
 
     function categoriseSong(){
         //for each song, we categorise them so we can rank them easy based on the current running state
-        var songStates = [
-        { 
-            "state"=> RSTATE_WARMUP,
-            "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (low prio)
-            "dance"=> [50, 85],
-            "energy"=> [50, 85],
-            "acoustic"=> [0, 10],
-            "instrumental"=> [0, 40],
-            "liveness"=> [0, 20],
-            "speech"=> [0, 10]
-        },
-        { 
-            "state"=> RSTATE_RECOVER,
-            "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (high prio)
-            "dance"=> [50, 85],
-            "energy"=> [50, 85],
-            "acoustic"=> [0, 10],
-            "instrumental"=> [0, 40],
-            "liveness"=> [0, 20],
-            "speech"=> [0, 10]
-        },
-        {
-            "state"=> RSTATE_TEMPO,
-            "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (High prio)
-            "dance"=> [40, 85],
-            "energy"=> [70, 100],
-            "acoustic"=> [0, 10],
-            "instrumental"=> [0, 100],
-            "liveness"=> [0, 50],
-            "speech"=> [0, 30]
-        },
-        {
-            "state"=> RSTATE_RACE,
-            "bpmRange"=> [175, 180], // BPM match ideal cadence ~175-180bpm (High prio)
-            "dance"=> [40, 85],
-            "energy"=> [80, 100],
-            "acoustic"=> [0, 10],
-            "instrumental"=> [0, 100],
-            "liveness"=> [5, 50],
-            "speech"=> [0, 20]
-        },
-        {
-            "state"=> RSTATE_FALLOFF,
-            "bpmRange"=> [0, rundata.maxHR], // BPM equal avg cadence, or slightly higher than current cadence (High prio)
-            "happiness"=> [40, 100],
-            "dance"=> [40, 85],
-            "energy"=> [70, 90],
-            "acoustic"=> [0, 10],
-            "instrumental"=> [0, 100],
-            "liveness"=> [5, 50],
-            "speech"=> [20, 50]
-        },
-        {
-            "state"=> RSTATE_COOLDOWN,
-            "bpmRange"=> [0, rundata.maxHR], // BPM lower than current cadence (low prio)
-            "dance"=> [0, 85],
-            "energy"=> [30, 80],
-            "acoustic"=> [0, 10],
-            "instrumental"=> [0, 100],
-            "liveness"=> [5, 50],
-            "speech"=> [0, 20]
-        }
-    ];
+        var statelist = ["WARMUP","RECOVER","TEMPO","RACE","FALLOFF","COOLDOWN"];
+        var songchosen = false;
+        var songStates = {
+            "RACE" =>   {
+                "state"=> RSTATE_RACE,
+                "bpmRange"=> [.175, .180], // BPM match ideal cadence ~175-180bpm (High prio)
+                "dance"=> [.40, .85],
+                "energy"=> [.80, .100],
+                "acoustic"=> [0, .10],
+                "instrumental"=> [0, .100],
+                "liveness"=> [.5, .50],
+                "speech"=> [0, .20]
+            },
+
+            "FALLOFF" =>{
+                "state"=> RSTATE_FALLOFF,
+                "bpmRange"=> [0, rundata.maxHR], // BPM equal avg cadence, or slightly higher than current cadence (High prio)
+                "happiness"=> [.40, .100],
+                "dance"=> [.40, .85],
+                "energy"=> [.70, .90],
+                "acoustic"=> [0, .10],
+                "instrumental"=> [0, .100],
+                "liveness"=> [.5, .50],
+                "speech"=> [.20, .50]
+            },
+            "TEMPO" =>  {
+                "state"=> RSTATE_TEMPO,
+                "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (High prio)
+                "dance"=> [.40, .85],
+                "energy"=> [.70, .100],
+                "acoustic"=> [0, .10],
+                "instrumental"=> [0, .100],
+                "liveness"=> [0, .50],
+                "speech"=> [0, .30]
+            },
+            "WARMUP" =>{ 
+                "state"=> RSTATE_WARMUP,
+                "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (low prio)
+                "dance"=> [0.5, 0.85],
+                "energy"=> [.50, .85],
+                "acoustic"=> [0, .10],
+                "instrumental"=> [0, .40],
+                "liveness"=> [0, .20],
+                "speech"=> [0, .10]
+            },
+            "COOLDOWN" =>{
+                "state"=> RSTATE_COOLDOWN,
+                "bpmRange"=> [0, rundata.maxHR], // BPM lower than current cadence (low prio)
+                "dance"=> [0, .85],
+                "energy"=> [.30, .80],
+                "acoustic"=> [0, .10],
+                "instrumental"=> [0, .100],
+                "liveness"=> [.5, .50],
+                "speech"=> [0, .20]
+            },
+            "RECOVER" => { 
+                "state"=> RSTATE_RECOVER,
+                "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (high prio)
+                "dance"=> [.50, .85],
+                "energy"=> [.50, .85],
+                "acoustic"=> [0, .10],
+                "instrumental"=> [0, .40],
+                "liveness"=> [0, .20],
+                "speech"=> [0, .10]
+            }
+        };
         System.println("ANALYSIS: " + spotify.getAnalysisFlag());
         if (spotify.getAnalysisFlag() == true){
-        
             //initailise the arrays
-            for (var state=0; state < songStates.size(); state++) {
-                songMatch[songStates[state]["state"]] =[];
+            for (var state=0; state < statelist.size(); state++) {
+                
+                songMatch.put(statelist[state],[]);
             }
+            songMatch.put("UNIDENTIFIED",[]);
+            System.println(songMatch.toString());
             for (var i =0; i <spotify.selectedPlaylistTracks.size(); i++){
                 
-                for (var state=0; state < songStates.size(); state++) {
-                if (
-                inRange(spotify.selectedPlaylistTracks[i]["tempo"], songStates[state]["bpmRange"]) &&
-                inRange(spotify.selectedPlaylistTracks[i]["danceability"], songStates[state]["dance"]) &&
-                inRange(spotify.selectedPlaylistTracks[i]["energy"], songStates[state]["energy"]) &&
-                inRange(spotify.selectedPlaylistTracks[i]["acousticness"], songStates[state]["acoustic"]) &&
-                inRange(spotify.selectedPlaylistTracks[i]["instrumentalness"], songStates[state]["instrumental"]) &&
-                inRange(spotify.selectedPlaylistTracks[i]["liveness"], songStates[state]["liveness"]) &&
-                inRange(spotify.selectedPlaylistTracks[i]["speechiness"], songStates[state]["speech"])
-                ) {
-                // categorise the song to its state
-                songMatch[songStates[state]["state"]].add(spotify.selectedPlaylistTracks[i]["track_href"]);
+                songchosen = false;
+                // System.println("Tempo: " +spotify.selectedPlaylistTracks["track"+i]["tempo"]);
+                // System.println("danceability: " +spotify.selectedPlaylistTracks["track"+i]["danceability"]);
+                // System.println("energy: " +spotify.selectedPlaylistTracks["track"+i]["energy"]);
+                // System.println("acousticness: " +spotify.selectedPlaylistTracks["track"+i]["acousticness"]);
+                // System.println("instrumentalness: " +spotify.selectedPlaylistTracks["track"+i]["instrumentalness"]);
+                // System.println("liveness: " +spotify.selectedPlaylistTracks["track"+i]["liveness"]);
 
-                break; // Exit the loop once a state is matched
+
+                for (var state=0; state < songStates.size(); state++) {
+                    if (inRange(spotify.selectedPlaylistTracks["track"+i]["tempo"], songStates[statelist[state]]["bpmRange"]) &&
+                        inRange(spotify.selectedPlaylistTracks["track"+i]["danceability"], songStates[statelist[state]]["dance"]) &&
+                        inRange(spotify.selectedPlaylistTracks["track"+i]["energy"], songStates[statelist[state]]["energy"]) &&
+                        inRange(spotify.selectedPlaylistTracks["track"+i]["acousticness"], songStates[statelist[state]]["acoustic"]) &&
+                        inRange(spotify.selectedPlaylistTracks["track"+i]["instrumentalness"], songStates[statelist[state]]["instrumental"]) &&
+                        inRange(spotify.selectedPlaylistTracks["track"+i]["liveness"], songStates[statelist[state]]["liveness"]) &&
+                        inRange(spotify.selectedPlaylistTracks["track"+i]["speechiness"], songStates[statelist[state]]["speech"])
+                        ) {
+                        // categorise the song to its state
+                        songchosen = true;
+                        System.println("State chosen" + statelist[state]);
+                        songMatch[statelist[state]].add(spotify.selectedPlaylistTracks["track"+i]["track_href"]);
+
+                        break; // Exit the loop once a state is matched
                     }
+                    
+
+                }
+                if (songchosen == false) {
+                    // songMatch["UNIDENTIFIED"].add(spotify.selectedPlaylistTracks["track"+i]["track_href"]);
                 }
             }
+            System.println(songMatch.toString());
             return songMatch;
         }
         else{
