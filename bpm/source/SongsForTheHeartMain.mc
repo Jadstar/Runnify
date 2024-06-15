@@ -64,7 +64,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
         spotifyApi = spotify;
         sensorData = watchSensorData;
         stateData = music;
-        music.initialize();
+        music.initialize(spotifyApi);
         View.initialize();
         runningStatusText = "ANALYSING DATA";
     }

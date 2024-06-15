@@ -46,7 +46,7 @@ class SpotifyApi {
     var audioFeatureURLs = {};
     var totalAudioFeatureRequests = 0;
     var delayedAudioFeatureTimer = new Timer.Timer();
-    public var audioAnalysis = false;
+    public var audioAnalysis;
 
     // Track progress
     public var currentTrackProgress = 0;
@@ -402,13 +402,18 @@ class SpotifyApi {
     /*
         Make web request to get audio features in a callback so that it can be delayed using a timer
     */
+    function getAnalysisFlag()as Boolean{
+        return audioAnalysis;
+    }
     function delayedAudioRequest() {
-        if (audioFeatureRequests == totalAudioFeatureRequests) {
+        System.println("audioFeatureRequests: " + audioFeatureRequests);
+        System.println("totalAudioFeatureRequests: " + totalAudioFeatureRequests);
+
+        if (audioFeatureRequests >= totalAudioFeatureRequests) {
             System.println("Finished all audio feature songs: " + selectedPlaylistTracks.keys().size());
-            delayedAudioFeatureTimer.stop();
             audioAnalysis = true;
+            delayedAudioFeatureTimer.stop();
             
-            //Allow for flag to be open
         } else {
             var url = $.BASE_URL + "/audio-features";
             var params = {
@@ -432,6 +437,7 @@ class SpotifyApi {
         Adds the audio features received to the corresponding tracks in the playlistTracks dictionary
     */
     function onGetAudioFeaturesResponse(responseCode as Number, data as Dictionary?) as Void {
+        System.println("GET AUDIO FEATURES CALLED");
         if (responseCode == 200) {
             // What track we are up to when this callback is received
             var start = audioFeatureRequests * $.AUDIO_FEATURE_LIM;
