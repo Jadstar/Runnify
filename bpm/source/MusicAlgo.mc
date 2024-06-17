@@ -169,12 +169,12 @@ class MusicAlgo  {
         var songStates = {
             "RACE" =>   {
                 "state"=> RSTATE_RACE,
-                "bpmRange"=> [.175, .180], // BPM match ideal cadence ~175-180bpm (High prio)
-                "dance"=> [.40, .85],
-                "energy"=> [.80, .100],
-                "acoustic"=> [0, .10],
-                "instrumental"=> [0, .100],
-                "liveness"=> [.5, .50],
+                "bpmRange"=> [100, 200], // BPM match ideal cadence ~175-180bpm (High prio)
+                "dance"=> [.3, .75],
+                "energy"=> [.80, 1],
+                "acoustic"=> [0, 10],
+                "instrumental"=> [0, 1],
+                "liveness"=> [.05, .50],
                 "speech"=> [0, .20]
             },
 
@@ -182,20 +182,20 @@ class MusicAlgo  {
                 "state"=> RSTATE_FALLOFF,
                 "bpmRange"=> [0, rundata.maxHR], // BPM equal avg cadence, or slightly higher than current cadence (High prio)
                 "happiness"=> [.40, .100],
-                "dance"=> [.40, .85],
+                "dance"=> [.29, .85],
                 "energy"=> [.70, .90],
-                "acoustic"=> [0, .10],
-                "instrumental"=> [0, .100],
+                "acoustic"=> [0, .40],
+                "instrumental"=> [0, .200],
                 "liveness"=> [.5, .50],
-                "speech"=> [.20, .50]
+                "speech"=> [0, .30]
             },
             "TEMPO" =>  {
                 "state"=> RSTATE_TEMPO,
-                "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (High prio)
+                "bpmRange"=> [160, 1000], // BPM match cadence (High prio)
                 "dance"=> [.40, .85],
-                "energy"=> [.70, .100],
+                "energy"=> [.6, .100],
                 "acoustic"=> [0, .10],
-                "instrumental"=> [0, .100],
+                "instrumental"=> [0, 1],
                 "liveness"=> [0, .50],
                 "speech"=> [0, .30]
             },
@@ -215,7 +215,7 @@ class MusicAlgo  {
                 "dance"=> [0, .85],
                 "energy"=> [.30, .80],
                 "acoustic"=> [0, .10],
-                "instrumental"=> [0, .100],
+                "instrumental"=> [0, 1],
                 "liveness"=> [.5, .50],
                 "speech"=> [0, .20]
             },
