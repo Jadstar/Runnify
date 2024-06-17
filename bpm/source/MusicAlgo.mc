@@ -164,70 +164,69 @@ class MusicAlgo  {
 
     function categoriseSong(){
         //for each song, we categorise them so we can rank them easy based on the current running state
-        var statelist = ["WARMUP","RECOVER","TEMPO","RACE","FALLOFF","COOLDOWN"];
+        var statelist = ["RECOVER","FALLOFF","COOLDOWN","RACE","TEMPO","WARMUP"];
         var songchosen = false;
         var songStates = {
-            "RACE" =>   {
-                "state"=> RSTATE_RACE,
-                "bpmRange"=> [100, 200], // BPM match ideal cadence ~175-180bpm (High prio)
-                "dance"=> [.3, .75],
-                "energy"=> [.80, 1],
-                "acoustic"=> [0, 10],
-                "instrumental"=> [0, 1],
-                "liveness"=> [.05, .50],
-                "speech"=> [0, .20]
+            "RECOVER" => {
+                "state" => RSTATE_RECOVER,
+                "bpmRange" => [0, rundata.maxHR], // BPM match cadence (high prio)
+                "dance" => [.50, .85],
+                "energy" => [.50, .85],
+                "acoustic" => [0, .10],
+                "instrumental" => [0, .40],
+                "liveness" => [0, .20],
+                "speech" => [0, .10]
             },
-
-            "FALLOFF" =>{
-                "state"=> RSTATE_FALLOFF,
-                "bpmRange"=> [0, rundata.maxHR], // BPM equal avg cadence, or slightly higher than current cadence (High prio)
-                "happiness"=> [.40, .100],
-                "dance"=> [.29, .85],
-                "energy"=> [.70, .90],
-                "acoustic"=> [0, .40],
-                "instrumental"=> [0, .200],
-                "liveness"=> [.5, .50],
-                "speech"=> [0, .30]
+            "FALLOFF" => {
+                "state" => RSTATE_FALLOFF,
+                "bpmRange" => [0, rundata.maxHR], // BPM equal avg cadence, or slightly higher than current cadence (High prio)
+                "happiness" => [.40, .90],
+                "dance" => [.48, .80],
+                "energy" => [.73, 1],
+                "acoustic" => [0, .60],
+                "instrumental" => [0, .15],
+                "liveness" => [.05, .30],
+                "speech" => [0, .20]
             },
-            "TEMPO" =>  {
-                "state"=> RSTATE_TEMPO,
-                "bpmRange"=> [160, 1000], // BPM match cadence (High prio)
-                "dance"=> [.40, .85],
-                "energy"=> [.6, .100],
-                "acoustic"=> [0, .10],
-                "instrumental"=> [0, 1],
-                "liveness"=> [0, .50],
-                "speech"=> [0, .30]
+            "COOLDOWN" => {
+                "state" => RSTATE_COOLDOWN,
+                "bpmRange" => [0, rundata.maxHR], // BPM lower than current cadence (low prio)
+                "dance" => [.45, .55],
+                "energy" => [.60, .80],
+                "acoustic" => [0, .80],
+                "instrumental" => [0, .20],
+                "liveness" => [0, .25],
+                "speech" => [0, .50]
             },
-            "WARMUP" =>{ 
-                "state"=> RSTATE_WARMUP,
-                "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (low prio)
-                "dance"=> [0.5, 0.85],
-                "energy"=> [.50, .85],
-                "acoustic"=> [0, .10],
-                "instrumental"=> [0, .40],
-                "liveness"=> [0, .20],
-                "speech"=> [0, .10]
+            "RACE" => {
+                "state" => RSTATE_RACE,
+                "bpmRange" => [100, 200], // BPM match ideal cadence ~175-180bpm (High prio)
+                "dance" => [.05, .80],
+                "energy" => [.82, 1.00],
+                "acoustic" => [0, .10],
+                "instrumental" => [0, .10],
+                "liveness" => [.05, .60],
+                "speech" => [0, .20]
             },
-            "COOLDOWN" =>{
-                "state"=> RSTATE_COOLDOWN,
-                "bpmRange"=> [0, rundata.maxHR], // BPM lower than current cadence (low prio)
-                "dance"=> [0, .85],
-                "energy"=> [.30, .80],
-                "acoustic"=> [0, .10],
-                "instrumental"=> [0, 1],
-                "liveness"=> [.5, .50],
-                "speech"=> [0, .20]
+            "TEMPO" => {
+                "state" => RSTATE_TEMPO,
+                "bpmRange" => [0, 1000], // BPM match cadence (High prio)
+                "dance" => [.15, .80],
+                "energy" => [.60, 1],
+                "acoustic" => [0, 1],
+                "instrumental" => [0, 1],
+                "liveness" => [0, .80],
+                "speech" => [0, .28]
             },
-            "RECOVER" => { 
-                "state"=> RSTATE_RECOVER,
-                "bpmRange"=> [0, rundata.maxHR], // BPM match cadence (high prio)
-                "dance"=> [.50, .85],
-                "energy"=> [.50, .85],
-                "acoustic"=> [0, .10],
-                "instrumental"=> [0, .40],
-                "liveness"=> [0, .20],
-                "speech"=> [0, .10]
+            "WARMUP" => {
+                "state" => RSTATE_WARMUP,
+                "bpmRange" => [0, 200], // BPM match cadence (low prio)
+                "dance" => [.25, .85],
+                "energy" => [.30, 1],
+                "acoustic" => [0, .80],
+                "instrumental" => [0, .50],
+                "liveness" => [0, .90],
+                "speech" => [0, .60]
             }
         };
         System.println("ANALYSIS: " + spotify.getAnalysisFlag());
@@ -270,10 +269,10 @@ class MusicAlgo  {
 
                 }
                 if (songchosen == false) {
-                    // songMatch["UNIDENTIFIED"].add(spotify.selectedPlaylistTracks["track"+i]["track_href"]);
+                    songMatch["UNIDENTIFIED"].add(spotify.selectedPlaylistTracks["track"+i]["track_href"]);
                 }
             }
-            System.println(songMatch.toString());
+            // System.println(songMatch.toString());
             return songMatch;
         }
         else{
@@ -282,8 +281,54 @@ class MusicAlgo  {
 
     }
     //Determines the best song to queue based on the run state
-    function rankSong(runstate as String) {
-      
+    function rankSong() {
+      //Intensity of song state follows:
+      // RACE
+      // TEMPO
+      // FALLOFF
+      // WARMUP
+      // RECOVER
+      // COOLDOWN
+      //Depending on running state will change the order of the songsstates
+        var stateorder;
+        var queue;
+        
+        //need to establish prev runmodes to check the trend since we only queue one song
+        switch (true)
+            {
+                case (runmode == RSTATE_COOLDOWN):
+                    stateorder = ["COOLDOWN","RECOVER","WARMUP","FALLOFF","TEMPO","RACE"];
+                    break;
+                case (runmode == RSTATE_WARMUP):
+                    stateorder = ["WARMUP","FALLOFF","RECOVER","TEMPO","COOLOFF","RACE"];
+                    break;
+                case (runmode == RSTATE_RECOVER):
+                    stateorder = ["RECOVER","WARMUP","COOLDOWN","FALLOFF","TEMPO","RACE"];
+                    break;
+                case (runmode == RSTATE_TEMPO):
+                    stateorder = ["TEMPO","RACE","FALLOFF","WARMUP","RECOVER","COOLDOWN"];
+                    break;
+                case (runmode == RSTATE_RACE):
+                    stateorder = ["RACE","TEMPO","FALLOFF","WARMUP","RECOVER","COOLDOWN"];
+                    break;
+                case (runmode == RSTATE_FALLOFF):
+                    stateorder = ["FALLOFF","TEMPO","RACE","WARMUP","RECOVER","COOLDOWN"];
+                    break;
+                default:
+                    stateorder = ["WARMUP","FALLOFF","COOLDOWN","RECOVER","TEMPO","RACE"];
+                    break;
+            }
+            for (var i=0; i < stateorder.size(); i++) {
+                
+                if songMatch[stateorder[i]].size() > 0{
+                    queue = songMatch[stateorder[i]][0];
+                    songMatch.remove(songMatch[stateorder[i]][0].keys());
+                    break;
+                }
+            }
+
+            //queue song with spotify api calls
+            spotify.addToQueue(queue);
     }
 
 }
