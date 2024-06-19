@@ -43,17 +43,7 @@ class MusicAlgo  {
         "high" => { "range" => [0.4, 0.8], "variance" => HIGH },
         "sprint" => { "range" => [0.8, 1.0], "variance" => SPRINT },
         "stopped" => { "range" => [-1.0, -0.8], "variance" => STOPPED }
-    };
-    // var songStates = [
-    //     [RSTATE_WARMUP, [0, rundata.maxHR], [50, 85], [50, 85], [0, 10], [0, 40], [0, 20], [0, 10]],
-    //     [RSTATE_RECOVER, [0, rundata.maxHR], [50, 85], [50, 85], [0, 10], [0, 40], [0, 20], [0, 10]],
-    //     [RSTATE_TEMPO, [0, rundata.maxHR], [40, 85], [70, 100], [0, 10], [0, 100], [0, 50], [0, 30]],
-    //     [RSTATE_RACE, [175, 180], [40, 85], [80, 100], [0, 10], [0, 100], [5, 50], [0, 20]],
-    //     [RSTATE_FALLOFF, [0, rundata.maxHR], [40, 85], [70, 90], [0, 10], [0, 100], [5, 50], [20, 50], [40, 100]],
-    //     [RSTATE_COOLDOWN, [0, rundata.maxHR], [0, 85], [30, 80], [0, 10], [0, 100], [5, 50], [0, 20]]
-    // ];
-
-       
+    };     
 
 
     // Uses the Sensor Data to determine Run State
@@ -95,8 +85,7 @@ class MusicAlgo  {
                 stateText = "TEMPO RUN";
                 runmode = RSTATE_TEMPO;
             }
-            
-           
+                
              else {
                 // Default state if none of the conditions are met
                 System.println("RECOVER");
@@ -142,7 +131,6 @@ class MusicAlgo  {
     }
     function RegressionCalc(dataarray) {
         var value = corr(rundata.timestamps,dataarray);
-        //TODO: set up different sensor data, match to timestamp and tehn do correlation formala
         // Get the list of states (keys)
         var states = coefficients.keys();
         for (var i = 0; i < states.size(); i++) {
@@ -320,15 +308,20 @@ class MusicAlgo  {
             }
             for (var i=0; i < stateorder.size(); i++) {
                 
-                if songMatch[stateorder[i]].size() > 0{
+                if (songMatch[stateorder[i]].size() > 0){
                     queue = songMatch[stateorder[i]][0];
                     songMatch.remove(songMatch[stateorder[i]][0].keys());
+                     //queue song with spotify api calls
+                    spotify.getCurrentQueue();
+                    if (spotify.queueList.size() == 0){
+                        spotify.addToQueue(queue);
+                    
+                    }
                     break;
                 }
             }
 
-            //queue song with spotify api calls
-            spotify.addToQueue(queue);
+           
     }
 
 }

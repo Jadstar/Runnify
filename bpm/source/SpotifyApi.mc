@@ -48,6 +48,8 @@ class SpotifyApi {
     var delayedAudioFeatureTimer = new Timer.Timer();
     public var audioAnalysis;
 
+    // Queue
+    public var queueList = [];
     // Track progress
     public var currentTrackProgress = 0;
     public var trackPlaying = false;
@@ -112,7 +114,39 @@ class SpotifyApi {
         }
     }
 
+    function getCurrentQueue() as Void{
+        var url = $.BASE_URL + "/me/player/queue";
+        var params = {};
+        var options = {                                             
+            :method => Communications.HTTP_REQUEST_METHOD_GET,      
+            :headers => {
+                "Authorization" => "Bearer " + accesstoken,
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
+            }
+        };
+        
+        Communications.makeWebRequest(url, params, options, method(:currentQueueCallback));
+    }
 
+    function currentQueueCallback(responseCode as Number, data as Dictionary?) as Void{
+         System.println("Post received -> ");
+        if (responseCode == 401) { // Refresh if bad token code
+            System.println("Bad Token Provided");
+            System.println("Error: " + data["error"]);
+            refreshTokenRequest();
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else if (responseCode == 200 || responseCode == 204) {
+            queueList.add(data["queue"]["uri"]);
+            System.println("Current Queue: " + queueList);
+        } else {
+            System.println("Unhandled response in currentQueueCallback: " + responseCode + " " + data["error"]);
+        }
+        if (responseCode == 200) {
+
+        }
+
+    }
     /*
         Given a spotify track uri make a request to queue that song
     */
@@ -619,7 +653,7 @@ class SpotifyApi {
     */
     function getOAuthToken() {
         if (isDebug == true) {
-            authcode = "AQCWdP9YEARyrRIfmRnlR_EtoiqoCGxt_P5ke7_ldR_qQkFMCAt1YwBU-TST5s82P5N4Zwbzn88HglEJ8HP4ExIW_NtvD7H9iL-6K08V5V1U5UyoTzi7PlkuYji90yE0R4ygbQjZFb1jgjZdKT67nLsFjcO6t3my8oZ11lt9D3lWk3PKBCHK0sXNOjfq_taXTjasceI19VX_6emtUvFn13JaAx6Y1ttkVk124WzlTr3Av7KlCJNjAVkjsHNzhhx7ucoKby2Zg07XdYFzW2vSNW_ECd75K-pkB31LKf70Gb9P4939hnSC_Qeg1-WMDgjjLJ3dcg";
+            authcode = "AQBovjct8RWu90Gh62iOS-avwr7FUQL1YVp58FB-66diov0vFsknyDluySX9HQz9WcrvWDn6FX596tuZD427B9EBsOuDrWiNQo9eXUZAqMNibveuTMFrIDOpHqXMxUNxRsvDj-HWb7fNFD0FEUNJR1dimX_8dR_wm8UCZIx9fEJQw9Aa7PnWPDhmOZrqmQjTiJeNLOeD7WCvBD4v9C622GbTlo6sHMmNVYb240k4ZbBAqbm99BGl4PH7CE30V_R2CwzebEWzHOGuBd6oOVJuHVY6qoO_YTGZlK5db6rcN_0eBBEeyODefvWibeSzkN7RPmuZDg";
             tokenRequest();
             return;
         }
