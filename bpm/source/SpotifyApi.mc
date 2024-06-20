@@ -653,7 +653,7 @@ class SpotifyApi {
     */
     function getOAuthToken() {
         if (isDebug == true) {
-            authcode = "AQBovjct8RWu90Gh62iOS-avwr7FUQL1YVp58FB-66diov0vFsknyDluySX9HQz9WcrvWDn6FX596tuZD427B9EBsOuDrWiNQo9eXUZAqMNibveuTMFrIDOpHqXMxUNxRsvDj-HWb7fNFD0FEUNJR1dimX_8dR_wm8UCZIx9fEJQw9Aa7PnWPDhmOZrqmQjTiJeNLOeD7WCvBD4v9C622GbTlo6sHMmNVYb240k4ZbBAqbm99BGl4PH7CE30V_R2CwzebEWzHOGuBd6oOVJuHVY6qoO_YTGZlK5db6rcN_0eBBEeyODefvWibeSzkN7RPmuZDg";
+            authcode = "AQD-ZHKXsK8Fi4VG5Bj7byhoPWc7VzRTaHwS_OOiX94nnhTGAkNDANAk5O1geRo0g6ENtPmRy_TsJnlPlRCte6SnySe3Rn4Vvd-zGR5sRl-PZRYu71SsnTsT39j2EixWOJMlGW4KuYJJQmClLvu4918zkFqaqYP3uFXfwl8CsvZa7XaS613RasZgHlZY8vCxvv_KdPt0cLPDDuCjCJUF8waob8g7JmFkrWv44Sl5PklBdcynLbtVW8ZqdhC1_c-xY3sanNVFu_vg4ZHZzFf-TmOScjRS51k1-mo7zHOq9du0bBFZ09PTZmX2WHQoPpxkfMFXQio-t6rfDJbHkrsmdRxjrrBZ1JuQQL6YhK8L";
             tokenRequest();
             return;
         }

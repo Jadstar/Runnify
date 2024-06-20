@@ -322,13 +322,16 @@ class MusicAlgo  {
                     // System.println(songMatch[stateorder[i]].size());
 
                     songMatch[stateorder[i]].remove(songMatch[stateorder[i]][0]);
+
+                    //NOTE: getCurrentQueue() returns too much data so it breaks, and on top of thats theres issues with it on spotify's dev end so not using for now
                      //queue song with spotify api calls
                     // System.println(songMatch[stateorder[i]].size());
-                    spotify.getCurrentQueue();
+                    // spotify.getCurrentQueue();           
 
                     //wait for current queue to return
-                    if (spotify.queueList.size() == 0 && spotify.getqueueflag == true){
+                    if (spotify.queueList.size() == 0){
                         spotify.addToQueue(queue);
+                        spotify.queueList.add(queue);
                     
                     }
                     break;
