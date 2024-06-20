@@ -8,7 +8,7 @@ const CLIENT_SECRET = "0aa850a846844d46ab3d6c50591c1c2b";
 const OAUTH_CODE = "code";
 const OAUTH_ERROR = "error";
 const REDIRECT_URI = "connectiq://oauth";
-const SCOPE = "streaming user-modify-playback-state user-read-private user-read-email playlist-read-private user-read-currently-playing";
+const SCOPE = "streaming user-modify-playback-state user-read-private user-read-email playlist-read-private user-read-currently-playing user-read-playback-state";
 
 const PLAYLIST_LIMIT = 50;
 const TRACK_LIMIT = 50;
@@ -50,6 +50,7 @@ class SpotifyApi {
 
     // Queue
     public var queueList = [];
+    public var getqueueflag;
     // Track progress
     public var currentTrackProgress = 0;
     public var trackPlaying = false;
@@ -115,6 +116,7 @@ class SpotifyApi {
     }
 
     function getCurrentQueue() as Void{
+        getqueueflag = false;
         var url = $.BASE_URL + "/me/player/queue";
         var params = {};
         var options = {                                             
@@ -140,11 +142,9 @@ class SpotifyApi {
             queueList.add(data["queue"]["uri"]);
             System.println("Current Queue: " + queueList);
         } else {
-            System.println("Unhandled response in currentQueueCallback: " + responseCode + " " + data["error"]);
+            System.println("Unhandled response in currentQueueCallback: " + responseCode );
         }
-        if (responseCode == 200) {
-
-        }
+        getqueueflag = true;
 
     }
     /*
@@ -482,7 +482,7 @@ class SpotifyApi {
             // Add the audio features to the track variable in the dictionary so all the info is together
             for (var i = 0; i < data["audio_features"].size(); i++) {
                 var audiofeature = {
-                    "track_href" => data["audio_features"][i]["track_href"],
+                    "uri" => data["audio_features"][i]["uri"],
                     "id" => data["audio_features"][i]["id"],
                     "acousticness" => data["audio_features"][i]["acousticness"],
                     "instrumentalness" => data["audio_features"][i]["instrumentalness"],
@@ -531,7 +531,7 @@ class SpotifyApi {
         } else if (responseCode == 200 || responseCode == 204) {
             System.println("Added to queue!");
         } else {
-            System.println("Unhandled response in onQueueRequestResponse: " + responseCode + " " + data["error"]);
+            System.println("Unhandled response in onQueueRequestResponse: " + responseCode);
         }
     }
 

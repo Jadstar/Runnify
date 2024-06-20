@@ -88,10 +88,14 @@ class MusicAlgo  {
                 
              else {
                 // Default state if none of the conditions are met
-                System.println("RECOVER");
-                stateText = "RECOVERY";
+                System.println("UNKNOWN");
+                stateText = "UNKNOWN";
 
                 runmode = RSTATE_RECOVER;
+            }
+            if (categoriseSong() != false){
+                rankSong();
+
             }
         }
        
@@ -219,6 +223,7 @@ class MusicAlgo  {
         };
         System.println("ANALYSIS: " + spotify.getAnalysisFlag());
         if (spotify.getAnalysisFlag() == true){
+            spotify.audioAnalysis = false;
             //initailise the arrays
             for (var state=0; state < statelist.size(); state++) {
                 
@@ -248,8 +253,8 @@ class MusicAlgo  {
                         ) {
                         // categorise the song to its state
                         songchosen = true;
-                        System.println("State chosen" + statelist[state]);
-                        songMatch[statelist[state]].add(spotify.selectedPlaylistTracks["track"+i]["track_href"]);
+                        System.println("State chosen: " + statelist[state]);
+                        songMatch[statelist[state]].add(spotify.selectedPlaylistTracks["track"+i]["uri"]);
 
                         break; // Exit the loop once a state is matched
                     }
@@ -257,13 +262,16 @@ class MusicAlgo  {
 
                 }
                 if (songchosen == false) {
-                    songMatch["UNIDENTIFIED"].add(spotify.selectedPlaylistTracks["track"+i]["track_href"]);
+                    songMatch["UNIDENTIFIED"].add(spotify.selectedPlaylistTracks["track"+i]["uri"]);
                 }
             }
             // System.println(songMatch.toString());
-            return songMatch;
+            return true;
         }
-        else{
+        else if (songMatch.size() > 0){
+            return true;
+        }
+        else {
             return false;
         }
 
@@ -310,10 +318,16 @@ class MusicAlgo  {
                 
                 if (songMatch[stateorder[i]].size() > 0){
                     queue = songMatch[stateorder[i]][0];
-                    songMatch.remove(songMatch[stateorder[i]][0].keys());
+                    System.println(songMatch[stateorder[i]][0]);
+                    // System.println(songMatch[stateorder[i]].size());
+
+                    songMatch[stateorder[i]].remove(songMatch[stateorder[i]][0]);
                      //queue song with spotify api calls
+                    // System.println(songMatch[stateorder[i]].size());
                     spotify.getCurrentQueue();
-                    if (spotify.queueList.size() == 0){
+
+                    //wait for current queue to return
+                    if (spotify.queueList.size() == 0 && spotify.getqueueflag == true){
                         spotify.addToQueue(queue);
                     
                     }
