@@ -67,6 +67,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
         music.initialize(spotifyApi);
         View.initialize();
         runningStatusText = "ANALYSING DATA";
+        spotifyApi.getRecentlyPlayedTracks();   //we only run this once at the start because its got a lot of data
     }
 
     //! Load your resources here

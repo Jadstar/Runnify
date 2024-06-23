@@ -330,9 +330,25 @@ class MusicAlgo  {
 
                     //wait for current queue to return
                     if (spotify.queueList.size() == 0){
-                        spotify.addToQueue(queue);
-                        spotify.queueList.add(queue);
-                    
+
+                        //prioritise songs that haven't been recently played
+                        if (spotify.recentlyPlayed.size() >= 0){
+                        
+                            for (var a = 0; a < spotify.recentlyPlayed.size(); a++){
+                                if (queue != spotify.recentlyPlayed[a]){
+
+                                    spotify.addToQueue(queue);
+                                    spotify.queueList.add(queue);
+                                    break;
+
+                                }
+                            }
+                        }
+                        else {
+                            spotify.addToQueue(queue);
+                            spotify.queueList.add(queue);
+                        }
+                        
                     }
                     break;
                 }

@@ -8,12 +8,12 @@ const CLIENT_SECRET = "0aa850a846844d46ab3d6c50591c1c2b";
 const OAUTH_CODE = "code";
 const OAUTH_ERROR = "error";
 const REDIRECT_URI = "connectiq://oauth";
-const SCOPE = "streaming user-modify-playback-state user-read-private user-read-email playlist-read-private user-read-currently-playing user-read-playback-state";
+const SCOPE = "user-read-recently-played streaming user-modify-playback-state user-read-private user-read-email playlist-read-private user-read-currently-playing user-read-playback-state";
 
 const PLAYLIST_LIMIT = 50;
 const TRACK_LIMIT = 50;
 const AUDIO_FEATURE_LIM = 50;
-
+const RECENTPLAYED_LIMIT = 5;
 const TOKEN_EXP_DT = 10;
 
 /*
@@ -25,7 +25,7 @@ class SpotifyApi {
     public var accesstoken;
     public var refreshtoken;
     var autoRefreshTimer = new Timer.Timer();
-    var tokenExpirationSec = 3600;
+    var tokenExpirationSec = 3600;*
     var firstToken = true;
 
     // Playlist variables
@@ -48,9 +48,12 @@ class SpotifyApi {
     var delayedAudioFeatureTimer = new Timer.Timer();
     public var audioAnalysis;
 
-    // Queue
+
+    // Queue/Recently Played Variables
     public var queueList = [];
     public var getqueueflag;
+    public var  recentlyPlayed = [];
+
     // Track progress
     public var currentTrackProgress = 0;
     public var trackPlaying = false;
@@ -279,6 +282,47 @@ class SpotifyApi {
     /*
         Gets progress of current track playing
     */
+    function getRecentlyPlayedTracks() as Void {
+        var url = $.BASE_URL + "/me/player/recently-played";
+
+        var params = {
+            "limit" => $.RECENTPLAYED_LIMIT
+        };
+
+        var options = {                                             
+            :method => Communications.HTTP_REQUEST_METHOD_GET,      
+            :headers => {
+                "Authorization" => "Bearer " + accesstoken,
+                "Content-Type" => Communications.REQUEST_CONTENT_TYPE_URL_ENCODED
+            }
+        };
+
+        Communications.makeWebRequest(url, params, options, method(:recentlyPlayedResponse));
+
+
+    }
+    function recentlyPlayedResponse(responseCode as Number, data as Dictionary?) as Void {
+       System.println("Post received -> ");
+        if (responseCode == 401) { // Refresh if bad token code
+            System.println("Bad Token Provided");
+            System.println("Error: " + data["error"]);
+            refreshTokenRequest();
+        } else if (responseCode == 400) {
+            System.println("Error: " + data["error"]);
+        } else if (responseCode == 200 || responseCode == 204) {
+
+
+            for (var i = 0; i < data["items"].size(); i++){
+                
+                recentlyPlayed.add(data["items"][0]["track"]["uri"]);
+            }
+            System.println("Recently Played Songs: " + recentlyPlayed);
+        } else {
+            System.println("Unhandled response in recentlyPlayed: " + responseCode+ " error: " + data["error"] );
+        }
+    
+    }
+
     function getCurrentTrackProgress() as Void{
         var url = $.BASE_URL + "/me/player/currently-playing";
 
@@ -312,6 +356,18 @@ class SpotifyApi {
             var progress = data["progress_ms"];
             var track = data["item"];
 
+            //check queue list to see if this was previously queued to remove it from list
+            System.println("queue list: "+queueList);
+            if (queueList.size() > 0)
+            {
+                for (var i = 0; i < queueList.size(); i++){
+
+                    if (track["uri"] == queueList[i]){
+                        queueList.remove(queueList[i]);
+                        recentlyPlayed.add(queueList[i]);
+                    }
+                }
+            }
             if (progress != null && track != null) { // Sometimes returns as null
                 currentTrackProgress = progress.toDouble() / track["duration_ms"].toDouble();
                 
@@ -653,7 +709,7 @@ class SpotifyApi {
     */
     function getOAuthToken() {
         if (isDebug == true) {
-            authcode = "AQD-ZHKXsK8Fi4VG5Bj7byhoPWc7VzRTaHwS_OOiX94nnhTGAkNDANAk5O1geRo0g6ENtPmRy_TsJnlPlRCte6SnySe3Rn4Vvd-zGR5sRl-PZRYu71SsnTsT39j2EixWOJMlGW4KuYJJQmClLvu4918zkFqaqYP3uFXfwl8CsvZa7XaS613RasZgHlZY8vCxvv_KdPt0cLPDDuCjCJUF8waob8g7JmFkrWv44Sl5PklBdcynLbtVW8ZqdhC1_c-xY3sanNVFu_vg4ZHZzFf-TmOScjRS51k1-mo7zHOq9du0bBFZ09PTZmX2WHQoPpxkfMFXQio-t6rfDJbHkrsmdRxjrrBZ1JuQQL6YhK8L";
+            authcode = "AQCmjEdQP7U5xGXJHW1EgoxJPlqyGqebif_x3u8SK5jFXQioyp6c3p7L40bIROgEOAyx1uX_3kilq5aQ5gO9Pzi8DlMPoHoXxrL50WnpPKAAjBCQ3bCzgOzNX3mN2ttxJl-TDBST-RLj0u2XEt5CgmOQmfvVUAn8I1nSS871dJUpNATH3hCFDZNiEbjmHjUpjMmlpgKbgGLjqCOtCTCnE7MxYOvCdCyr2Yh3iQ2iJ36WC4SAbEchqN0oiWnsRVO5kqIaigqLwl8N8p1eiiKPWiKROUag021FTTtFiyPTaOPFVEC_qqnY5l9iU0NBpu8QpL3dmx0Ix1mgkCEzCEB9JSNoDvyY6B9tNdhBUxOE9O5mw1TRGcaRM2byCsij-1MtSaLQTPHJ4NUo";
             tokenRequest();
             return;
         }
