@@ -21,13 +21,16 @@ class SongsForTheHeartApp extends Application.AppBase {
             spotify.getOAuthToken();
         } else {
             spotify.refreshTokenRequest();
-        }
+            spotify.getRecentlyPlayedTracks();   //we only run this once at the start because its got a lot of data
 
+        }
+        
     }
 
     // onStop() is called when your application is exiting
     function onStop(state as Dictionary?) as Void {
         spotify.stop();
+        System.println("Exiting");
     }
 
     // Return the initial view of your application here

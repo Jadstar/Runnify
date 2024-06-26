@@ -25,7 +25,7 @@ class SpotifyApi {
     public var accesstoken;
     public var refreshtoken;
     var autoRefreshTimer = new Timer.Timer();
-    var tokenExpirationSec = 3600;*
+    var tokenExpirationSec = 3600;
     var firstToken = true;
 
     // Playlist variables
@@ -61,7 +61,7 @@ class SpotifyApi {
     public var currentTrackName = "No Active Device";
     public var  currentTrackImage = null;
 
-    var isDebug = true;
+    var isDebug = false;
 
     /*
         Constructor
@@ -318,7 +318,7 @@ class SpotifyApi {
             }
             System.println("Recently Played Songs: " + recentlyPlayed);
         } else {
-            System.println("Unhandled response in recentlyPlayed: " + responseCode+ " error: " + data["error"] );
+            System.println("Unhandled response in recentlyPlayed: " + responseCode+ " error: " );
         }
     
     }
@@ -358,16 +358,14 @@ class SpotifyApi {
 
             //check queue list to see if this was previously queued to remove it from list
             System.println("queue list: "+queueList);
-            if (queueList.size() > 0)
-            {
-                for (var i = 0; i < queueList.size(); i++){
 
-                    if (track["uri"] == queueList[i]){
-                        queueList.remove(queueList[i]);
-                        recentlyPlayed.add(queueList[i]);
-                    }
-                }
+            if (queueList.indexOf(track["uri"]) != -1){
+                queueList.remove(track["uri"]);
             }
+            if (recentlyPlayed.indexOf(track["uri"]) == -1){
+                recentlyPlayed.add(track["uri"]);
+            }
+
             if (progress != null && track != null) { // Sometimes returns as null
                 currentTrackProgress = progress.toDouble() / track["duration_ms"].toDouble();
                 
@@ -635,7 +633,7 @@ class SpotifyApi {
             getUsersPlaylists();
         } 
         else { // Failed, try authenticate again
-            System.println("Unhandled response in onReceiveToken(): " + responseCode + " " + data["error"]);
+            System.println("Unhandled response in onReceiveToken(): " + responseCode + " ");
             System.println("Attempting new OAuth...");
             getOAuthToken();
         }

@@ -231,7 +231,8 @@ class MusicAlgo  {
             }
             songMatch.put("UNIDENTIFIED",[]);
             System.println(songMatch.toString());
-            for (var i =0; i <spotify.selectedPlaylistTracks.size(); i++){
+            //I run this in reverse because sometimes the first song queues before it checks that its currently playing, this way that won't happen
+            for (var i =spotify.selectedPlaylistTracks.size()-1; i > 0; i--){
                 
                 songchosen = false;
                 // System.println("Tempo: " +spotify.selectedPlaylistTracks["track"+i]["tempo"]);

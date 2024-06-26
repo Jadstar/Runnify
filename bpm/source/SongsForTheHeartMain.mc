@@ -16,7 +16,6 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
     //! Handle the menu event
     //! @return true if handled, false otherwise
    
-
     public function onPreviousPage() as Boolean {
         var playlist;
         // If playlists retrieved
@@ -67,7 +66,6 @@ class SongsForTheHeartMainView extends WatchUi.View {
         music.initialize(spotifyApi);
         View.initialize();
         runningStatusText = "ANALYSING DATA";
-        spotifyApi.getRecentlyPlayedTracks();   //we only run this once at the start because its got a lot of data
     }
 
     //! Load your resources here

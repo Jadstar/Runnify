@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\Jaden\Documents\GitHub\Runnify\bpm\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="1" lineNum="6" parent="globals/SongsForTheHeartMainDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="19" parent="globals/SongsForTheHeartMainDelegate" pc="268435479" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="22" parent="globals/SongsForTheHeartMainDelegate" pc="268435483" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="20" parent="globals/SongsForTheHeartMainDelegate" pc="268435483" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="25" parent="globals/SongsForTheHeartMainDelegate" pc="268435500" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="26" parent="globals/SongsForTheHeartMainDelegate" pc="268435568" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="27" parent="globals/SongsForTheHeartMainDelegate" pc="268435585" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="29" parent="globals/SongsForTheHeartMainDelegate" pc="268435602" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="30" parent="globals/SongsForTheHeartMainDelegate" pc="268435627" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="32" parent="globals/SongsForTheHeartMainDelegate" pc="268435651" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="33" parent="globals/SongsForTheHeartMainDelegate" pc="268435658" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="34" parent="globals/SongsForTheHeartMainDelegate" pc="268435683" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="36" parent="globals/SongsForTheHeartMainDelegate" pc="268435708" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="38" parent="globals/SongsForTheHeartMainDelegate" pc="268435742" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="41" parent="globals/SongsForTheHeartMainDelegate" pc="268435769" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="42" parent="globals/SongsForTheHeartMainDelegate" pc="268435826" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="2" lineNum="46" parent="globals/SongsForTheHeartMainDelegate" pc="268435832" symbol="onPreviousPage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="3" lineNum="11" parent="globals/SongsForTheHeartMainDelegate" pc="268435835" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="3" lineNum="12" parent="globals/SongsForTheHeartMainDelegate" pc="268435837" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="3" lineNum="13" parent="globals/SongsForTheHeartMainDelegate" pc="268435847" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="4" lineNum="43" parent="globals" pc="268435866" symbol="getApp"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="4" lineNum="44" parent="globals" pc="268435876" symbol="getApp"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="5" lineNum="50" parent="globals/SongsForTheHeartMainView" pc="268435892" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="5" lineNum="52" parent="globals/SongsForTheHeartMainView" pc="268435910" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="5" lineNum="53" parent="globals/SongsForTheHeartMainView" pc="268435946" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="6" lineNum="80" parent="globals/SongsForTheHeartMainView" pc="268435994" symbol="onShow"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="6" lineNum="81" parent="globals/SongsForTheHeartMainView" pc="268435996" symbol="onShow"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="6" lineNum="82" parent="globals/SongsForTheHeartMainView" pc="268436037" symbol="onShow"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="7" lineNum="73" parent="globals/SongsForTheHeartMainView" pc="268436054" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="7" lineNum="74" parent="globals/SongsForTheHeartMainView" pc="268436056" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="85" parent="globals/SongsForTheHeartMainView" pc="268436098" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="88" parent="globals/SongsForTheHeartMainView" pc="268436100" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="89" parent="globals/SongsForTheHeartMainView" pc="268436118" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="90" parent="globals/SongsForTheHeartMainView" pc="268436134" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="91" parent="globals/SongsForTheHeartMainView" pc="268436152" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="93" parent="globals/SongsForTheHeartMainView" pc="268436168" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="95" parent="globals/SongsForTheHeartMainView" pc="268436190" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="96" parent="globals/SongsForTheHeartMainView" pc="268436203" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="99" parent="globals/SongsForTheHeartMainView" pc="268436225" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="102" parent="globals/SongsForTheHeartMainView" pc="268436247" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="8" lineNum="103" parent="globals/SongsForTheHeartMainView" pc="268436265" symbol="updateMainScreen"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="9" lineNum="62" parent="globals/SongsForTheHeartMainView" pc="268436282" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="9" lineNum="63" parent="globals/SongsForTheHeartMainView" pc="268436284" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="9" lineNum="64" parent="globals/SongsForTheHeartMainView" pc="268436294" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="9" lineNum="65" parent="globals/SongsForTheHeartMainView" pc="268436304" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="9" lineNum="66" parent="globals/SongsForTheHeartMainView" pc="268436314" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="9" lineNum="67" parent="globals/SongsForTheHeartMainView" pc="268436334" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="9" lineNum="68" parent="globals/SongsForTheHeartMainView" pc="268436352" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="10" lineNum="139" parent="globals/SongsForTheHeartMainView" pc="268436366" symbol="onHide"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="10" lineNum="140" parent="globals/SongsForTheHeartMainView" pc="268436368" symbol="onHide"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="108" parent="globals/SongsForTheHeartMainView" pc="268436387" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="111" parent="globals/SongsForTheHeartMainView" pc="268436389" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="114" parent="globals/SongsForTheHeartMainView" pc="268436409" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="115" parent="globals/SongsForTheHeartMainView" pc="268436431" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="118" parent="globals/SongsForTheHeartMainView" pc="268436510" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="119" parent="globals/SongsForTheHeartMainView" pc="268436532" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="122" parent="globals/SongsForTheHeartMainView" pc="268436611" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="123" parent="globals/SongsForTheHeartMainView" pc="268436686" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="124" parent="globals/SongsForTheHeartMainView" pc="268436708" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="127" parent="globals/SongsForTheHeartMainView" pc="268436799" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="128" parent="globals/SongsForTheHeartMainView" pc="268436818" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="132" parent="globals/SongsForTheHeartMainView" pc="268436896" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartMain.mc" id="11" lineNum="133" parent="globals/SongsForTheHeartMainView" pc="268436918" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="12" lineNum="32" parent="globals/DrawableMenuTitle" pc="268437004" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="13" lineNum="35" parent="globals/DrawableMenuTitle" pc="268437023" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="13" lineNum="36" parent="globals/DrawableMenuTitle" pc="268437025" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="14" lineNum="41" parent="globals/DrawableMenuTitle" pc="268437050" symbol="draw"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="14" lineNum="42" parent="globals/DrawableMenuTitle" pc="268437054" symbol="draw"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="14" lineNum="43" parent="globals/DrawableMenuTitle" pc="268437061" symbol="draw"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="14" lineNum="45" parent="globals/DrawableMenuTitle" pc="268437084" symbol="draw"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="14" lineNum="46" parent="globals/DrawableMenuTitle" pc="268437106" symbol="draw"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="15" lineNum="7" parent="globals/Rez" pc="268437119" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="16" lineNum="22" parent="globals/WatchSensorData" pc="268437143" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="16" lineNum="11" parent="globals/WatchSensorData" pc="268437143" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="16" lineNum="23" parent="globals/WatchSensorData" pc="268437157" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="16" lineNum="24" parent="globals/WatchSensorData" pc="268437171" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="16" lineNum="25" parent="globals/WatchSensorData" pc="268437185" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="16" lineNum="33" parent="globals/WatchSensorData" pc="268437199" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="16" lineNum="34" parent="globals/WatchSensorData" pc="268437222" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="130" parent="globals/WatchSensorData" pc="268437266" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="131" parent="globals/WatchSensorData" pc="268437270" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="132" parent="globals/WatchSensorData" pc="268437285" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="134" parent="globals/WatchSensorData" pc="268437298" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="137" parent="globals/WatchSensorData" pc="268437335" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="139" parent="globals/WatchSensorData" pc="268437342" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="141" parent="globals/WatchSensorData" pc="268437344" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="144" parent="globals/WatchSensorData" pc="268437367" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="147" parent="globals/WatchSensorData" pc="268437390" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="150" parent="globals/WatchSensorData" pc="268437413" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="153" parent="globals/WatchSensorData" pc="268437436" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="156" parent="globals/WatchSensorData" pc="268437459" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="142" parent="globals/WatchSensorData" pc="268437462" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="143" parent="globals/WatchSensorData" pc="268437475" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="145" parent="globals/WatchSensorData" pc="268437478" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="146" parent="globals/WatchSensorData" pc="268437491" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="148" parent="globals/WatchSensorData" pc="268437494" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="149" parent="globals/WatchSensorData" pc="268437507" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="151" parent="globals/WatchSensorData" pc="268437510" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="152" parent="globals/WatchSensorData" pc="268437523" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="154" parent="globals/WatchSensorData" pc="268437526" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="155" parent="globals/WatchSensorData" pc="268437539" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="157" parent="globals/WatchSensorData" pc="268437542" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="17" lineNum="158" parent="globals/WatchSensorData" pc="268437555" symbol="getHRpercent"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="18" lineNum="114" parent="globals/WatchSensorData" pc="268437566" symbol="getHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="18" lineNum="115" parent="globals/WatchSensorData" pc="268437568" symbol="getHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="18" lineNum="117" parent="globals/WatchSensorData" pc="268437581" symbol="getHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="19" lineNum="107" parent="globals/WatchSensorData" pc="268437601" symbol="getCadence"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="19" lineNum="108" parent="globals/WatchSensorData" pc="268437603" symbol="getCadence"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="19" lineNum="110" parent="globals/WatchSensorData" pc="268437616" symbol="getCadence"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="88" parent="globals/WatchSensorData" pc="268437636" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="89" parent="globals/WatchSensorData" pc="268437638" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="90" parent="globals/WatchSensorData" pc="268437652" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="91" parent="globals/WatchSensorData" pc="268437666" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="92" parent="globals/WatchSensorData" pc="268437680" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="93" parent="globals/WatchSensorData" pc="268437692" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="94" parent="globals/WatchSensorData" pc="268437735" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="20" lineNum="95" parent="globals/WatchSensorData" pc="268437767" symbol="getData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="69" parent="globals/WatchSensorData" pc="268437780" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="71" parent="globals/WatchSensorData" pc="268437784" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="72" parent="globals/WatchSensorData" pc="268437801" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="73" parent="globals/WatchSensorData" pc="268437808" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="75" parent="globals/WatchSensorData" pc="268437825" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="76" parent="globals/WatchSensorData" pc="268437841" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="77" parent="globals/WatchSensorData" pc="268437857" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="21" lineNum="78" parent="globals/WatchSensorData" pc="268437873" symbol="ActivityTimerCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="22" lineNum="123" parent="globals/WatchSensorData" pc="268437896" symbol="getZone"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="22" lineNum="125" parent="globals/WatchSensorData" pc="268437898" symbol="getZone"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="23" lineNum="164" parent="globals/WatchSensorData" pc="268437935" symbol="getMaxHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="23" lineNum="166" parent="globals/WatchSensorData" pc="268437939" symbol="getMaxHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="23" lineNum="168" parent="globals/WatchSensorData" pc="268437955" symbol="getMaxHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="23" lineNum="169" parent="globals/WatchSensorData" pc="268437974" symbol="getMaxHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="23" lineNum="172" parent="globals/WatchSensorData" pc="268437990" symbol="getMaxHeartRate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="24" lineNum="100" parent="globals/WatchSensorData" pc="268437999" symbol="getSpeed"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="24" lineNum="101" parent="globals/WatchSensorData" pc="268438001" symbol="getSpeed"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="24" lineNum="103" parent="globals/WatchSensorData" pc="268438014" symbol="getSpeed"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="25" lineNum="36" parent="globals/WatchSensorData" pc="268438034" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="25" lineNum="37" parent="globals/WatchSensorData" pc="268438036" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="25" lineNum="38" parent="globals/WatchSensorData" pc="268438071" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="41" parent="globals/WatchSensorData" pc="268438104" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="43" parent="globals/WatchSensorData" pc="268438106" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="45" parent="globals/WatchSensorData" pc="268438119" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="47" parent="globals/WatchSensorData" pc="268438148" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="48" parent="globals/WatchSensorData" pc="268438174" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="50" parent="globals/WatchSensorData" pc="268438208" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="52" parent="globals/WatchSensorData" pc="268438221" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="54" parent="globals/WatchSensorData" pc="268438250" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="55" parent="globals/WatchSensorData" pc="268438276" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="57" parent="globals/WatchSensorData" pc="268438310" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="59" parent="globals/WatchSensorData" pc="268438323" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="61" parent="globals/WatchSensorData" pc="268438352" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="62" parent="globals/WatchSensorData" pc="268438378" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="64" parent="globals/WatchSensorData" pc="268438405" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="65" parent="globals/WatchSensorData" pc="268438431" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\WatchSensorData.mc" id="26" lineNum="66" parent="globals/WatchSensorData" pc="268438457" symbol="tempDataStorer"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="27" lineNum="16" parent="globals/MusicAlgo" pc="268438492" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="27" lineNum="11" parent="globals/MusicAlgo" pc="268438492" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="27" lineNum="17" parent="globals/MusicAlgo" pc="268438506" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="27" lineNum="40" parent="globals/MusicAlgo" pc="268438542" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="104" parent="globals/MusicAlgo" pc="268438892" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="105" parent="globals/MusicAlgo" pc="268438896" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="106" parent="globals/MusicAlgo" pc="268438896" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="107" parent="globals/MusicAlgo" pc="268438904" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="108" parent="globals/MusicAlgo" pc="268438911" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="109" parent="globals/MusicAlgo" pc="268438932" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="111" parent="globals/MusicAlgo" pc="268438953" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="113" parent="globals/MusicAlgo" pc="268439019" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="114" parent="globals/MusicAlgo" pc="268439026" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="118" parent="globals/MusicAlgo" pc="268439032" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="119" parent="globals/MusicAlgo" pc="268439047" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="121" parent="globals/MusicAlgo" pc="268439079" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="122" parent="globals/MusicAlgo" pc="268439109" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="123" parent="globals/MusicAlgo" pc="268439141" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="127" parent="globals/MusicAlgo" pc="268439161" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="128" parent="globals/MusicAlgo" pc="268439168" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="131" parent="globals/MusicAlgo" pc="268439184" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="28" lineNum="134" parent="globals/MusicAlgo" pc="268439205" symbol="corr"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="281" parent="globals/MusicAlgo" pc="268439208" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="294" parent="globals/MusicAlgo" pc="268439212" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="290" parent="globals/MusicAlgo" pc="268439212" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="291" parent="globals/MusicAlgo" pc="268439212" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="296" parent="globals/MusicAlgo" pc="268439214" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="299" parent="globals/MusicAlgo" pc="268439243" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="302" parent="globals/MusicAlgo" pc="268439272" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="305" parent="globals/MusicAlgo" pc="268439301" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="308" parent="globals/MusicAlgo" pc="268439330" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="311" parent="globals/MusicAlgo" pc="268439359" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="314" parent="globals/MusicAlgo" pc="268439388" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="297" parent="globals/MusicAlgo" pc="268439391" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="298" parent="globals/MusicAlgo" pc="268439477" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="300" parent="globals/MusicAlgo" pc="268439480" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="301" parent="globals/MusicAlgo" pc="268439566" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="303" parent="globals/MusicAlgo" pc="268439569" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="304" parent="globals/MusicAlgo" pc="268439655" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="306" parent="globals/MusicAlgo" pc="268439658" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="307" parent="globals/MusicAlgo" pc="268439744" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="309" parent="globals/MusicAlgo" pc="268439747" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="310" parent="globals/MusicAlgo" pc="268439833" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="312" parent="globals/MusicAlgo" pc="268439836" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="313" parent="globals/MusicAlgo" pc="268439922" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="315" parent="globals/MusicAlgo" pc="268439925" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="316" parent="globals/MusicAlgo" pc="268440011" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="318" parent="globals/MusicAlgo" pc="268440015" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="320" parent="globals/MusicAlgo" pc="268440039" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="321" parent="globals/MusicAlgo" pc="268440071" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="322" parent="globals/MusicAlgo" pc="268440093" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="325" parent="globals/MusicAlgo" pc="268440131" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="333" parent="globals/MusicAlgo" pc="268440175" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="336" parent="globals/MusicAlgo" pc="268440207" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="338" parent="globals/MusicAlgo" pc="268440239" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="339" parent="globals/MusicAlgo" pc="268440275" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="341" parent="globals/MusicAlgo" pc="268440298" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="342" parent="globals/MusicAlgo" pc="268440318" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="343" parent="globals/MusicAlgo" pc="268440344" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="349" parent="globals/MusicAlgo" pc="268440366" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="350" parent="globals/MusicAlgo" pc="268440386" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="29" lineNum="354" parent="globals/MusicAlgo" pc="268440415" symbol="rankSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="136" parent="globals/MusicAlgo" pc="268440435" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="137" parent="globals/MusicAlgo" pc="268440439" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="139" parent="globals/MusicAlgo" pc="268440468" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="140" parent="globals/MusicAlgo" pc="268440487" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="141" parent="globals/MusicAlgo" pc="268440511" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="142" parent="globals/MusicAlgo" pc="268440518" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="144" parent="globals/MusicAlgo" pc="268440531" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="146" parent="globals/MusicAlgo" pc="268440541" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="147" parent="globals/MusicAlgo" pc="268440559" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="30" lineNum="151" parent="globals/MusicAlgo" pc="268440584" symbol="RegressionCalc"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="31" lineNum="153" parent="globals/MusicAlgo" pc="268440590" symbol="inRange"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="31" lineNum="154" parent="globals/MusicAlgo" pc="268440592" symbol="inRange"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="157" parent="globals/MusicAlgo" pc="268440621" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="159" parent="globals/MusicAlgo" pc="268440625" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="160" parent="globals/MusicAlgo" pc="268440711" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="161" parent="globals/MusicAlgo" pc="268440715" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="224" parent="globals/MusicAlgo" pc="268442632" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="225" parent="globals/MusicAlgo" pc="268442673" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="226" parent="globals/MusicAlgo" pc="268442696" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="228" parent="globals/MusicAlgo" pc="268442712" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="230" parent="globals/MusicAlgo" pc="268442736" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="232" parent="globals/MusicAlgo" pc="268442778" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="233" parent="globals/MusicAlgo" pc="268442807" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="235" parent="globals/MusicAlgo" pc="268442842" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="237" parent="globals/MusicAlgo" pc="268442884" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="246" parent="globals/MusicAlgo" pc="268442888" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="247" parent="globals/MusicAlgo" pc="268442912" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="256" parent="globals/MusicAlgo" pc="268443329" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="257" parent="globals/MusicAlgo" pc="268443333" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="258" parent="globals/MusicAlgo" pc="268443362" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="260" parent="globals/MusicAlgo" pc="268443415" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="265" parent="globals/MusicAlgo" pc="268443434" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="266" parent="globals/MusicAlgo" pc="268443442" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="270" parent="globals/MusicAlgo" pc="268443511" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="272" parent="globals/MusicAlgo" pc="268443517" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="273" parent="globals/MusicAlgo" pc="268443543" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="32" lineNum="276" parent="globals/MusicAlgo" pc="268443549" symbol="categoriseSong"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="33" lineNum="19" parent="globals/MusicAlgo" pc="268443553" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="33" lineNum="20" parent="globals/MusicAlgo" pc="268443555" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="33" lineNum="21" parent="globals/MusicAlgo" pc="268443565" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="33" lineNum="22" parent="globals/MusicAlgo" pc="268443599" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="50" parent="globals/MusicAlgo" pc="268443641" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="53" parent="globals/MusicAlgo" pc="268443643" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="55" parent="globals/MusicAlgo" pc="268443661" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="57" parent="globals/MusicAlgo" pc="268443673" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="58" parent="globals/MusicAlgo" pc="268443758" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="59" parent="globals/MusicAlgo" pc="268443829" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="60" parent="globals/MusicAlgo" pc="268443852" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="61" parent="globals/MusicAlgo" pc="268443865" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="63" parent="globals/MusicAlgo" pc="268443881" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="64" parent="globals/MusicAlgo" pc="268443930" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="65" parent="globals/MusicAlgo" pc="268443953" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="67" parent="globals/MusicAlgo" pc="268443969" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="68" parent="globals/MusicAlgo" pc="268444040" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="69" parent="globals/MusicAlgo" pc="268444063" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="70" parent="globals/MusicAlgo" pc="268444076" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="73" parent="globals/MusicAlgo" pc="268444092" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="74" parent="globals/MusicAlgo" pc="268444163" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="75" parent="globals/MusicAlgo" pc="268444186" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="76" parent="globals/MusicAlgo" pc="268444199" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="78" parent="globals/MusicAlgo" pc="268444215" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="79" parent="globals/MusicAlgo" pc="268444275" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="80" parent="globals/MusicAlgo" pc="268444288" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="81" parent="globals/MusicAlgo" pc="268444311" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="83" parent="globals/MusicAlgo" pc="268444327" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="84" parent="globals/MusicAlgo" pc="268444387" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="85" parent="globals/MusicAlgo" pc="268444410" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="86" parent="globals/MusicAlgo" pc="268444423" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="91" parent="globals/MusicAlgo" pc="268444439" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="92" parent="globals/MusicAlgo" pc="268444462" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="94" parent="globals/MusicAlgo" pc="268444475" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="96" parent="globals/MusicAlgo" pc="268444488" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\MusicAlgo.mc" id="34" lineNum="97" parent="globals/MusicAlgo" pc="268444505" symbol="parseRunData"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="27" parent="globals/SpotifyApi" pc="268444524" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="22" parent="globals/SpotifyApi" pc="268444524" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="32" parent="globals/SpotifyApi" pc="268444558" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="41" parent="globals/SpotifyApi" pc="268444572" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="46" parent="globals/SpotifyApi" pc="268444586" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="48" parent="globals/SpotifyApi" pc="268444600" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="53" parent="globals/SpotifyApi" pc="268444634" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="35" lineNum="55" parent="globals/SpotifyApi" pc="268444648" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="36" lineNum="77" parent="globals/SpotifyApi" pc="268444663" symbol="downloadTrackImage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="36" lineNum="78" parent="globals/SpotifyApi" pc="268444667" symbol="downloadTrackImage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="36" lineNum="80" parent="globals/SpotifyApi" pc="268444693" symbol="downloadTrackImage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="36" lineNum="81" parent="globals/SpotifyApi" pc="268444697" symbol="downloadTrackImage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="36" lineNum="82" parent="globals/SpotifyApi" pc="268444700" symbol="downloadTrackImage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="36" lineNum="105" parent="globals/SpotifyApi" pc="268444943" symbol="downloadTrackImage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="345" parent="globals/SpotifyApi" pc="268444984" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="346" parent="globals/SpotifyApi" pc="268444988" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="347" parent="globals/SpotifyApi" pc="268444999" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="348" parent="globals/SpotifyApi" pc="268445022" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="349" parent="globals/SpotifyApi" pc="268445054" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="350" parent="globals/SpotifyApi" pc="268445069" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="351" parent="globals/SpotifyApi" pc="268445080" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="352" parent="globals/SpotifyApi" pc="268445115" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="355" parent="globals/SpotifyApi" pc="268445126" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="356" parent="globals/SpotifyApi" pc="268445142" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="357" parent="globals/SpotifyApi" pc="268445152" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="360" parent="globals/SpotifyApi" pc="268445162" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="362" parent="globals/SpotifyApi" pc="268445194" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="363" parent="globals/SpotifyApi" pc="268445228" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="365" parent="globals/SpotifyApi" pc="268445257" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="366" parent="globals/SpotifyApi" pc="268445291" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="369" parent="globals/SpotifyApi" pc="268445320" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="370" parent="globals/SpotifyApi" pc="268445337" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="373" parent="globals/SpotifyApi" pc="268445374" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="374" parent="globals/SpotifyApi" pc="268445384" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="375" parent="globals/SpotifyApi" pc="268445407" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="377" parent="globals/SpotifyApi" pc="268445417" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="378" parent="globals/SpotifyApi" pc="268445451" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="380" parent="globals/SpotifyApi" pc="268445474" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="37" lineNum="383" parent="globals/SpotifyApi" pc="268445548" symbol="currentTrackResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="38" lineNum="737" parent="globals/SpotifyApi" pc="268445575" symbol="startPlayback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="38" lineNum="738" parent="globals/SpotifyApi" pc="268445579" symbol="startPlayback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="38" lineNum="740" parent="globals/SpotifyApi" pc="268445586" symbol="startPlayback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="38" lineNum="745" parent="globals/SpotifyApi" pc="268445658" symbol="startPlayback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="38" lineNum="753" parent="globals/SpotifyApi" pc="268445728" symbol="startPlayback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="38" lineNum="754" parent="globals/SpotifyApi" pc="268445751" symbol="startPlayback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="454" parent="globals/SpotifyApi" pc="268445792" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="456" parent="globals/SpotifyApi" pc="268445796" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="457" parent="globals/SpotifyApi" pc="268445822" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="458" parent="globals/SpotifyApi" pc="268445845" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="461" parent="globals/SpotifyApi" pc="268445849" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="462" parent="globals/SpotifyApi" pc="268445863" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="466" parent="globals/SpotifyApi" pc="268445876" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="467" parent="globals/SpotifyApi" pc="268445883" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="468" parent="globals/SpotifyApi" pc="268445890" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="469" parent="globals/SpotifyApi" pc="268445911" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="470" parent="globals/SpotifyApi" pc="268445928" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="471" parent="globals/SpotifyApi" pc="268445962" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="472" parent="globals/SpotifyApi" pc="268445981" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="473" parent="globals/SpotifyApi" pc="268445991" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="475" parent="globals/SpotifyApi" pc="268446001" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="479" parent="globals/SpotifyApi" pc="268446054" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="480" parent="globals/SpotifyApi" pc="268446094" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="481" parent="globals/SpotifyApi" pc="268446113" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="484" parent="globals/SpotifyApi" pc="268446123" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="485" parent="globals/SpotifyApi" pc="268446133" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="486" parent="globals/SpotifyApi" pc="268446156" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="39" lineNum="487" parent="globals/SpotifyApi" pc="268446166" symbol="getTrackAudioFeatures"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="136" parent="globals/SpotifyApi" pc="268446208" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="137" parent="globals/SpotifyApi" pc="268446210" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="138" parent="globals/SpotifyApi" pc="268446233" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="139" parent="globals/SpotifyApi" pc="268446244" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="140" parent="globals/SpotifyApi" pc="268446267" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="141" parent="globals/SpotifyApi" pc="268446299" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="142" parent="globals/SpotifyApi" pc="268446314" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="143" parent="globals/SpotifyApi" pc="268446325" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="144" parent="globals/SpotifyApi" pc="268446360" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="145" parent="globals/SpotifyApi" pc="268446385" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="146" parent="globals/SpotifyApi" pc="268446417" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="148" parent="globals/SpotifyApi" pc="268446452" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="40" lineNum="150" parent="globals/SpotifyApi" pc="268446478" symbol="currentQueueCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="41" lineNum="285" parent="globals/SpotifyApi" pc="268446489" symbol="getRecentlyPlayedTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="41" lineNum="286" parent="globals/SpotifyApi" pc="268446493" symbol="getRecentlyPlayedTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="41" lineNum="288" parent="globals/SpotifyApi" pc="268446500" symbol="getRecentlyPlayedTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="41" lineNum="292" parent="globals/SpotifyApi" pc="268446521" symbol="getRecentlyPlayedTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="41" lineNum="300" parent="globals/SpotifyApi" pc="268446591" symbol="getRecentlyPlayedTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="496" parent="globals/SpotifyApi" pc="268446632" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="497" parent="globals/SpotifyApi" pc="268446636" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="498" parent="globals/SpotifyApi" pc="268446668" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="500" parent="globals/SpotifyApi" pc="268446700" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="501" parent="globals/SpotifyApi" pc="268446720" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="502" parent="globals/SpotifyApi" pc="268446770" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="503" parent="globals/SpotifyApi" pc="268446780" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="506" parent="globals/SpotifyApi" pc="268446801" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="507" parent="globals/SpotifyApi" pc="268446808" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="511" parent="globals/SpotifyApi" pc="268446847" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="519" parent="globals/SpotifyApi" pc="268446917" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="42" lineNum="520" parent="globals/SpotifyApi" pc="268446949" symbol="delayedAudioRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="304" parent="globals/SpotifyApi" pc="268446990" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="305" parent="globals/SpotifyApi" pc="268446994" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="306" parent="globals/SpotifyApi" pc="268447017" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="307" parent="globals/SpotifyApi" pc="268447028" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="308" parent="globals/SpotifyApi" pc="268447051" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="309" parent="globals/SpotifyApi" pc="268447083" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="310" parent="globals/SpotifyApi" pc="268447098" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="311" parent="globals/SpotifyApi" pc="268447109" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="312" parent="globals/SpotifyApi" pc="268447144" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="315" parent="globals/SpotifyApi" pc="268447169" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="317" parent="globals/SpotifyApi" pc="268447199" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="319" parent="globals/SpotifyApi" pc="268447256" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="43" lineNum="321" parent="globals/SpotifyApi" pc="268447291" symbol="recentlyPlayedResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="44" lineNum="208" parent="globals/SpotifyApi" pc="268447324" symbol="selectPlaylist"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="44" lineNum="209" parent="globals/SpotifyApi" pc="268447328" symbol="selectPlaylist"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="44" lineNum="210" parent="globals/SpotifyApi" pc="268447338" symbol="selectPlaylist"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="44" lineNum="211" parent="globals/SpotifyApi" pc="268447351" symbol="selectPlaylist"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="44" lineNum="212" parent="globals/SpotifyApi" pc="268447358" symbol="selectPlaylist"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="256" parent="globals/SpotifyApi" pc="268447374" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="257" parent="globals/SpotifyApi" pc="268447378" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="258" parent="globals/SpotifyApi" pc="268447386" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="259" parent="globals/SpotifyApi" pc="268447393" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="260" parent="globals/SpotifyApi" pc="268447414" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="263" parent="globals/SpotifyApi" pc="268447449" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="264" parent="globals/SpotifyApi" pc="268447471" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="265" parent="globals/SpotifyApi" pc="268447481" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="266" parent="globals/SpotifyApi" pc="268447497" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="267" parent="globals/SpotifyApi" pc="268447519" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="273" parent="globals/SpotifyApi" pc="268447573" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="275" parent="globals/SpotifyApi" pc="268447580" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="45" lineNum="279" parent="globals/SpotifyApi" pc="268447616" symbol="reformatUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="46" lineNum="111" parent="globals/SpotifyApi" pc="268447627" symbol="imageResponseCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="46" lineNum="112" parent="globals/SpotifyApi" pc="268447629" symbol="imageResponseCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="46" lineNum="113" parent="globals/SpotifyApi" pc="268447640" symbol="imageResponseCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="46" lineNum="114" parent="globals/SpotifyApi" pc="268447650" symbol="imageResponseCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="46" lineNum="116" parent="globals/SpotifyApi" pc="268447669" symbol="imageResponseCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="46" lineNum="117" parent="globals/SpotifyApi" pc="268447695" symbol="imageResponseCallback"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="221" parent="globals/SpotifyApi" pc="268447705" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="222" parent="globals/SpotifyApi" pc="268447707" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="225" parent="globals/SpotifyApi" pc="268447718" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="226" parent="globals/SpotifyApi" pc="268447749" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="229" parent="globals/SpotifyApi" pc="268447765" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="230" parent="globals/SpotifyApi" pc="268447778" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="231" parent="globals/SpotifyApi" pc="268447797" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="235" parent="globals/SpotifyApi" pc="268447812" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="236" parent="globals/SpotifyApi" pc="268447844" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="237" parent="globals/SpotifyApi" pc="268447857" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="238" parent="globals/SpotifyApi" pc="268447867" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="239" parent="globals/SpotifyApi" pc="268447879" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="242" parent="globals/SpotifyApi" pc="268447926" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="243" parent="globals/SpotifyApi" pc="268447937" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="244" parent="globals/SpotifyApi" pc="268447960" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="245" parent="globals/SpotifyApi" pc="268447992" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="246" parent="globals/SpotifyApi" pc="268448007" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="247" parent="globals/SpotifyApi" pc="268448018" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="47" lineNum="249" parent="globals/SpotifyApi" pc="268448053" symbol="onPlayListResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="421" parent="globals/SpotifyApi" pc="268448080" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="422" parent="globals/SpotifyApi" pc="268448084" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="425" parent="globals/SpotifyApi" pc="268448095" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="426" parent="globals/SpotifyApi" pc="268448125" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="427" parent="globals/SpotifyApi" pc="268448165" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="431" parent="globals/SpotifyApi" pc="268448197" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="432" parent="globals/SpotifyApi" pc="268448210" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="433" parent="globals/SpotifyApi" pc="268448229" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="435" parent="globals/SpotifyApi" pc="268448244" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="436" parent="globals/SpotifyApi" pc="268448254" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="437" parent="globals/SpotifyApi" pc="268448325" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="440" parent="globals/SpotifyApi" pc="268448340" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="441" parent="globals/SpotifyApi" pc="268448351" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="442" parent="globals/SpotifyApi" pc="268448374" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="443" parent="globals/SpotifyApi" pc="268448406" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="444" parent="globals/SpotifyApi" pc="268448421" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="445" parent="globals/SpotifyApi" pc="268448432" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="48" lineNum="447" parent="globals/SpotifyApi" pc="268448467" symbol="onPlaylistTracksResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="49" lineNum="326" parent="globals/SpotifyApi" pc="268448494" symbol="getCurrentTrackProgress"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="49" lineNum="327" parent="globals/SpotifyApi" pc="268448498" symbol="getCurrentTrackProgress"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="49" lineNum="329" parent="globals/SpotifyApi" pc="268448505" symbol="getCurrentTrackProgress"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="49" lineNum="331" parent="globals/SpotifyApi" pc="268448513" symbol="getCurrentTrackProgress"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="49" lineNum="339" parent="globals/SpotifyApi" pc="268448583" symbol="getCurrentTrackProgress"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="50" lineNum="775" parent="globals/SpotifyApi" pc="268448624" symbol="stop"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="50" lineNum="776" parent="globals/SpotifyApi" pc="268448626" symbol="stop"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="51" lineNum="121" parent="globals/SpotifyApi" pc="268448645" symbol="getCurrentQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="51" lineNum="122" parent="globals/SpotifyApi" pc="268448649" symbol="getCurrentQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="51" lineNum="123" parent="globals/SpotifyApi" pc="268448659" symbol="getCurrentQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="51" lineNum="124" parent="globals/SpotifyApi" pc="268448666" symbol="getCurrentQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="51" lineNum="125" parent="globals/SpotifyApi" pc="268448674" symbol="getCurrentQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="51" lineNum="133" parent="globals/SpotifyApi" pc="268448744" symbol="getCurrentQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="390" parent="globals/SpotifyApi" pc="268448785" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="391" parent="globals/SpotifyApi" pc="268448789" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="394" parent="globals/SpotifyApi" pc="268448826" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="395" parent="globals/SpotifyApi" pc="268448840" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="396" parent="globals/SpotifyApi" pc="268448850" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="397" parent="globals/SpotifyApi" pc="268448863" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="398" parent="globals/SpotifyApi" pc="268448876" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="401" parent="globals/SpotifyApi" pc="268448893" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="407" parent="globals/SpotifyApi" pc="268448949" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="52" lineNum="415" parent="globals/SpotifyApi" pc="268449019" symbol="getPlaylistsTracks"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="53" lineNum="645" parent="globals/SpotifyApi" pc="268449060" symbol="refreshTokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="53" lineNum="646" parent="globals/SpotifyApi" pc="268449064" symbol="refreshTokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="53" lineNum="648" parent="globals/SpotifyApi" pc="268449071" symbol="refreshTokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="53" lineNum="654" parent="globals/SpotifyApi" pc="268449121" symbol="refreshTokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="53" lineNum="661" parent="globals/SpotifyApi" pc="268449205" symbol="refreshTokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="53" lineNum="662" parent="globals/SpotifyApi" pc="268449225" symbol="refreshTokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="577" parent="globals/SpotifyApi" pc="268449266" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="578" parent="globals/SpotifyApi" pc="268449268" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="579" parent="globals/SpotifyApi" pc="268449291" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="580" parent="globals/SpotifyApi" pc="268449302" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="581" parent="globals/SpotifyApi" pc="268449325" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="582" parent="globals/SpotifyApi" pc="268449357" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="583" parent="globals/SpotifyApi" pc="268449372" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="584" parent="globals/SpotifyApi" pc="268449383" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="585" parent="globals/SpotifyApi" pc="268449418" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="586" parent="globals/SpotifyApi" pc="268449443" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="54" lineNum="588" parent="globals/SpotifyApi" pc="268449469" symbol="onQueueRequestResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="55" lineNum="691" parent="globals/SpotifyApi" pc="268449496" symbol="onOAuthMessage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="55" lineNum="694" parent="globals/SpotifyApi" pc="268449498" symbol="onOAuthMessage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="55" lineNum="695" parent="globals/SpotifyApi" pc="268449511" symbol="onOAuthMessage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="55" lineNum="696" parent="globals/SpotifyApi" pc="268449534" symbol="onOAuthMessage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="55" lineNum="697" parent="globals/SpotifyApi" pc="268449556" symbol="onOAuthMessage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="55" lineNum="698" parent="globals/SpotifyApi" pc="268449593" symbol="onOAuthMessage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="55" lineNum="701" parent="globals/SpotifyApi" pc="268449608" symbol="onOAuthMessage"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="527" parent="globals/SpotifyApi" pc="268449632" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="528" parent="globals/SpotifyApi" pc="268449636" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="529" parent="globals/SpotifyApi" pc="268449659" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="531" parent="globals/SpotifyApi" pc="268449670" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="537" parent="globals/SpotifyApi" pc="268449686" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="538" parent="globals/SpotifyApi" pc="268449716" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="551" parent="globals/SpotifyApi" pc="268449974" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="555" parent="globals/SpotifyApi" pc="268450009" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="557" parent="globals/SpotifyApi" pc="268450044" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="558" parent="globals/SpotifyApi" pc="268450055" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="559" parent="globals/SpotifyApi" pc="268450078" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="560" parent="globals/SpotifyApi" pc="268450110" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="561" parent="globals/SpotifyApi" pc="268450125" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="562" parent="globals/SpotifyApi" pc="268450136" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="563" parent="globals/SpotifyApi" pc="268450171" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="564" parent="globals/SpotifyApi" pc="268450182" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="566" parent="globals/SpotifyApi" pc="268450208" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="56" lineNum="570" parent="globals/SpotifyApi" pc="268450234" symbol="onGetAudioFeaturesResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="57" lineNum="156" parent="globals/SpotifyApi" pc="268450254" symbol="addToQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="57" lineNum="157" parent="globals/SpotifyApi" pc="268450258" symbol="addToQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="57" lineNum="160" parent="globals/SpotifyApi" pc="268450268" symbol="addToQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="57" lineNum="164" parent="globals/SpotifyApi" pc="268450286" symbol="addToQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="57" lineNum="172" parent="globals/SpotifyApi" pc="268450356" symbol="addToQueue"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="58" lineNum="595" parent="globals/SpotifyApi" pc="268450397" symbol="checkTokenExpiration"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="58" lineNum="596" parent="globals/SpotifyApi" pc="268450399" symbol="checkTokenExpiration"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="58" lineNum="597" parent="globals/SpotifyApi" pc="268450416" symbol="checkTokenExpiration"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="58" lineNum="599" parent="globals/SpotifyApi" pc="268450431" symbol="checkTokenExpiration"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="178" parent="globals/SpotifyApi" pc="268450451" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="179" parent="globals/SpotifyApi" pc="268450455" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="182" parent="globals/SpotifyApi" pc="268450462" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="183" parent="globals/SpotifyApi" pc="268450476" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="184" parent="globals/SpotifyApi" pc="268450486" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="185" parent="globals/SpotifyApi" pc="268450499" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="186" parent="globals/SpotifyApi" pc="268450512" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="189" parent="globals/SpotifyApi" pc="268450529" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="194" parent="globals/SpotifyApi" pc="268450572" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="59" lineNum="202" parent="globals/SpotifyApi" pc="268450642" symbol="getUsersPlaylists"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="60" lineNum="493" parent="globals/SpotifyApi" pc="268450683" symbol="getAnalysisFlag"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="60" lineNum="494" parent="globals/SpotifyApi" pc="268450685" symbol="getAnalysisFlag"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="607" parent="globals/SpotifyApi" pc="268450694" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="608" parent="globals/SpotifyApi" pc="268450696" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="609" parent="globals/SpotifyApi" pc="268450719" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="612" parent="globals/SpotifyApi" pc="268450730" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="613" parent="globals/SpotifyApi" pc="268450743" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="614" parent="globals/SpotifyApi" pc="268450759" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="615" parent="globals/SpotifyApi" pc="268450796" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="616" parent="globals/SpotifyApi" pc="268450828" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="618" parent="globals/SpotifyApi" pc="268450847" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="619" parent="globals/SpotifyApi" pc="268450860" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="620" parent="globals/SpotifyApi" pc="268450876" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="621" parent="globals/SpotifyApi" pc="268450913" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="624" parent="globals/SpotifyApi" pc="268450948" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="625" parent="globals/SpotifyApi" pc="268450959" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="626" parent="globals/SpotifyApi" pc="268450982" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="627" parent="globals/SpotifyApi" pc="268451023" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="630" parent="globals/SpotifyApi" pc="268451036" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="633" parent="globals/SpotifyApi" pc="268451054" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="636" parent="globals/SpotifyApi" pc="268451069" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="637" parent="globals/SpotifyApi" pc="268451101" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="61" lineNum="638" parent="globals/SpotifyApi" pc="268451124" symbol="onReceiveToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="62" lineNum="668" parent="globals/SpotifyApi" pc="268451137" symbol="tokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="62" lineNum="669" parent="globals/SpotifyApi" pc="268451141" symbol="tokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="62" lineNum="671" parent="globals/SpotifyApi" pc="268451148" symbol="tokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="62" lineNum="677" parent="globals/SpotifyApi" pc="268451198" symbol="tokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="62" lineNum="685" parent="globals/SpotifyApi" pc="268451282" symbol="tokenRequest"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="708" parent="globals/SpotifyApi" pc="268451323" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="709" parent="globals/SpotifyApi" pc="268451327" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="710" parent="globals/SpotifyApi" pc="268451341" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="711" parent="globals/SpotifyApi" pc="268451354" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="712" parent="globals/SpotifyApi" pc="268451366" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="715" parent="globals/SpotifyApi" pc="268451370" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="718" parent="globals/SpotifyApi" pc="268451404" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="724" parent="globals/SpotifyApi" pc="268451464" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="63" lineNum="725" parent="globals/SpotifyApi" pc="268451487" symbol="getOAuthToken"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="64" lineNum="69" parent="globals/SpotifyApi" pc="268451555" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="64" lineNum="70" parent="globals/SpotifyApi" pc="268451557" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="64" lineNum="71" parent="globals/SpotifyApi" pc="268451593" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="757" parent="globals/SpotifyApi" pc="268451630" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="759" parent="globals/SpotifyApi" pc="268451632" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="760" parent="globals/SpotifyApi" pc="268451643" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="761" parent="globals/SpotifyApi" pc="268451666" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="762" parent="globals/SpotifyApi" pc="268451698" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="763" parent="globals/SpotifyApi" pc="268451713" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="764" parent="globals/SpotifyApi" pc="268451724" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="765" parent="globals/SpotifyApi" pc="268451759" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="766" parent="globals/SpotifyApi" pc="268451784" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SpotifyApi.mc" id="65" lineNum="768" parent="globals/SpotifyApi" pc="268451810" symbol="onStartResponse"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="66" lineNum="4" parent="globals/SongsForTheHeartView" pc="268451852" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="66" lineNum="6" parent="globals/SongsForTheHeartView" pc="268451870" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="68" lineNum="14" parent="globals/SongsForTheHeartView" pc="268451905" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="68" lineNum="15" parent="globals/SongsForTheHeartView" pc="268451907" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="69" lineNum="8" parent="globals/SongsForTheHeartView" pc="268451949" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="69" lineNum="9" parent="globals/SongsForTheHeartView" pc="268451951" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="69" lineNum="10" parent="globals/SongsForTheHeartView" pc="268451961" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="71" lineNum="25" parent="globals/SongsForTheHeartView" pc="268451980" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="71" lineNum="26" parent="globals/SongsForTheHeartView" pc="268451982" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="71" lineNum="29" parent="globals/SongsForTheHeartView" pc="268452002" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="71" lineNum="30" parent="globals/SongsForTheHeartView" pc="268452024" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="71" lineNum="31" parent="globals/SongsForTheHeartView" pc="268452082" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartView.mc" id="71" lineNum="32" parent="globals/SongsForTheHeartView" pc="268452152" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="72" lineNum="5" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452223" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="72" lineNum="7" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452241" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="72" lineNum="9" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452288" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="73" lineNum="27" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452305" symbol="onBack"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="73" lineNum="28" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452307" symbol="onBack"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="74" lineNum="11" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452329" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="74" lineNum="12" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452331" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="74" lineNum="13" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452341" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="75" lineNum="18" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452360" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="75" lineNum="19" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452364" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="75" lineNum="21" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452377" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="75" lineNum="22" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452397" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartPlaylistMenu.mc" id="75" lineNum="23" parent="globals/SongsForTheHeartPlaylistMenuDelegate" pc="268452415" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="76" lineNum="10" parent="globals/SongsForTheHeartApp" pc="268452428" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="76" lineNum="11" parent="globals/SongsForTheHeartApp" pc="268452446" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="76" lineNum="12" parent="globals/SongsForTheHeartApp" pc="268452480" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="76" lineNum="13" parent="globals/SongsForTheHeartApp" pc="268452514" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="77" lineNum="19" parent="globals/SongsForTheHeartApp" pc="268452557" symbol="onStart"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="77" lineNum="20" parent="globals/SongsForTheHeartApp" pc="268452559" symbol="onStart"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="77" lineNum="21" parent="globals/SongsForTheHeartApp" pc="268452600" symbol="onStart"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="77" lineNum="23" parent="globals/SongsForTheHeartApp" pc="268452621" symbol="onStart"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="77" lineNum="24" parent="globals/SongsForTheHeartApp" pc="268452639" symbol="onStart"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="78" lineNum="37" parent="globals/SongsForTheHeartApp" pc="268452658" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="78" lineNum="38" parent="globals/SongsForTheHeartApp" pc="268452660" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="79" lineNum="14" parent="globals/SongsForTheHeartApp" pc="268452767" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="79" lineNum="15" parent="globals/SongsForTheHeartApp" pc="268452769" symbol="initialize"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="80" lineNum="31" parent="globals/SongsForTheHeartApp" pc="268452788" symbol="onStop"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="80" lineNum="32" parent="globals/SongsForTheHeartApp" pc="268452790" symbol="onStop"/>
+        <entry filename="C:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\SongsForTheHeartApp.mc" id="80" lineNum="33" parent="globals/SongsForTheHeartApp" pc="268452808" symbol="onStop"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="81" lineNum="21" parent="globals/Rez/Layouts" pc="268452832" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="81" lineNum="22" parent="globals/Rez/Layouts" pc="268452842" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="82" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268452849" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="83" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268452868" symbol="initialize"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="83" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268452870" symbol="initialize"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="83" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268452888" symbol="initialize"/>
+        <entry filename="c:\\Users\\Jaden\\Documents\\GitHub\\Runnify\\bpm\\source\\gen\\006-B3113-00\\source\\Rez.mcgen" id="83" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268452944" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="121" symbol="usersPlaylists"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="31" symbol="ActivityAVGSpeed"/>
+        <entry field="true" id="69" symbol="audioFeatureRequests"/>
+        <entry field="true" id="124" symbol="menu"/>
+        <entry field="true" id="35" symbol="currCadence"/>
+        <entry id="39" method="true" symbol="getCadence"/>
+        <entry field="true" id="38" symbol="currentBPM"/>
+        <entry id="82" method="true" symbol="downloadTrackImage"/>
+        <entry field="true" id="25" symbol="stateData"/>
+        <entry field="true" id="105" symbol="recentlyPlayed"/>
+        <entry field="true" id="71" symbol="authcode"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="46" symbol="heartRates"/>
+        <entry id="10" object="true" symbol="MusicAlgo"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="8388638" module="true" symbol="ActivityRecording"/>
+        <entry field="true" id="23" symbol="runningStatusText"/>
+        <entry id="131" method="true" symbol="MainLayout"/>
+        <entry id="78" method="true" symbol="currentTrackResponse"/>
+        <entry id="99" method="true" symbol="onPlayListResponse"/>
+        <entry id="8389661" symbol="maxWidth"/>
+        <entry field="true" id="21" symbol="heartIcon"/>
+        <entry id="95" method="true" symbol="imageResponseCallback"/>
+        <entry field="true" id="128" symbol="Heart"/>
+        <entry field="true" id="66" symbol="accesstoken"/>
+        <entry field="true" id="29" symbol="ActivityAVGCadence"/>
+        <entry field="true" id="8389250" symbol="timestamp"/>
+        <entry field="true" id="79" symbol="currentTrackURL"/>
+        <entry field="true" id="8391941" symbol="theme"/>
+        <entry id="107" method="true" symbol="reformatUsersPlaylists"/>
+        <entry field="true" id="116" symbol="totalPlaylistCount"/>
+        <entry id="8389782" module="true" symbol="StringUtil"/>
+        <entry field="true" id="112" symbol="selectedPlaylistTracks"/>
+        <entry id="8388647" module="true" symbol="UserProfile"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="93" symbol="gotAllPlaylists"/>
+        <entry id="12" object="true" symbol="SongsForTheHeartMainDelegate"/>
+        <entry field="true" id="24" symbol="sensorData"/>
+        <entry field="true" id="48" symbol="profile"/>
+        <entry id="51" method="true" symbol="tempDataStorer"/>
+        <entry id="100" method="true" symbol="onPlaylistTracksResponse"/>
+        <entry id="59" method="true" symbol="rankSong"/>
+        <entry id="102" method="true" symbol="onReceiveToken"/>
+        <entry id="110" method="true" symbol="selectPlaylist"/>
+        <entry id="54" method="true" symbol="RegressionCalc"/>
+        <entry field="true" id="133" symbol="AppName"/>
+        <entry id="41" method="true" symbol="getHRpercent"/>
+        <entry field="true" id="37" symbol="currTime"/>
+        <entry id="11" object="true" symbol="SongsForTheHeartApp"/>
+        <entry id="97" method="true" symbol="onGetAudioFeaturesResponse"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry field="true" id="113" symbol="tokenExpirationSec"/>
+        <entry id="8389594" symbol="headers"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="42" method="true" symbol="getHeartRate"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8391867" module="true" symbol="Authentication"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry field="true" id="126" symbol="music"/>
+        <entry field="true" id="123" symbol="watchdata"/>
+        <entry field="true" id="22" symbol="playlistName"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="136" symbol="prompt"/>
+        <entry field="true" id="117" symbol="totalPlaylistsPages"/>
+        <entry field="true" id="8390129" symbol="coefficients"/>
+        <entry field="true" id="77" symbol="currentTrackProgress"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="96" symbol="isDebug"/>
+        <entry field="true" id="111" symbol="selectedPlaylistName"/>
+        <entry field="true" id="30" symbol="ActivityAVGHeartRate"/>
+        <entry id="89" method="true" symbol="getRecentlyPlayedTracks"/>
+        <entry field="true" id="80" symbol="delayedAudioFeatureTimer"/>
+        <entry field="true" id="61" symbol="rundata"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="119" symbol="totalTrackPages"/>
+        <entry id="138" symbol="item_2"/>
+        <entry id="137" symbol="item_1"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry field="true" id="53" symbol="zone"/>
+        <entry id="17" object="true" symbol="WatchSensorData"/>
+        <entry id="28" module="true" symbol="Menus"/>
+        <entry field="true" id="94" symbol="gotAllTracks"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="83" symbol="firstToken"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="40" method="true" symbol="getData"/>
+        <entry field="true" id="34" symbol="cadences"/>
+        <entry id="98" method="true" symbol="onOAuthMessage"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="114" method="true" symbol="tokenRequest"/>
+        <entry id="33" method="true" symbol="ActivityTimerCallback"/>
+        <entry field="true" id="120" symbol="trackPlaying"/>
+        <entry id="8389657" symbol="maxHeight"/>
+        <entry field="true" id="50" symbol="speeds"/>
+        <entry field="true" id="109" symbol="refreshtoken"/>
+        <entry id="43" method="true" symbol="getMaxHeartRate"/>
+        <entry field="true" id="32" symbol="ActivityElapsedTime"/>
+        <entry field="true" id="63" symbol="songMatch"/>
+        <entry id="88" method="true" symbol="getPlaylistsTracks"/>
+        <entry id="57" method="true" symbol="inRange"/>
+        <entry id="85" method="true" symbol="getCurrentQueue"/>
+        <entry id="26" method="true" symbol="updateMainScreen"/>
+        <entry id="58" method="true" symbol="parseRunData"/>
+        <entry id="14" object="true" symbol="SongsForTheHeartPlaylistMenuDelegate"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="91" method="true" symbol="getUsersPlaylists"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="15" object="true" symbol="SongsForTheHeartView"/>
+        <entry id="132" object="true" symbol="MainMenu"/>
+        <entry field="true" id="92" symbol="getqueueflag"/>
+        <entry id="8388699" method="true" symbol="stop"/>
+        <entry id="45" method="true" symbol="getZone"/>
+        <entry id="101" method="true" symbol="onQueueRequestResponse"/>
+        <entry field="true" id="8391337" symbol="offset"/>
+        <entry id="108" method="true" symbol="refreshTokenRequest"/>
+        <entry id="81" method="true" symbol="delayedAudioRequest"/>
+        <entry id="8388786" method="true" symbol="method"/>
+        <entry field="true" id="72" symbol="autoRefreshTimer"/>
+        <entry field="true" id="36" symbol="currSpeed"/>
+        <entry field="true" id="62" symbol="runmode"/>
+        <entry field="true" id="125" symbol="spotifyIcon"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="44" method="true" symbol="getSpeed"/>
+        <entry id="103" method="true" symbol="onStartResponse"/>
+        <entry field="true" id="19" symbol="spotifyApi"/>
+        <entry field="true" id="118" symbol="totalTrackCount"/>
+        <entry field="true" id="68" symbol="audioAnalysis"/>
+        <entry field="true" id="70" symbol="audioFeatureURLs"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="47" symbol="maxHR"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="130" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8388643" module="true" symbol="Sensor"/>
+        <entry field="true" id="20" symbol="currentTrackTimer"/>
+        <entry id="90" method="true" symbol="getTrackAudioFeatures"/>
+        <entry id="67" method="true" symbol="addToQueue"/>
+        <entry id="106" method="true" symbol="recentlyPlayedResponse"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="49" symbol="setAvgCadence"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="64" symbol="spotify"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="115" symbol="totalAudioFeatureRequests"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="65" symbol="stateText"/>
+        <entry id="86" method="true" symbol="getCurrentTrackProgress"/>
+        <entry id="13" object="true" symbol="SongsForTheHeartMainView"/>
+        <entry id="87" method="true" symbol="getOAuthToken"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="60" symbol="runTimer"/>
+        <entry id="9" object="true" symbol="DrawableMenuTitle"/>
+        <entry field="true" id="129" symbol="Heart2"/>
+        <entry id="74" method="true" symbol="currentQueueCallback"/>
+        <entry id="84" method="true" symbol="getAnalysisFlag"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="27" module="true" symbol="Layouts"/>
+        <entry field="true" id="75" symbol="currentTrackImage"/>
+        <entry id="8389694" symbol="dithering"/>
+        <entry id="16" object="true" symbol="SpotifyApi"/>
+        <entry id="56" method="true" symbol="corr"/>
+        <entry id="73" method="true" symbol="checkTokenExpiration"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="55" method="true" symbol="categoriseSong"/>
+        <entry field="true" id="76" symbol="currentTrackName"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="18" symbol="session"/>
+        <entry field="true" id="52" symbol="timestamps"/>
+        <entry field="true" id="104" symbol="queueList"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8389642" symbol="title"/>
+        <entry field="true" id="122" symbol="s"/>
+        <entry id="8390476" method="true" symbol="startPlayback"/>
+        <entry field="true" id="135" symbol="menu_label_2"/>
+        <entry field="true" id="134" symbol="menu_label_1"/>
+        <entry field="true" id="127" symbol="watchSensorData"/>
+        <entry id="8389660" symbol="palette"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435834" name="playlist" stackId="1" startPc="268435483"/>
+        <entry endPc="268435828" name="menu" stackId="2" startPc="268435500"/>
+        <entry endPc="268435828" name="playlistNames" stackId="3" startPc="268435500"/>
+        <entry endPc="268435768" name="playlistNum" stackId="4" startPc="268435651"/>
+        <entry endPc="268435755" name="playlistName" stackId="5" startPc="268435651"/>
+        <entry endPc="268435755" name="noOfTracks" stackId="6" startPc="268435651"/>
+        <entry endPc="268435755" name="imageURL" stackId="7" startPc="268435651"/>
+        <entry arg="true" endPc="268435865" name="spotify" stackId="1" startPc="268435835"/>
+        <entry arg="true" endPc="268436097" name="dc" stackId="1" startPc="268436054"/>
+        <entry arg="true" endPc="268436365" name="spotify" stackId="1" startPc="268436282"/>
+        <entry arg="true" endPc="268436365" name="watchSensorData" stackId="2" startPc="268436282"/>
+        <entry arg="true" endPc="268436365" name="music" stackId="3" startPc="268436282"/>
+        <entry arg="true" endPc="268437003" name="dc" stackId="1" startPc="268436387"/>
+        <entry arg="true" endPc="268437118" name="dc" stackId="1" startPc="268437050"/>
+        <entry endPc="268437117" name="spacing" stackId="2" startPc="268437054"/>
+        <entry endPc="268437117" name="labelWidth" stackId="3" startPc="268437054"/>
+        <entry arg="true" endPc="268437565" name="calendar" stackId="1" startPc="268437266"/>
+        <entry arg="true" endPc="268437565" name="sensorinfo" stackId="2" startPc="268437266"/>
+        <entry endPc="268437564" name="max" stackId="3" startPc="268437270"/>
+        <entry endPc="268437561" name="percent" stackId="4" startPc="268437298"/>
+        <entry arg="true" endPc="268437600" name="sensorInfo" stackId="1" startPc="268437566"/>
+        <entry arg="true" endPc="268437635" name="sensorInfo" stackId="1" startPc="268437601"/>
+        <entry arg="true" endPc="268437779" name="sensorInfo" stackId="1" startPc="268437636"/>
+        <entry endPc="268437894" name="activity" stackId="1" startPc="268437784"/>
+        <entry arg="true" endPc="268437998" name="calendar" stackId="1" startPc="268437935"/>
+        <entry endPc="268437998" name="curryear" stackId="2" startPc="268437939"/>
+        <entry endPc="268437998" name="age" stackId="3" startPc="268437939"/>
+        <entry arg="true" endPc="268438033" name="sensorInfo" stackId="1" startPc="268437999"/>
+        <entry arg="true" endPc="268439207" name="xvalues" stackId="1" startPc="268438892"/>
+        <entry arg="true" endPc="268439207" name="yvalues" stackId="2" startPc="268438892"/>
+        <entry endPc="268439207" name="coefficent" stackId="3" startPc="268438896"/>
+        <entry endPc="268439207" name="product_of_z" stackId="4" startPc="268438896"/>
+        <entry endPc="268439207" name="samplesize" stackId="5" startPc="268438896"/>
+        <entry endPc="268439207" name="x_avg" stackId="6" startPc="268438896"/>
+        <entry endPc="268439207" name="y_avg" stackId="7" startPc="268438896"/>
+        <entry endPc="268439183" name="i" stackId="8" startPc="268439047"/>
+        <entry endPc="268439170" name="z_x" stackId="9" startPc="268439047"/>
+        <entry endPc="268439157" name="z_y" stackId="10" startPc="268439109"/>
+        <entry endPc="268440433" name="stateorder" stackId="1" startPc="268439212"/>
+        <entry endPc="268440433" name="queue" stackId="2" startPc="268439212"/>
+        <entry endPc="268440433" name="i" stackId="3" startPc="268440039"/>
+        <entry endPc="268440362" name="a" stackId="4" startPc="268440275"/>
+        <entry arg="true" endPc="268440589" name="dataarray" stackId="1" startPc="268440435"/>
+        <entry endPc="268440589" name="value" stackId="2" startPc="268440439"/>
+        <entry endPc="268440589" name="states" stackId="3" startPc="268440439"/>
+        <entry endPc="268440583" name="i" stackId="4" startPc="268440511"/>
+        <entry endPc="268440570" name="state" stackId="5" startPc="268440511"/>
+        <entry endPc="268440570" name="entry" stackId="6" startPc="268440511"/>
+        <entry endPc="268440570" name="range" stackId="7" startPc="268440511"/>
+        <entry arg="true" endPc="268440620" name="value" stackId="1" startPc="268440590"/>
+        <entry arg="true" endPc="268440620" name="range" stackId="2" startPc="268440590"/>
+        <entry endPc="268443551" name="statelist" stackId="1" startPc="268440625"/>
+        <entry endPc="268443551" name="songchosen" stackId="2" startPc="268440625"/>
+        <entry endPc="268443551" name="songStates" stackId="3" startPc="268440625"/>
+        <entry endPc="268442777" name="state" stackId="4" startPc="268442736"/>
+        <entry endPc="268443510" name="i" stackId="5" startPc="268442884"/>
+        <entry endPc="268443433" name="state" stackId="6" startPc="268442912"/>
+        <entry arg="true" endPc="268443640" name="spotifyrun" stackId="1" startPc="268443553"/>
+        <entry arg="true" endPc="268444983" name="currentTrackURL" stackId="1" startPc="268444663"/>
+        <entry endPc="268444982" name="url" stackId="2" startPc="268444667"/>
+        <entry endPc="268444982" name="parameters" stackId="3" startPc="268444667"/>
+        <entry endPc="268444982" name="options" stackId="4" startPc="268444667"/>
+        <entry arg="true" endPc="268445574" name="responseCode" stackId="1" startPc="268444984"/>
+        <entry arg="true" endPc="268445574" name="data" stackId="2" startPc="268444984"/>
+        <entry endPc="268445544" name="progress" stackId="3" startPc="268445126"/>
+        <entry endPc="268445544" name="track" stackId="4" startPc="268445126"/>
+        <entry endPc="268445541" name="newTrackName" stackId="5" startPc="268445337"/>
+        <entry endPc="268445790" name="url" stackId="1" startPc="268445579"/>
+        <entry endPc="268445790" name="params" stackId="2" startPc="268445579"/>
+        <entry endPc="268445790" name="options" stackId="3" startPc="268445579"/>
+        <entry endPc="268446206" name="urlCount" stackId="1" startPc="268445796"/>
+        <entry endPc="268446206" name="getUrl" stackId="2" startPc="268445796"/>
+        <entry endPc="268446053" name="i" stackId="3" startPc="268445911"/>
+        <entry arg="true" endPc="268446488" name="responseCode" stackId="1" startPc="268446208"/>
+        <entry arg="true" endPc="268446488" name="data" stackId="2" startPc="268446208"/>
+        <entry endPc="268446630" name="url" stackId="1" startPc="268446493"/>
+        <entry endPc="268446630" name="params" stackId="2" startPc="268446493"/>
+        <entry endPc="268446630" name="options" stackId="3" startPc="268446493"/>
+        <entry endPc="268446988" name="url" stackId="1" startPc="268446801"/>
+        <entry endPc="268446988" name="params" stackId="2" startPc="268446801"/>
+        <entry endPc="268446988" name="options" stackId="3" startPc="268446801"/>
+        <entry arg="true" endPc="268447323" name="responseCode" stackId="1" startPc="268446990"/>
+        <entry arg="true" endPc="268447323" name="data" stackId="2" startPc="268446990"/>
+        <entry endPc="268447255" name="i" stackId="3" startPc="268447199"/>
+        <entry arg="true" endPc="268447373" name="name" stackId="1" startPc="268447324"/>
+        <entry endPc="268447372" name="selectedPlaylist" stackId="2" startPc="268447328"/>
+        <entry endPc="268447625" name="newdict" stackId="1" startPc="268447378"/>
+        <entry endPc="268447625" name="currentTotal" stackId="2" startPc="268447378"/>
+        <entry endPc="268447615" name="page" stackId="3" startPc="268447414"/>
+        <entry endPc="268447602" name="playlist" stackId="4" startPc="268447449"/>
+        <entry endPc="268447589" name="playlistDict" stackId="5" startPc="268447449"/>
+        <entry endPc="268447589" name="playlistName" stackId="6" startPc="268447449"/>
+        <entry endPc="268447589" name="tracks" stackId="7" startPc="268447449"/>
+        <entry endPc="268447589" name="image" stackId="8" startPc="268447449"/>
+        <entry endPc="268447589" name="trimmedDict" stackId="9" startPc="268447449"/>
+        <entry arg="true" endPc="268447704" name="responseCode" stackId="1" startPc="268447627"/>
+        <entry arg="true" endPc="268447704" name="data" stackId="2" startPc="268447627"/>
+        <entry arg="true" endPc="268448079" name="responseCode" stackId="1" startPc="268447705"/>
+        <entry arg="true" endPc="268448079" name="data" stackId="2" startPc="268447705"/>
+        <entry arg="true" endPc="268448493" name="responseCode" stackId="1" startPc="268448080"/>
+        <entry arg="true" endPc="268448493" name="data" stackId="2" startPc="268448080"/>
+        <entry endPc="268448196" name="i" stackId="3" startPc="268448125"/>
+        <entry endPc="268448622" name="url" stackId="1" startPc="268448498"/>
+        <entry endPc="268448622" name="params" stackId="2" startPc="268448498"/>
+        <entry endPc="268448622" name="options" stackId="3" startPc="268448498"/>
+        <entry endPc="268448783" name="url" stackId="1" startPc="268448649"/>
+        <entry endPc="268448783" name="params" stackId="2" startPc="268448649"/>
+        <entry endPc="268448783" name="options" stackId="3" startPc="268448649"/>
+        <entry endPc="268449058" name="url" stackId="1" startPc="268448789"/>
+        <entry endPc="268449058" name="params" stackId="2" startPc="268448789"/>
+        <entry endPc="268449058" name="options" stackId="3" startPc="268448789"/>
+        <entry endPc="268449264" name="url" stackId="1" startPc="268449064"/>
+        <entry endPc="268449264" name="params" stackId="2" startPc="268449064"/>
+        <entry endPc="268449264" name="options" stackId="3" startPc="268449064"/>
+        <entry arg="true" endPc="268449495" name="responseCode" stackId="1" startPc="268449266"/>
+        <entry arg="true" endPc="268449495" name="data" stackId="2" startPc="268449266"/>
+        <entry arg="true" endPc="268449631" name="message" stackId="1" startPc="268449496"/>
+        <entry arg="true" endPc="268450253" name="responseCode" stackId="1" startPc="268449632"/>
+        <entry arg="true" endPc="268450253" name="data" stackId="2" startPc="268449632"/>
+        <entry endPc="268450040" name="start" stackId="3" startPc="268449670"/>
+        <entry endPc="268450008" name="i" stackId="4" startPc="268449716"/>
+        <entry endPc="268449995" name="audiofeature" stackId="5" startPc="268449716"/>
+        <entry arg="true" endPc="268450396" name="uri" stackId="1" startPc="268450254"/>
+        <entry endPc="268450395" name="url" stackId="2" startPc="268450258"/>
+        <entry endPc="268450395" name="params" stackId="3" startPc="268450258"/>
+        <entry endPc="268450395" name="options" stackId="4" startPc="268450258"/>
+        <entry endPc="268450681" name="url" stackId="1" startPc="268450455"/>
+        <entry endPc="268450681" name="params" stackId="2" startPc="268450455"/>
+        <entry endPc="268450681" name="options" stackId="3" startPc="268450455"/>
+        <entry arg="true" endPc="268451136" name="responseCode" stackId="1" startPc="268450694"/>
+        <entry arg="true" endPc="268451136" name="data" stackId="2" startPc="268450694"/>
+        <entry endPc="268451321" name="url" stackId="1" startPc="268451141"/>
+        <entry endPc="268451321" name="params" stackId="2" startPc="268451141"/>
+        <entry endPc="268451321" name="options" stackId="3" startPc="268451141"/>
+        <entry endPc="268451553" name="params" stackId="1" startPc="268451327"/>
+        <entry arg="true" endPc="268451851" name="responseCode" stackId="1" startPc="268451630"/>
+        <entry arg="true" endPc="268451851" name="data" stackId="2" startPc="268451630"/>
+        <entry arg="true" endPc="268451948" name="dc" stackId="1" startPc="268451905"/>
+        <entry arg="true" endPc="268451979" name="spotify" stackId="1" startPc="268451949"/>
+        <entry arg="true" endPc="268452222" name="dc" stackId="1" startPc="268451980"/>
+        <entry arg="true" endPc="268452359" name="spotify" stackId="1" startPc="268452329"/>
+        <entry arg="true" endPc="268452427" name="item" stackId="1" startPc="268452360"/>
+        <entry endPc="268452426" name="name" stackId="2" startPc="268452364"/>
+        <entry arg="true" endPc="268452657" name="state" stackId="1" startPc="268452557"/>
+        <entry arg="true" endPc="268452831" name="state" stackId="1" startPc="268452788"/>
+        <entry arg="true" endPc="268452848" name="dc" stackId="1" startPc="268452832"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Heart2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Heart"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/SongsForTheHeartMainDelegate" offset="214" parentId="globals" symbolId="SongsForTheHeartMainDelegate" type="class"/>
+        <dataEntry label="globals/SongsForTheHeartMainView" offset="285" parentId="globals" symbolId="SongsForTheHeartMainView" type="class"/>
+        <dataEntry label="globals/DrawableMenuTitle" offset="436" parentId="globals" symbolId="DrawableMenuTitle" type="class"/>
+        <dataEntry label="globals/Rez" offset="491" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/WatchSensorData" offset="570" parentId="globals" symbolId="WatchSensorData" type="class"/>
+        <dataEntry label="globals/MusicAlgo" offset="825" parentId="globals" symbolId="MusicAlgo" type="class"/>
+        <dataEntry label="globals/SpotifyApi" offset="976" parentId="globals" symbolId="SpotifyApi" type="class"/>
+        <dataEntry label="globals/SongsForTheHeartView" offset="1487" parentId="globals" symbolId="SongsForTheHeartView" type="class"/>
+        <dataEntry label="globals/SongsForTheHeartPlaylistMenuDelegate" offset="1582" parentId="globals" symbolId="SongsForTheHeartPlaylistMenuDelegate" type="class"/>
+        <dataEntry label="globals/SongsForTheHeartApp" offset="1677" parentId="globals" symbolId="SongsForTheHeartApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1772" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1827" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1866" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1905" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1936" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1999" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="2030" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="SongsForTheHeartMainDelegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435834" name="onPreviousPage" parent="SongsForTheHeartMainDelegate" startPc="268435479">
+            <documentation><![CDATA[<div class="description"> Handle the menu event<br/> <div class="returns">Returns  true if handled, false otherwise</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435865" name="initialize" parent="SongsForTheHeartMainDelegate" startPc="268435835">
+            <param id="spotify"/>
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435891" name="getApp" startPc="268435866">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435993" name="&lt;init&gt;" parent="SongsForTheHeartMainView" startPc="268435892">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436053" name="onShow" parent="SongsForTheHeartMainView" startPc="268435994">
+            <documentation><![CDATA[<div class="description"> Called when this View is brought to the foreground. Restore<br/> the state of this View and prepare it to be shown. This includes<br/> loading resources into memory.<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436097" name="onLayout" parent="SongsForTheHeartMainView" startPc="268436054">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Load your resources here<br/> <div class="param"> dc Device Context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436281" name="updateMainScreen" parent="SongsForTheHeartMainView" startPc="268436098">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436365" name="initialize" parent="SongsForTheHeartMainView" startPc="268436282">
+            <param id="spotify"/>
+            <param id="watchSensorData"/>
+            <param id="music"/>
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436386" name="onHide" parent="SongsForTheHeartMainView" startPc="268436366">
+            <documentation><![CDATA[<div class="description"> Called when this View is removed from the screen. Save the<br/> state of this View here. This includes freeing resources from<br/> memory.<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437003" name="onUpdate" parent="SongsForTheHeartMainView" startPc="268436387">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Update the view<br/> <div class="param"> dc Device Context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437022" name="&lt;init&gt;" parent="DrawableMenuTitle" startPc="268437004">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437049" name="initialize" parent="DrawableMenuTitle" startPc="268437023">
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437118" name="draw" parent="DrawableMenuTitle" startPc="268437050">
+            <param id="dc"/>
+            <documentation><![CDATA[<div class="description"> Draw the application icon and main menu title<br/> <div class="param"> dc Device Context</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437142" name="&lt;init&gt;" parent="Rez" startPc="268437119">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437265" name="&lt;init&gt;" parent="WatchSensorData" startPc="268437143">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437565" name="getHRpercent" parent="WatchSensorData" startPc="268437266">
+            <param id="calendar"/>
+            <param id="sensorinfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437600" name="getHeartRate" parent="WatchSensorData" startPc="268437566">
+            <param id="sensorInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437635" name="getCadence" parent="WatchSensorData" startPc="268437601">
+            <param id="sensorInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437779" name="getData" parent="WatchSensorData" startPc="268437636">
+            <param id="sensorInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437895" name="ActivityTimerCallback" parent="WatchSensorData" startPc="268437780">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437934" name="getZone" parent="WatchSensorData" startPc="268437896">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437998" name="getMaxHeartRate" parent="WatchSensorData" startPc="268437935">
+            <param id="calendar"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438033" name="getSpeed" parent="WatchSensorData" startPc="268437999">
+            <param id="sensorInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438103" name="initialize" parent="WatchSensorData" startPc="268438034">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438491" name="tempDataStorer" parent="WatchSensorData" startPc="268438104">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438891" name="&lt;init&gt;" parent="MusicAlgo" startPc="268438492">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439207" name="corr" parent="MusicAlgo" startPc="268438892">
+            <param id="xvalues"/>
+            <param id="yvalues"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440434" name="rankSong" parent="MusicAlgo" startPc="268439208">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440589" name="RegressionCalc" parent="MusicAlgo" startPc="268440435">
+            <param id="dataarray"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440620" name="inRange" parent="MusicAlgo" startPc="268440590">
+            <param id="value"/>
+            <param id="range"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443552" name="categoriseSong" parent="MusicAlgo" startPc="268440621">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268443640" name="initialize" parent="MusicAlgo" startPc="268443553">
+            <param id="spotifyrun"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444523" name="parseRunData" parent="MusicAlgo" startPc="268443641">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444662" name="&lt;init&gt;" parent="SpotifyApi" startPc="268444524">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444983" name="downloadTrackImage" parent="SpotifyApi" startPc="268444663">
+            <param id="currentTrackURL"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445574" name="currentTrackResponse" parent="SpotifyApi" startPc="268444984">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445791" name="startPlayback" parent="SpotifyApi" startPc="268445575">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446207" name="getTrackAudioFeatures" parent="SpotifyApi" startPc="268445792">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446488" name="currentQueueCallback" parent="SpotifyApi" startPc="268446208">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446631" name="getRecentlyPlayedTracks" parent="SpotifyApi" startPc="268446489">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268446989" name="delayedAudioRequest" parent="SpotifyApi" startPc="268446632">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447323" name="recentlyPlayedResponse" parent="SpotifyApi" startPc="268446990">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447373" name="selectPlaylist" parent="SpotifyApi" startPc="268447324">
+            <param id="name"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447626" name="reformatUsersPlaylists" parent="SpotifyApi" startPc="268447374">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268447704" name="imageResponseCallback" parent="SpotifyApi" startPc="268447627">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448079" name="onPlayListResponse" parent="SpotifyApi" startPc="268447705">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448493" name="onPlaylistTracksResponse" parent="SpotifyApi" startPc="268448080">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448623" name="getCurrentTrackProgress" parent="SpotifyApi" startPc="268448494">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448644" name="stop" parent="SpotifyApi" startPc="268448624">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268448784" name="getCurrentQueue" parent="SpotifyApi" startPc="268448645">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268449059" name="getPlaylistsTracks" parent="SpotifyApi" startPc="268448785">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268449265" name="refreshTokenRequest" parent="SpotifyApi" startPc="268449060">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268449495" name="onQueueRequestResponse" parent="SpotifyApi" startPc="268449266">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268449631" name="onOAuthMessage" parent="SpotifyApi" startPc="268449496">
+            <param id="message"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450253" name="onGetAudioFeaturesResponse" parent="SpotifyApi" startPc="268449632">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450396" name="addToQueue" parent="SpotifyApi" startPc="268450254">
+            <param id="uri"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450450" name="checkTokenExpiration" parent="SpotifyApi" startPc="268450397">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450682" name="getUsersPlaylists" parent="SpotifyApi" startPc="268450451">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268450693" name="getAnalysisFlag" parent="SpotifyApi" startPc="268450683">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451136" name="onReceiveToken" parent="SpotifyApi" startPc="268450694">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451322" name="tokenRequest" parent="SpotifyApi" startPc="268451137">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451554" name="getOAuthToken" parent="SpotifyApi" startPc="268451323">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451629" name="initialize" parent="SpotifyApi" startPc="268451555">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451851" name="onStartResponse" parent="SpotifyApi" startPc="268451630">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451904" name="&lt;init&gt;" parent="SongsForTheHeartView" startPc="268451852">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="SongsForTheHeartView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451948" name="onLayout" parent="SongsForTheHeartView" startPc="268451905">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268451979" name="initialize" parent="SongsForTheHeartView" startPc="268451949">
+            <param id="spotify"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="SongsForTheHeartView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452222" name="onUpdate" parent="SongsForTheHeartView" startPc="268451980">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452304" name="&lt;init&gt;" parent="SongsForTheHeartPlaylistMenuDelegate" startPc="268452223">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452328" name="onBack" parent="SongsForTheHeartPlaylistMenuDelegate" startPc="268452305">
+            <documentation><![CDATA[<div class="description"> Handle the back key being pressed<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452359" name="initialize" parent="SongsForTheHeartPlaylistMenuDelegate" startPc="268452329">
+            <param id="spotify"/>
+            <documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452427" name="onSelect" parent="SongsForTheHeartPlaylistMenuDelegate" startPc="268452360">
+            <param id="item"/>
+            <documentation><![CDATA[<div class="description"> Handle an item being selected<br/> <div class="param"> item The selected menu item</div><br/></div>]]></documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452556" name="&lt;init&gt;" parent="SongsForTheHeartApp" startPc="268452428">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452657" name="onStart" parent="SongsForTheHeartApp" startPc="268452557">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452766" name="getInitialView" parent="SongsForTheHeartApp" startPc="268452658">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452787" name="initialize" parent="SongsForTheHeartApp" startPc="268452767">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452831" name="onStop" parent="SongsForTheHeartApp" startPc="268452788">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452848" name="MainLayout" parent="Layouts" startPc="268452832">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268452867" name="&lt;init&gt;" parent="MainMenu" startPc="268452849">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268453000" name="initialize" parent="MainMenu" startPc="268452868">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

@@ -101,21 +101,21 @@ class WatchSensorData {
         if (sensorInfo.speed != null)
         {
             currSpeed = sensorInfo.speed;       // in m/s
-            System.println("Current Speed: "  +currSpeed);
+            // System.println("Current Speed: "  +currSpeed);
         }
     }
     function getCadence(sensorInfo as Sensor.Info)  {
         if (sensorInfo.cadence != null)
         {
             currCadence = sensorInfo.cadence;
-            System.println("Current Cadence: "  +currCadence);
+            // System.println("Current Cadence: "  +currCadence);
         }
     }
     function getHeartRate(sensorInfo as Sensor.Info) {
         if (sensorInfo.heartRate != null)
         { 
             currentBPM = sensorInfo.heartRate;
-            System.println("Current HR: "  +currentBPM);
+            // System.println("Current HR: "  +currentBPM);
 
         }
     }
@@ -123,7 +123,7 @@ class WatchSensorData {
     function getZone() {
         
         getHRpercent(Gregorian.Info,Sensor.Info);
-        System.println("Current Zone: "  +zone);
+        // System.println("Current Zone: "  +zone);
         
 
     }
@@ -133,7 +133,7 @@ class WatchSensorData {
         {
             var percent = currentBPM.toFloat() / max.toFloat()*100;
         
-            System.println("percent: " + percent);
+            // System.println("percent: " + percent);
             if (percent != null)
             {
                 switch (true)
@@ -167,7 +167,7 @@ class WatchSensorData {
         
         var age = curryear - profile.birthYear;
         maxHR = 220- age;
-        System.println("MAX HR: "  +maxHR);
+        // System.println("MAX HR: "  +maxHR);
         
         return maxHR;
     }
