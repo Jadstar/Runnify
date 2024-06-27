@@ -6,13 +6,21 @@ import Toybox.Communications;
 import Toybox.StringUtil;
 import Toybox.Sensor;
 import Toybox.Timer;
+import Toybox.Background;
+import Toybox.Time;
+import Toybox.System;
 
+(:background)
 class SongsForTheHeartApp extends Application.AppBase {
     var spotify = new SpotifyApi();
     var watchSensorData = new WatchSensorData();
     var music = new MusicAlgo(spotify);
     function initialize() {
         AppBase.initialize();
+
+        if(Background.getTemporalEventRegisteredTime() != null) {
+            Background.registerForTemporalEvent(new Time.Duration(5 * 60));
+        }
     }
 
     // onStart() is called on application start up
@@ -37,6 +45,11 @@ class SongsForTheHeartApp extends Application.AppBase {
     function getInitialView() as Array<Views or InputDelegates>? {
         return [ new SongsForTheHeartMainView(spotify, watchSensorData,music), new SongsForTheHeartMainDelegate(spotify) ] as Array<Views or InputDelegates>;
     }
+
+    public function getServiceDelegate() as Array<System.ServiceDelegate> {
+        return [new BackgroundCall(music)];
+    }
+
 
 }
 

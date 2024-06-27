@@ -5,9 +5,11 @@ import Toybox.Lang;
 import Toybox.Math;
 import Toybox.Activity;
 import Toybox.Timer;
+import Toybox.Background;
 /*
     Collects and stores heart rate
 */
+(:background)
 class WatchSensorData {
 
     public var setAvgCadence = 175; // To be used so the user can choose the cadence threshold

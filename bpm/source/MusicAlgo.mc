@@ -1,6 +1,7 @@
 import Toybox.Sensor;
 import Toybox.Lang;
-
+import Toybox.System;
+import Toybox.Background;
 /*
 Uses the spotify song data found in a playlist
 compares it with the heart rate data and begins ranking
@@ -94,7 +95,7 @@ class MusicAlgo  {
                 runmode = RSTATE_RECOVER;
             }
             if (categoriseSong() != false){
-                rankSong();
+                // rankSong();
 
             }
         }
@@ -356,6 +357,21 @@ class MusicAlgo  {
             }
 
            
+    }
+
+}
+
+(:background)
+class BackgroundCall extends System.ServiceDelegate {
+    public var musicdata;
+    function initialize(music as MusicAlgo){
+        musicdata = music;
+    }
+    public function onTemporalEvent() as Void {
+        //Run the music algo ranking via background
+        System.println("BACKGROUND RUN");
+        musicdata.rankSong();
+        
     }
 
 }

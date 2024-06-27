@@ -2,6 +2,7 @@ import Toybox.Lang;
 import Toybox.Timer;
 import Toybox.Graphics;
 import Toybox.WatchUi;
+import Toybox.Background;
 const BASE_URL = "https://api.spotify.com/v1";
 const CLIENT_ID = "03e00d7168c84260a6175f4668bc7bd6";
 const CLIENT_SECRET = "0aa850a846844d46ab3d6c50591c1c2b";
@@ -16,15 +17,24 @@ const AUDIO_FEATURE_LIM = 50;
 const RECENTPLAYED_LIMIT = 5;
 const TOKEN_EXP_DT = 10;
 
+//Timers and Background functions cannot be in the same class, so the timers are moved to this child class
+class onTimerSpotifyCalls extends SpotifyApi {
+    var autoRefreshTimer = new Timer.Timer();
+    var delayedAudioFeatureTimer = new Timer.Timer();
+
+    function initialize(){
+        SpotifyApi.initialize();
+    }
+}
 /*
     Contains all spotify api functionality
 */
+(:background)
 class SpotifyApi {
     // Authentication stuff
     public var authcode;
     public var accesstoken;
     public var refreshtoken;
-    var autoRefreshTimer = new Timer.Timer();
     var tokenExpirationSec = 3600;
     var firstToken = true;
 
@@ -45,7 +55,6 @@ class SpotifyApi {
     var audioFeatureRequests = 0;
     var audioFeatureURLs = {};
     var totalAudioFeatureRequests = 0;
-    var delayedAudioFeatureTimer = new Timer.Timer();
     public var audioAnalysis;
 
 
@@ -153,6 +162,7 @@ class SpotifyApi {
     /*
         Given a spotify track uri make a request to queue that song
     */
+    (:background)
     function addToQueue(uri) {
         var url = $.BASE_URL + "/me/player/queue?uri=" + uri;    
         // System.println(uri);              
@@ -322,7 +332,7 @@ class SpotifyApi {
         }
     
     }
-
+    (:background)
     function getCurrentTrackProgress() as Void{
         var url = $.BASE_URL + "/me/player/currently-playing";
 
