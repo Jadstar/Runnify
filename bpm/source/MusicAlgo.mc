@@ -3,7 +3,7 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.Background;
 /*
-Uses the spotify song data found in a playlist
+Uses the spotifyAPI song data found in a playlist
 compares it with the heart rate data and begins ranking
 what song should play based on the state of runner
 
@@ -12,13 +12,15 @@ what song should play based on the state of runner
 class MusicAlgo  {
     public var runmode;
     public var stateText = "WAITING FOR DATA";
-    var spotify as SpotifyApi;
+    var spotifyApi as Spotify.SpotifyApi;
+    var spotifyTimerCalls as Spotify.onTimerSpotifyCalls;
     public var rundata;
     public var songMatch = {};
     var runTimer = new Timer.Timer();
 
-    function initialize(spotifyrun as SpotifyApi){
-        spotify = spotifyrun;
+    function initialize(spotifyrun as Spotify.SpotifyApi){
+        spotifyTimerCalls = new Spotify.onTimerSpotifyCalls();
+        spotifyApi = spotifyrun;
         rundata = new WatchSensorData();
         runTimer.start(method(:parseRunData),1000,true);
     }
@@ -52,7 +54,7 @@ class MusicAlgo  {
 
         //Run activity data:
         rundata.ActivityTimerCallback();
-        //if spotify is ready, start categorising songs
+        //if spotifyAPI is ready, start categorising songs
         categoriseSong();
 
         if (rundata.currSpeed != null && rundata.currCadence !=null && rundata.currentBPM !=null && rundata.zone !=null){
@@ -222,9 +224,9 @@ class MusicAlgo  {
                 "speech" => [0, .60]
             }
         };
-        System.println("ANALYSIS: " + spotify.getAnalysisFlag());
-        if (spotify.getAnalysisFlag() == true){
-            spotify.audioAnalysis = false;
+        System.println("ANALYSIS: " +spotifyTimerCalls.getAnalysisFlag());
+        if (spotifyTimerCalls.getAnalysisFlag() == true){
+            Spotify.audioAnalysis = false;
             //initailise the arrays
             for (var state=0; state < statelist.size(); state++) {
                 
@@ -233,30 +235,30 @@ class MusicAlgo  {
             songMatch.put("UNIDENTIFIED",[]);
             System.println(songMatch.toString());
             //I run this in reverse because sometimes the first song queues before it checks that its currently playing, this way that won't happen
-            for (var i =spotify.selectedPlaylistTracks.size()-1; i > 0; i--){
+            for (var i =Spotify.selectedPlaylistTracks.size()-1; i > 0; i--){
                 
                 songchosen = false;
-                // System.println("Tempo: " +spotify.selectedPlaylistTracks["track"+i]["tempo"]);
-                // System.println("danceability: " +spotify.selectedPlaylistTracks["track"+i]["danceability"]);
-                // System.println("energy: " +spotify.selectedPlaylistTracks["track"+i]["energy"]);
-                // System.println("acousticness: " +spotify.selectedPlaylistTracks["track"+i]["acousticness"]);
-                // System.println("instrumentalness: " +spotify.selectedPlaylistTracks["track"+i]["instrumentalness"]);
-                // System.println("liveness: " +spotify.selectedPlaylistTracks["track"+i]["liveness"]);
+                // System.println("Tempo: " +Spotify.selectedPlaylistTracks["track"+i]["tempo"]);
+                // System.println("danceability: " +Spotify.selectedPlaylistTracks["track"+i]["danceability"]);
+                // System.println("energy: " +Spotify.selectedPlaylistTracks["track"+i]["energy"]);
+                // System.println("acousticness: " +Spotify.selectedPlaylistTracks["track"+i]["acousticness"]);
+                // System.println("instrumentalness: " +Spotify.selectedPlaylistTracks["track"+i]["instrumentalness"]);
+                // System.println("liveness: " +Spotify.selectedPlaylistTracks["track"+i]["liveness"]);
 
 
                 for (var state=0; state < songStates.size(); state++) {
-                    if (inRange(spotify.selectedPlaylistTracks["track"+i]["tempo"], songStates[statelist[state]]["bpmRange"]) &&
-                        inRange(spotify.selectedPlaylistTracks["track"+i]["danceability"], songStates[statelist[state]]["dance"]) &&
-                        inRange(spotify.selectedPlaylistTracks["track"+i]["energy"], songStates[statelist[state]]["energy"]) &&
-                        inRange(spotify.selectedPlaylistTracks["track"+i]["acousticness"], songStates[statelist[state]]["acoustic"]) &&
-                        inRange(spotify.selectedPlaylistTracks["track"+i]["instrumentalness"], songStates[statelist[state]]["instrumental"]) &&
-                        inRange(spotify.selectedPlaylistTracks["track"+i]["liveness"], songStates[statelist[state]]["liveness"]) &&
-                        inRange(spotify.selectedPlaylistTracks["track"+i]["speechiness"], songStates[statelist[state]]["speech"])
+                    if (inRange(Spotify.selectedPlaylistTracks["track"+i]["tempo"], songStates[statelist[state]]["bpmRange"]) &&
+                        inRange(Spotify.selectedPlaylistTracks["track"+i]["danceability"], songStates[statelist[state]]["dance"]) &&
+                        inRange(Spotify.selectedPlaylistTracks["track"+i]["energy"], songStates[statelist[state]]["energy"]) &&
+                        inRange(Spotify.selectedPlaylistTracks["track"+i]["acousticness"], songStates[statelist[state]]["acoustic"]) &&
+                        inRange(Spotify.selectedPlaylistTracks["track"+i]["instrumentalness"], songStates[statelist[state]]["instrumental"]) &&
+                        inRange(Spotify.selectedPlaylistTracks["track"+i]["liveness"], songStates[statelist[state]]["liveness"]) &&
+                        inRange(Spotify.selectedPlaylistTracks["track"+i]["speechiness"], songStates[statelist[state]]["speech"])
                         ) {
                         // categorise the song to its state
                         songchosen = true;
                         System.println("State chosen: " + statelist[state]);
-                        songMatch[statelist[state]].add(spotify.selectedPlaylistTracks["track"+i]["uri"]);
+                        songMatch[statelist[state]].add(Spotify.selectedPlaylistTracks["track"+i]["uri"]);
 
                         break; // Exit the loop once a state is matched
                     }
@@ -264,7 +266,7 @@ class MusicAlgo  {
 
                 }
                 if (songchosen == false) {
-                    songMatch["UNIDENTIFIED"].add(spotify.selectedPlaylistTracks["track"+i]["uri"]);
+                    songMatch["UNIDENTIFIED"].add(Spotify.selectedPlaylistTracks["track"+i]["uri"]);
                 }
             }
             // System.println(songMatch.toString());
@@ -325,30 +327,30 @@ class MusicAlgo  {
 
                     songMatch[stateorder[i]].remove(songMatch[stateorder[i]][0]);
 
-                    //NOTE: getCurrentQueue() returns too much data so it breaks, and on top of thats theres issues with it on spotify's dev end so not using for now
-                     //queue song with spotify api calls
+                    //NOTE: getCurrentQueue() returns too much data so it breaks, and on top of thats theres issues with it on spotifyAPI's dev end so not using for now
+                     //queue song with spotifyAPI api calls
                     // System.println(songMatch[stateorder[i]].size());
-                    // spotify.getCurrentQueue();           
+                    //spotifyApi.getCurrentQueue();           
 
                     //wait for current queue to return
-                    if (spotify.queueList.size() == 0){
+                    if (Spotify.queueList.size() == 0){
 
                         //prioritise songs that haven't been recently played
-                        if (spotify.recentlyPlayed.size() >= 0){
+                        if (Spotify.recentlyPlayed.size() >= 0){
                         
-                            for (var a = 0; a < spotify.recentlyPlayed.size(); a++){
-                                if (queue != spotify.recentlyPlayed[a]){
+                            for (var a = 0; a <Spotify.recentlyPlayed.size(); a++){
+                                if (queue !=Spotify.recentlyPlayed[a]){
 
-                                    spotify.addToQueue(queue);
-                                    spotify.queueList.add(queue);
+                                   spotifyApi.addToQueue(queue);
+                                   Spotify.queueList.add(queue);
                                     break;
 
                                 }
                             }
                         }
                         else {
-                            spotify.addToQueue(queue);
-                            spotify.queueList.add(queue);
+                           spotifyApi.addToQueue(queue);
+                           Spotify.queueList.add(queue);
                         }
                         
                     }

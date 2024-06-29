@@ -12,7 +12,7 @@ import Toybox.System;
 
 (:background)
 class SongsForTheHeartApp extends Application.AppBase {
-    var spotify = new SpotifyApi();
+    var spotify = new Spotify.SpotifyApi();
     var watchSensorData = new WatchSensorData();
     var music = new MusicAlgo(spotify);
     function initialize() {

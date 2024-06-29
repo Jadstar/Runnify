@@ -1,15 +1,18 @@
 import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Spotify;
 
 class SongsForTheHeartPlaylistMenuDelegate extends WatchUi.Menu2InputDelegate {
-    var spotifyApi as SpotifyApi;
+    var spotifyApi as Spotify.SpotifyApi;
+    var spotifyTimer as Spotify.onTimerSpotifyCalls;
     var spotifyIcon = WatchUi.loadResource($.Rez.Drawables.Heart2);
     var theme =MENU_THEME_GREEN;
     var menu = Menu2InputDelegate;
     //! Constructor
-    public function initialize(spotify as SpotifyApi) {
+    public function initialize(spotify as Spotify.SpotifyApi) {
         spotifyApi = spotify;
+        spotifyTimer = new Spotify.onTimerSpotifyCalls();
         Menu2InputDelegate.initialize();
     }
 
@@ -18,7 +21,7 @@ class SongsForTheHeartPlaylistMenuDelegate extends WatchUi.Menu2InputDelegate {
     public function onSelect(item as MenuItem) as Void {
         var name = item.getId() as String;
         
-        spotifyApi.selectPlaylist(name);
+        spotifyTimer.selectPlaylist(name);
         spotifyApi.startPlayback();
         onBack();
     }

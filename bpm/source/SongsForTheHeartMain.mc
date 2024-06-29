@@ -8,7 +8,7 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
     var session = null;                                             // set up session variable
 
     //! Constructor
-    public function initialize(spotify as SpotifyApi) {
+    public function initialize(spotify as Spotify.onTimerSpotifyCalls) {
         spotifyApi = spotify;
         BehaviorDelegate.initialize();
     }
@@ -19,7 +19,7 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
     public function onPreviousPage() as Boolean {
         var playlist;
         // If playlists retrieved
-        if (spotifyApi.gotAllPlaylists) {
+        if (Spotify.gotAllPlaylists) {
 
             // Generate a new Menu with a drawable Title
             var menu = new WatchUi.Menu2({:title=>new $.DrawableMenuTitle()});
@@ -41,14 +41,16 @@ class SongsForTheHeartMainDelegate extends WatchUi.BehaviorDelegate {
             WatchUi.pushView(menu, new $.SongsForTheHeartPlaylistMenuDelegate(spotifyApi), WatchUi.SLIDE_UP);
             return true;
         }
-
-        // Otherwise dont handle button press
-        return false;
+        else {
+            spotifyApi.getUsersPlaylists();
+        
+            return false;
+        }
     }
 }
 
 class SongsForTheHeartMainView extends WatchUi.View {
-    var spotifyApi as SpotifyApi;
+    var spotifyApi as Spotify.SpotifyApi;
     var currentTrackTimer = new Timer.Timer();
     var heartIcon = WatchUi.loadResource($.Rez.Drawables.Heart2);
 
@@ -59,7 +61,7 @@ class SongsForTheHeartMainView extends WatchUi.View {
     // var music = new  MusicAlgo();
     var runningStatusText;
     //! Constructor
-    public function initialize(spotify as SpotifyApi, watchSensorData as WatchSensorData,music as MusicAlgo) {
+    public function initialize(spotify as Spotify.SpotifyApi, watchSensorData as WatchSensorData,music as MusicAlgo) {
         spotifyApi = spotify;
         sensorData = watchSensorData;
         stateData = music;
@@ -85,12 +87,12 @@ class SongsForTheHeartMainView extends WatchUi.View {
     function updateMainScreen() as Void {
         // Update text above info to tell user whether playlists are loaded, playlist has been selected
         // or if both have occurred running status.
-        if (!spotifyApi.gotAllPlaylists) {
+        if (!Spotify.gotAllPlaylists) {
             playlistName = "Waiting for Data";
-        } else if (!spotifyApi.gotAllTracks) {
+        } else if (!Spotify.gotAllTracks) {
             playlistName = "Select a Playlist";
         } else {
-            playlistName = spotifyApi.selectedPlaylistName;
+            playlistName = Spotify.selectedPlaylistName;
         }
          if (runningStatusText == null){
                 stateData.stateText = "ANALYSING DATA";
@@ -124,13 +126,13 @@ class SongsForTheHeartMainView extends WatchUi.View {
         dc.drawText(dc.getWidth() / 2 - 50, dc.getHeight() / 2 - 20 + offset, Graphics.FONT_SMALL, sensorData.currentBPM, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Image
-        if (spotifyApi.currentTrackImage != null) {
-            dc.drawBitmap(dc.getWidth() / 2, dc.getHeight() / 2 - 50 + offset, spotifyApi.currentTrackImage);
+        if (Spotify.currentTrackImage != null) {
+            dc.drawBitmap(dc.getWidth() / 2, dc.getHeight() / 2 - 50 + offset, Spotify.currentTrackImage);
         }
 
         // Text below
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 + 55 + offset, Graphics.FONT_XTINY, spotifyApi.currentTrackName, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2 + 55 + offset, Graphics.FONT_XTINY, Spotify.currentTrackName, Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     //! Called when this View is removed from the screen. Save the
